@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/infosidebar.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div>
+            <p> <a href="index.html">Home</a> > Account > My Profile</p>
+            <button id="MP">My Profile</button>
+            <button id="DA">Delivery Address</button>
+            <button id="MO">My orders</button>
+            <button id="TOP">Top ordered products</button>
+            <button id="MW">My Wishlist</button>
+            <button id="RV">Recently Viewd</button>
+            <button id="MC">My Cashback</button>
+            <button id="RF">Refer Friend</button>
+            <button id="CP">Change password</button>
+            <button id="LO">Log out</button>
+        </div>
+        <div id="ShowDetailsPage">
+        </div>
+    </div>
+</body>
+</html>
+<script type="module">
+    let LoggedUser=JSON.parse(localStorage.getItem("LoggedInUser"));
+     document.querySelector("#MP").addEventListener("click",()=>{
+           displaydata(LoggedUser);
+     })
+     console.log(LoggedUser,LoggedUser[0].FirstName);
+     displaydata(LoggedUser);
+     function displaydata(LoggedUser){
+        document.querySelector("#ShowDetailsPage").innerHTML="";
+        let div= document.createElement("div");
+        let h1=document.createElement("h1");
+        h1.innerText="Hello  "+LoggedUser[0].FirstName;
+        let FirstName=document.createElement("p");
+        FirstName.innerText="FirstName: "+LoggedUser[0].FirstName;
+        let LastName=document.createElement("p");
+        LastName.innerText="LastName: "+LoggedUser[0].LastName;
+        let email=document.createElement("p");
+        email.innerText="Email: "+LoggedUser[0].email;
+        let ContactNumber=document.createElement("p");
+        ContactNumber.innerText="ContactNumber:  ";
+        let Birthday=document.createElement("p");
+        Birthday.innerText="Birthday: ";
+        let Gender=document.createElement("p");
+        Gender.innerText="Gender:";
+        let button=document.createElement("button");
+        button.innerText="EDIT";
+        button.addEventListener("click",()=>{
+            showdata();
+        })
+        div.append(h1,FirstName,LastName,email,ContactNumber,Birthday,Gender,button);
+        document.querySelector("#ShowDetailsPage").append(div);
+     }
+     function showdata()
+     {
+
+     }
+</script>
