@@ -2,43 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skin Care</title>
-  <link rel="stylesheet" href="./Skin Care.css" />
-  <link rel="stylesheet" href="../navbar/style/navbar.css">
-  <link rel="stylesheet" href="../humam_css/footer_h.css">
-  <link rel="shortcut icon"
-    href="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw9d49eb87/images/favicons/favicon-196x196.png"
-    type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Care</title>
+    <link rel="stylesheet" href="./Skin Care.css" />
+
+
+
+
 </head>
 
 <body>
-  <div id="navbar"></div>
-  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/1200x235_1900x.jpg?v=1655708130" alt=""
-    style="width:100%">
-  <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # New Arrivals</h5>
+    <div id="navbar"></div>
+    <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/1200x235_1900x.jpg?v=1655708130" alt="" style="width:100%">
+    <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # New Arrivals</h5>
 
 
 
-  <div id="display_sv">
-    <div id="dummy_sv">
+    <div id="display_sv">
+        <div id="dummy_sv">
 
-    </div>
-    <div id="details_sv">
-      <p>Skin Care</p>
-      <div id="filter">
-        <div id="filter1">
-          <h4>Filter BY:</h4>
-          <form>
-            <select id="type_sv" onChange="handleType()">
+        </div>
+        <div id="details_sv">
+            <p>Skin Care</p>
+            <div id="filter">
+                <div id="filter1">
+                    <h4>Filter BY:</h4>
+                    <form>
+                        <select id="type_sv" onChange="handleType()">
               <option value="">Skin Care</option>
               <option value="By Product Type">By Product Type</option>
               <option value="By concern">By concern</option>
               <option value="By Skin Type">By Skin Type</option>
             </select>
-            <select id="subtype_sv" onChange="handleSubtype()">
+                        <select id="subtype_sv" onChange="handleSubtype()">
               <option value="">Face cream</option>
               <option value="Face cream">Face cream</option>
               <option value="Face Moisturisers">Face Moisturisers</option>
@@ -48,43 +46,27 @@
               <option value="Combo">Combo</option>
               <option value="Combo"></option>
             </select>
-          </form>
-        </div>
-        <div id="filter2">
-          <form>
-            <select id="price_sv" onChange="handlePrice()">
+                    </form>
+                </div>
+                <div id="filter2">
+                    <form>
+                        <select id="price_sv" onChange="handlePrice()">
               <option value="">Sort By Price</option>
               <option value="LTH">Low to High</option>
               <option value="HTL">High to Low</option>
             </select>
-          </form>
+                    </form>
+                </div>
+            </div>
+            <img src="https://github.com/humamul/Cool-Coders/blob/main/images/text.gif?raw=true" alt="" />
+            <div id="product_sv">
+                <div id="container_sv"></div>
+            </div>
         </div>
-      </div>
-      <img src="https://github.com/humamul/Cool-Coders/blob/main/images/text.gif?raw=true" alt="" />
-      <div id="product_sv">
-        <div id="container_sv"></div>
-      </div>
     </div>
-  </div>
 
-  <div id="footer_h">Footer</div>
+    <div id="footer_h">Footer</div>
 </body>
 
 </html>
 <script src="./Skin Care.js"></script>
-
-<script type="module">
-
-  import { navbar_h } from "../navbar/script/navbar.js";
-  var x = document.querySelector("#navbar");
-  x.innerHTML = navbar_h();
-
-  import { footer } from "../navbar/script/footer.js";
-  var y = document.querySelector("#footer_h");
-  y.innerHTML = footer();
-
-  import { sidebar } from "../navbar/script/sidebar.js"
-  let z = document.querySelector("#dummy_sv")
-  z.innerHTML = sidebar();
-
-</script>

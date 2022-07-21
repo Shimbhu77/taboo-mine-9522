@@ -1,36 +1,34 @@
-
 let data = JSON.parse(localStorage.getItem('all_data')) || []
 console.log(data)
 let dataArray = []
-data.forEach(function (el) {
+data.forEach(function(el) {
     if (el.type == 'By Product Type' || el.type == 'By concern' || el.type == 'By Skin Type') {
 
         dataArray.push(el)
     }
 })
 console.log(dataArray)
-appendData(dataArray)
+appendData(data)
 
 function handlePrice() {
     var select = document.querySelector("#price_sv").value
     if (select == "") {
         appendData(dataArray)
-    }
-    else if (select == 'HTL') {
-        dataArray.sort(function (a, b) {
+    } else if (select == 'HTL') {
+        dataArray.sort(function(a, b) {
             return b.realPrice - a.realPrice
 
         })
         appendData(dataArray)
-    }
-    else if (select == 'LTH') {
-        dataArray.sort(function (a, b) {
+    } else if (select == 'LTH') {
+        dataArray.sort(function(a, b) {
             return a.realPrice - b.realPrice
 
         })
         appendData(dataArray)
     }
 }
+
 function handleType() {
     let select = document.querySelector("#type_sv").value
     if (select == "") {
@@ -42,6 +40,7 @@ function handleType() {
     });
     appendData(filteredList)
 }
+
 function handleSubtype() {
     let select = document.querySelector("#subtype_sv").value
     if (select == "") {
@@ -59,7 +58,7 @@ function appendData(data) {
     let display = document.getElementById('container_sv')
     display.innerHTML = null;
     // console.log(data)
-    data.forEach(function (el) {
+    data.forEach(function(el) {
         // console.log(el)
         let div = document.createElement('div')
         div.setAttribute('class', 'box_sv')
@@ -97,13 +96,16 @@ function appendData(data) {
     });
 }
 let CartArray = JSON.parse(localStorage.getItem('cart')) || []
+
 function addToCart(data) {
     CartArray.push(data)
     console.log(CartArray)
     localStorage.setItem('cart', JSON.stringify(CartArray))
 
 }
+
 function Chacha(data) {
     localStorage.setItem('Products', JSON.stringify(data))
     window.location.href = '../product detail/product_detail.html'
 }
+appendData(data)
