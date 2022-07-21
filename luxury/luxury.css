@@ -206,3 +206,27 @@ button{
     color:#465c4a;
     font-size: 20px;
 }
+
+/* media queries */
+
+      /* for medium screens */
+
+@media all and (min-width:768px) and (max-width:1024px){
+
+    .container{
+        width:95%;
+    }
+
+}
+     
+
+
+
+        /* for small screen */
+
+
+
+@media all and (min-width:320px) and (max-width:767px){
+
+}
+
