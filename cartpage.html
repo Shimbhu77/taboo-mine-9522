@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles/Cartdiv1.css">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  /* background-color: rgb(0,0,0); */
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay h3 a {
+  /* color: #f1f1f1; */
+  /* color: black; */
+} 
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.overlay-content {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    font-weight: 500;
+    /* border: 4px solid blue; */
+    margin-top: 10px;
+}
+#myNav{
+    /* border: 10px solid red; */
+    border: 0px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#box{
+    border: 0px solid gray;
+    /* display: flex; */
+    width: 100%;
+    margin-top: 10px;
+}
+#box div{
+    border:0px solid gray;
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+
+#box div div:nth-child(1)
+{
+    width: 25%;
+    height: 104px;
+    margin-top: 20px;
+    border: 1px 0px 0px 1px solid gray;
+}
+#box div div:nth-child(1) img
+{
+    margin-top: 1px;
+    width: 100px;
+    height: 100px;
+    /* border: 4px solid brown; */
+}
+
+#box div div:nth-child(2)
+{
+    width: 75%;
+    height: 150px;
+    border:0px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+#box div div:nth-child(2) h2
+{
+     /* margin-top: 10px; */
+     margin-bottom: 0px;
+     
+}
+#box div div:nth-child(2) h3
+{
+     margin-top: 10px;
+     margin-bottom: 8px;
+}
+#box div div:nth-child(2) s
+{
+    margin-top: -23px;
+    margin-left: 80px;
+}
+#box div div:nth-child(2) div
+{
+    margin-top: 10px;
+    border: 1px solid ;
+    height: 28px;
+    width: 100px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+#box div div:nth-child(2) div button{
+    width: 40px;
+    height: 26px;
+    font-size: 20px;
+
+}
+#box div div:nth-child(2) div h2{
+    margin:1px 5px 5px 5px;
+}
+#select{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    border: none;
+    color: rgb(6, 110, 110);
+}
+#select div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: rgb(6, 110, 110);
+}
+#fix div h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#fix button{
+     width: 100%;
+     display: block;
+     margin: auto;
+     height: 60px;
+     font-size: 25px;
+     font-weight: bold;
+     background-color: #475d4b;
+     border-radius: 10px;
+     color: white;
+     border: none;
+}
+*{
+   border: none;
+   color: gray;
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+     <h3> <a href="">Your Cart &#8594;</a></h3>
+     <h3> <a href="">Continue Shoping</a></h3>
+  </div>
+   <div id="box"></div>
+   <div id="fix">
+    <select name="Offers" id="select">
+        <option value="">
+            <h3>Offers</h3>
+        </option>
+        <option value="">
+            <div>
+                <h4>10% Discount</h4>
+                 <h4>Use Coupen Code NEW10</h4>
+            </div>
+        </option>
+        <option value="">
+            <div>
+                <h4>4 at the price of 3</h4>
+                <h4>Use Coupen Code 4FOR3</h4>
+            </div>
+       </option>
+    </select>
+        
+       <p>Order Summary</p>
+       <hr>
+       <div id="first">
+        <div>Cashback Redeemed</div>
+        <div>₹ 0</div>
+       </div>
+       <div id="second">
+        <div>Savings</div>
+        <div>₹ 0</div>
+       </div>
+       <div id="fourth">
+        <div ><h3>Total</h3></div>
+        <div id="Totalpriceof"> <h3>₹ 0</h3></div>
+       </div>
+       <button>CHECKOUT</button>
+</div>
+</div> 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "35%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
+<script>
+    var Cardata=JSON.parse(localStorage.getItem("CartProducts"));
+    var x=Cardata;
+    var totalprice=0;
+    var productTotal=0;
+    var savings=0;
+     console.log(Cardata);
+     function displaydata(data)
+     {
+        totalprice=0;
+        savings=0;
+        document.querySelector("#Totalpriceof").innerHTML="₹ "+"";
+        document.querySelector("#box").innerHTML="";
+        data.forEach((elem,index) => {
+            productTotal=0;
+            var counter=elem.quantity;
+            console.log(counter,index,x);
+            let div1=document.createElement("div");
+            let div2=document.createElement("div");
+            let div3=document.createElement("div");
+            let div4=document.createElement("div");
+            let img=document.createElement("img");
+            img.src=elem.image;
+            let name=document.createElement("h3");
+            name.innerText=elem.title;
+            let Price=document.createElement("h2");
+            Price.innerText="₹ "+elem.ProductPrice+" ";
+            let SPrice=document.createElement("s");
+            SPrice.innerText="₹ "+elem.strikeprice;
+            var h2=document.createElement("h2");
+            h2.innerText=counter;
+            h2.style.color="gray";
+            console.log(x[index].quantity);
+            var increament=document.createElement("button");
+            increament.innerText="+"
+            increament.addEventListener("click",function(){
+                countvalueplus(elem,index,h2)
+            })
+            var decreament=document.createElement("button");
+            decreament.innerText="-"
+            decreament.addEventListener("click",function(){
+                countvalueminus(elem,index,h2)
+            });
+            div1.append(img);
+            div4.append(increament,h2,decreament);
+            div2.append(name,Price,SPrice,div4)
+            div3.append(div1,div2)
+            document.querySelector("#box").append(div3);
+            totalprice=totalprice+Number(elem.ProductPrice);
+            savings=savings+(Number(elem.price)-Number(elem.strikeprice));
+            console.log(totalprice,savings);
+        });
+        document.querySelector("#Totalpriceof").innerText="₹ "+totalprice;
+     }
+
+    function countvalueplus(elem,index,h2)
+    {
+        console.log(x[index].quantity);
+        x[index].quantity++;
+        x[index].ProductPrice=Number(elem.price)*Number(x[index].quantity);
+        localStorage.setItem("CartProducts",JSON.stringify(x));
+        displaydata(x);
+        console.log("inside ");
+
+        console.log(x[index].quantity);
+    }
+    function countvalueminus(elem,index,h2)
+    {
+        if(x[index].quantity==1) return;
+        x[index].quantity--;
+        x[index].ProductPrice=Number(elem.price)*Number(x[index].quantity);
+        localStorage.setItem("CartProducts",JSON.stringify(x));
+        displaydata(x);
+        console.log("inside ");
+        console.log(x[index].quantity);
+    }  
+    displaydata(Cardata);
+</script>
