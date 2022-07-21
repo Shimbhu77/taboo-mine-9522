@@ -172,8 +172,7 @@ let footer = () => {
 
                 </div>
             </div>
-            <button type="submit" class="newsletter-form__button
-                    field__button" name="commit" id="Subscribe" aria-label="submit">SUBMIT</button></form></span>
+            <button type="submit"id="Subscribe" >SUBMIT</button></form></span>
         </a>
         <a href="" title="Terms of Use">
             <i></i>

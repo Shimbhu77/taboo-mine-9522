@@ -9,25 +9,37 @@
 /* navbar1 */
 
 #navbar1 {
-    text-align: center;
+    /* text-align: center; */
     background: white;
     height: 50px;
-    width: 80%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid red;
-    margin-bottom: 20px;
+    /* justify-content: space-around; */
+    /* border-bottom: 1px solid red; */
+    /* margin-bottom: 20px; */
     padding-bottom: 20px;
-    align-items: center;
-    margin-left: 20px;
+    /* align-items: center; */
+    /* margin-left: 20px; */
+    margin: auto auto auto 190px;
 }
 
 #navbar1>div {
-    border: 1px solid red;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* border-right: 1px solid rgb(156, 154, 154); */
+}
+
+#navbar1>div>a {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgb(156, 154, 154);
 }
 
 #navbar1>a {
-    border: 1px solid red;
+    height: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgb(150, 146, 146);
 }
 
 #navbar>img {
@@ -58,19 +70,44 @@
     margin-left: 10px;
 }
 
+#a1>a:hover {
+    /* background-color:unvisivle; */
+    border-bottom: 1px solid rgb(150, 146, 146);
+    border-right: 1px solid transparent;
+}
+
+#a2>a:hover {
+    /* background-color: #e5f0da; */
+    border-bottom: 1px solid rgb(150, 146, 146);
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+#a3:hover {
+    /* background-color: #e5f0da; */
+    border-bottom: 1px solid rgb(150, 146, 146);
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+#navbar1>div>a:hover {
+    background-color: #e5f0da;
+    border-bottom: 1px solid rgb(150, 146, 146);
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
 #navbar1>div:hover {
     background-color: #e5f0da;
+    /* border-bottom: 1px solid rgb(150, 146, 146); */
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
 }
 
-#navbar1>a {
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
 
-#navbar1>a:hover {
+/* #navbar1>div>a:hover {
     background-color: #e5f0da;
-}
+} */
 
 .icon>i {
     font-size: 10px;
@@ -359,6 +396,12 @@ li {
 
 /* navbar2 */
 
+
+/* #navbar2 {
+    margin: auto;
+    width: 90%;
+} */
+
 #navbar2>div:nth-child(1) {
     padding-top: 20px;
     text-align: center;
@@ -369,6 +412,8 @@ li {
 }
 
 #navbar2>div:nth-child(2) {
+    margin: auto auto 20px auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     /* justify-items: center; */

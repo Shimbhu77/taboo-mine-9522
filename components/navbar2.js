@@ -4,11 +4,7 @@ let navbar2 = () => {
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <p>Buy ANY 4 products for the price of 3! Code - 4FOR3
-
-
-
-                </p>
+                <p>Buy ANY 4 products for the price of 3! Code - 4FOR3</p>
             </div>
             <div class="carousel-item">
                 <p> 10% off for new users on first order with minimum order value of ₹499. Code : NEW10</p>

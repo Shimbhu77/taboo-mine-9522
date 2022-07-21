@@ -10,90 +10,121 @@ import footer from "../components/footer.js";
 let footerOfCricbuzz = document.getElementById("footer_div");
 footerOfCricbuzz.innerHTML = footer();
 //clicking on image 
-document.querySelector("#navbar1>img").addEventListener("click", function() {
-    window.location.href = "index.html";
-})
+// document.querySelector("#navbar1>img").addEventListener("click", function() {
+//     window.location.href = "index.html";
+// })
 
 
 
-// let func = async ()=>{
-//     try{
+let bestArr = [{
+        id: 1,
+        image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_335c1545-0fc8-4689-949d-51d77f268530_533x.jpg?v=1652861341",
+        title: "brave essentials - de-tan face scrub, 75ml",
+        content: "brightens | removes dead skin & blackheads",
+        discount: "30%",
+        rating: 5,
+        price: 228,
+        strikeprice: 325,
+        icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
 
-//         let data = await fetch(url,options);
-//         let res = await data.json();
-//         console.log(res.typeMatches[0].seriesAdWrapper);
-//         fillThefeturedMatches(res.typeMatches[0].seriesAdWrapper);
-//     }catch(error){
-//         console.log(error);
-//     }
+    },
+    {
+        id: 2,
+        image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_a0b78020-d351-4908-9aa5-e9a6976cb552_533x.jpg?v=1652861079",
+        title: "brave essentials - beard grooming combo",
+        content: "beard wash,beard oil,& moustache wax",
+        discount: "30%",
+        rating: 4.7,
+        price: 614,
+        strikeprice: 877,
+        icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
 
-// }
-// func();
+    },
+    {
+        id: 3,
+        image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/shampoo_1_f4b738d9-6056-4fb9-98e5-618387369ec9_533x.jpg?v=1652856621",
+        title: "brave essentials -top to toe combo",
+        content: "2 in 1 shampoo conditioner turmeric condtioner",
+        discount: "30%",
+        rating: 4.6,
+        price: 733,
+        strikeprice: 1047,
+        icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
 
+    },
+    {
+        id: 4,
+        image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_8352d583-8302-4911-b42a-d6901acf611f_533x.jpg?v=1652855227",
+        title: "brave essentials -Hair stylimg combo",
+        content: "hair oil,2-in-1 shampoo wax,massage oil",
+        discount: "25%",
+        rating: 5,
+        price: 751,
+        strikeprice: 1073,
+        icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
 
-
-// //defining the fillThefeturedMatches function 
-// let fillThefeturedMatches=(array)=>{
-//     console.log(array);
-//     array.map(function(ele,index){
-//         if(index%2===0){
-//             let first_match = ele.seriesMatches.matches[0].matchInfo;
-//             let status = document.createElement("a");
-//             status.innerText=first_match.status;
-//             status.setAttribute("class","anchortag");
-//             let name1 = document.createElement("a");
-//             name1.innerText=first_match.team1.teamSName;
-//             let name2 = document.createElement("a");
-//             name2.innerText=first_match.team2.teamSName;
-//             // console.log(status.innerText,name1.innerText,name2.innerText);
-//             let div1 = document.createElement("div");
-//             let div2 = document.createElement("div");
-//             let div3 = document.createElement("div");
-//             let div4 = document.createElement("div");
-//             let score_match = ele.seriesMatches.matches[0].matchScore;
-//             let name1_score = document.createElement("a");
-//             name1_score.innerText=score_match.team1Score.inngs1.runs;
-//             let name1_wicket = document.createElement("a");
-//             name1_wicket.innerText=`(${score_match.team1Score.inngs1.overs})`;
-
-
-//             let name2_score = document.createElement("a");
-//             name2_score.innerText=score_match.team2Score.inngs1.runs;
-//             let name2_wicket = document.createElement("a");
-//             name2_wicket.innerText=`(${score_match.team2Score.inngs1.overs})`;
-//             let DIV_first = document.createElement("div");
-//             let DIV_second = document.createElement("div");
-//             div1.append(name1);
-//             div2.append(name1_score,name1_wicket);
-//             DIV_first.append(div1,div2);
-//             div3.append(name2);
-//             div4.append(name2_score,name2_wicket);
-//             DIV_second.append(div3,div4);
-//             let div_append=document.createElement("div");
-//             div_append.append(DIV_first,DIV_second,status);
-//             document.getElementById("live_featured_matches").append(div_append);
-//             // console.log(DIV_first,DIV_second);
-//         }
-//     })
-// }
+    },
 
 
+];
 
-// news
+appendBest(bestArr);
+
+function appendBest(data) {
+    data.forEach(element => {
+        let div = document.createElement("div");
+
+        let pic_container = document.createElement("div");
+        let pic = document.createElement("img");
+        pic.src = element.image;
+        pic_container.append(pic);
+
+        let p1 = document.createElement("p");
+        p1.innerText = element.title;
+
+        let p2 = document.createElement("span");
+        p2.innerText = element.discount;
+        p2.setAttribute("class", "discount");
+
+        let p4 = document.createElement("span");
+        p4.innerText = "#1 best seller"
+        p4.setAttribute("class", "bestseller");
 
 
 
+        let box_1 = document.createElement("div");
+        box_1.setAttribute("class", "box_1");
+
+        let first_box = document.createElement("div");
+
+        let li1 = document.createElement("span");
+        li1.innerText = element.price;
+        let li2 = document.createElement("span");
+        li2.innerText = element.strikeprice;
+
+        let bt1 = document.createElement("button");
+        bt1.innerText = "add to cart";
+        let p3 = document.createElement("span");
+        p3.innerText = element.content;
+        p3.setAttribute("class", "content");
 
 
-let newsToHome = (array) => {
-    array.map(function(ele, index) {
-        if (index !== 1 && index !== 6) {
-            //    ele.stroy.hline
-            let hline = document.createElement("h4");
-            let horizontal = document.createElement("hr");
-            horizontal.style.border = ".5px solid #E3E6E3"
-            hline.innerText = ele.story.hline;
-            document.getElementById("news_home").append(hline, horizontal);
-        }
-    })
+        first_box.append(li1, li2);
+
+        let second_box = document.createElement("div");
+
+
+        let li3 = document.createElement("span");
+        li3.innerText = element.rating;
+        let img_icon = document.createElement("img");
+        img_icon.src = element.icon;
+
+
+        second_box.append(li3, img_icon);
+
+        box_1.append(first_box, second_box);
+        div.append(pic_container, p1, p3, p2, p4, box_1, bt1);
+        document.querySelector(".seller_section").append(div);
+
+    });
 }

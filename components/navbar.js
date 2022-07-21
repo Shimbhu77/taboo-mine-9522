@@ -2,10 +2,10 @@ let navbar = () => {
     return `
    
    
-    <a href="" title="SHOP ALL">SHOP ALL</a>
-    <a href="" title=" NEW ARRIVALS">NEW ARRIVALS</a>
-    <a href="" title="BESTSELLERS">BESTSELLERS</a>
-     <div title="SKIN CARE"  class="icon dropMenu">
+    <div id="a1"><a href="" title="SHOP ALL">SHOP ALL</a></div>
+    <div id="a2"><a href="" title=" NEW ARRIVALS">NEW ARRIVALS</a></div>
+    <div id="a3"><a href="" title="BESTSELLERS">BESTSELLERS</a></div>
+     <div id="a4" title="SKIN CARE"  class="icon dropMenu">
         <a href="">SKIN CARE</a>
         
        
