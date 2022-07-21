@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="combo.css">
+    <link rel="stylesheet" href="../humam_css/footer_h.css">
+    <link rel="stylesheet" href="../navbar/style/navbar.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/1200x235_1900x.jpg?v=1655708130" alt=""
+        style="width:100%">
+    <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # New Arrivals</h5>
+    <div id="header_h"></div>
+
+    <div id="display_sv">
+        <div id="dummy_sv">
+
+        </div>
+        <div id="details_sv">
+            <p>Gifts</p>
+            <div id="filter">
+                <div id="filter1">
+                    <h4>Filter BY:</h4>
+                    <form>
+                        <select id="type_sv" onChange="handleType()">
+                            <option value="">Product Type</option>
+                            <option value="Combos">Combos</option>
+
+                        </select>
+                        <select id="subtype_sv" onChange="handleSubtype()">
+                            <option value="">Product Subtype</option>
+                            <option value="Combo">Combo</option>
+                        </select>
+                    </form>
+                </div>
+                <div id="filter2">
+                    <form>
+                        <select id="price_sv" onChange="handlePrice()">
+                            <option value="">Sort By Price</option>
+                            <option value="LTH">Low to High</option>
+                            <option value="HTL">High to Low</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <img src="https://github.com/humamul/Cool-Coders/blob/main/images/text.gif?raw=true" alt="">
+            <div id="product_sv">
+                <div id="container_sv"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer_h"></div>
+</body>
+
+</html>
+<script src="combo.js"></script>
+<script type="module">
+
+    import { navbar_h } from "../navbar/script/navbar.js";
+    var x = document.querySelector("#navbar");
+    x.innerHTML = navbar_h();
+
+    import { footer } from "../navbar/script/footer.js";
+    // console.log(footer());
+    var y = document.querySelector("#footer_h");
+    y.innerHTML = footer();
+
+    import { sidebar } from "../navbar/script/sidebar.js"
+    let z = document.querySelector("#dummy_sv")
+    z.innerHTML = sidebar();
+
+</script>
