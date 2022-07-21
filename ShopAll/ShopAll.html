@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sites-BathAndBodyWorks-Sites</title>
+
+  <link rel="stylesheet" href="ShopAll.css" />
+
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <div id="display_sv">
+    <div id="dummy_sv">
+
+    </div>
+    <div id="details_sv">
+      <p>All Products</p>
+      <div id="filter">
+        <img src="https://github.com/humamul/Cool-Coders/blob/main/images/text.gif?raw=true" alt="" />
+      </div>
+
+      <div id="product_sv">
+        <div id="container_sv"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer_h"></div>
+</body>
+
+</html>
+<script src="ShopAll.js"></script>
+
+<script type="module">
+
+  import { sidebar } from "../scripts/sidebar.js"
+  let z = document.querySelector("#dummy_sv")
+  z.innerHTML = sidebar();
+</script>

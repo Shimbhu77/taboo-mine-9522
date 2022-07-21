@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="combo.css">
-    <link rel="stylesheet" href="../humam_css/footer_h.css">
-    <link rel="stylesheet" href="../navbar/style/navbar.css">
+
+
 </head>
 
 <body>
     <div id="navbar"></div>
     <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/1200x235_1900x.jpg?v=1655708130" alt=""
         style="width:100%">
-    <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # New Arrivals</h5>
+    <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # Combos</h5>
     <div id="header_h"></div>
 
     <div id="display_sv">
@@ -62,19 +63,10 @@
 </body>
 
 </html>
-<script src="combo.js"></script>
+<script src="combo.js">name</script>
 <script type="module">
 
-    import { navbar_h } from "../navbar/script/navbar.js";
-    var x = document.querySelector("#navbar");
-    x.innerHTML = navbar_h();
-
-    import { footer } from "../navbar/script/footer.js";
-    // console.log(footer());
-    var y = document.querySelector("#footer_h");
-    y.innerHTML = footer();
-
-    import { sidebar } from "../navbar/script/sidebar.js"
+    import { sidebar } from "../scripts/sidebar.js"
     let z = document.querySelector("#dummy_sv")
     z.innerHTML = sidebar();
 

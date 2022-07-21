@@ -1,10 +1,10 @@
 
 let data = JSON.parse(localStorage.getItem('all_data')) || []
 console.log(data)
+
 let dataArray = []
 data.forEach(function (el) {
-    if (el.type == 'Combos') {
-
+    if (el.type == 'New Arrivals') {
         dataArray.push(el)
     }
 })
@@ -71,7 +71,6 @@ function appendData(data) {
         image.addEventListener('click', () => {
             Chacha(el)
         })
-
         let ndiv = document.createElement('div')
         ndiv.setAttribute('class', 'namediv_sv')
         let name = document.createElement('a')
@@ -90,6 +89,7 @@ function appendData(data) {
         let button = document.createElement('button')
         button.setAttribute('class', 'probtn_sv')
         button.innerText = 'Add To Cart'
+        button.style.cursor = 'pointer'
         button.addEventListener('click', () => {
             addToCart(el)
         })
