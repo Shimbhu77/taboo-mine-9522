@@ -1,0 +1,320 @@
+
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+#container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,470px);
+    gap:30px;
+    margin-top: 30px;
+    border:1px solid red;
+}
+#container>div{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    position: relative;
+    padding:10px;
+    /* overflow: hidden; */
+    /* height:420px; */
+    /* border:1px solid blue; */
+
+}
+#container>div>img{
+    width:100%;
+    box-sizing: border-box;
+    height:300px;
+}
+#container>div>p{
+   font-size: 14px;
+    font-weight: 600;
+    width:90%;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    line-height: 17px;
+    margin-bottom: 10px;
+    /* border:1px solid red; */
+} 
+.front_img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+    transition:all 0.9s ease;
+   
+}
+.front_img:hover{
+    opacity:1;
+}
+.discount{
+    border:none;
+    position: absolute;
+    top:0px;
+    right:10px;
+    background-color: #e5f0da;
+    color:#465c4a;
+    font-weight: bolder;
+    padding:5px;
+    border-radius:3px;
+    /* border:1px solid black; */
+}
+
+.box_1{
+    width:100%;
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+   
+} 
+.box_1>div{
+    /* border:1px solid green; */
+   
+    display:flex;
+   
+}
+.box_1>div>img{
+    width:20%;
+}
+.box_1>div:nth-child(1){
+    justify-content: space-between;
+    width:20%;
+}
+.box_1>div:nth-child(2){
+    width:25%;
+    justify-content: space-evenly;
+    
+   
+}
+button{
+    margin-top:10px ;
+    display:inline-block;
+    width:100%;
+    padding:12px 25px 12px 25px;
+    background-color:#465c4a;
+    color:#e5f0da;
+    font-family:'Segoe UI' ;
+    text-transform: uppercase;
+    font-size:15px;
+    border-radius: 7px;
+    font-weight:700;
+}
+.content{
+    line-height: 15px;
+    /* border:1px solid blue; */
+    font-family:'Segoe UI' ;
+    text-transform: capitalize;
+    font-weight: 200;
+    margin-top: 20px;
+   
+
+}
+.box_1>div>:nth-child(2){
+    /* border:1px solid green; */
+    text-decoration: line-through;
+    color:#465c4a;
+    font-size: 14px;
+    font-weight: 700;
+}
+.box_1>div>:nth-child(1){
+    /* border:1px solid green; */
+    color:#465c4a;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.image_container{
+        width:80%;
+        margin:auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+    .image_container>img{
+        width:100%;
+        border-radius: 15px
+    }
+
+
+
+    #perfume_box{
+        width:80%;
+        margin:auto;
+        /* border:1px solid red; */
+        margin-top: 40px;
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+    }
+    #perfume_box>div{
+      /* border:1px solid red; */
+      overflow:hidden;
+      height:200px;
+      border-radius:10px;
+     
+    }
+    #perfume_box>div>img{
+        width:100%;
+        border-radius: 10px;
+        height:200px;
+        
+   
+    }
+    #perfume_box>div>img:hover{
+ transform:scale(1.1);
+ transition:all 0.3s ease;
+}
+.seller_section{
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content: space-evenly;
+    margin-top: 20px;
+   
+}
+.seller_section>div{
+    width:24%;
+    /* border:1px solid red; */
+    position: relative;
+    padding:10px 10px 0px 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 6px;
+}
+
+.seller_section>div>div:nth-child(1){
+    width:100%;
+    overflow: hidden;
+    /* border:1px solid blue; */
+}
+.seller_section>div>div:nth-child(1)>img{
+    width:100%;
+}
+.seller_section>div>div>img:hover{
+    transform:scale(1.1);
+    transition:all 0.1s ease;
+}
+.discount{
+    border:none;
+    position: absolute;
+    top:0px;
+    right:10px;
+    background-color: #e5f0da;
+    color:#465c4a;
+    font-weight: bolder;
+    padding:5px;
+    border-radius:3px;
+    /* border:1px solid black; */
+}
+.bestseller{
+
+    border:none;
+    position: absolute;
+    top:0px;
+    left:10px;
+    background-color: #e5f0da;
+    color:#465c4a;
+    font-weight: bolder;
+    padding:5px;
+    border-radius:3px;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+.seller_section>div>p{
+   font-size: 14px;
+    font-weight: 600;
+    width:90%;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    line-height: 17px;
+    margin-bottom: 10px;
+    /* border:1px solid red; */
+} 
+.content{
+    line-height: 15px;
+    /* border:1px solid blue; */
+    font-family:'Segoe UI' ;
+    text-transform: capitalize;
+    font-weight: 200;
+    margin-top: 20px;
+   
+
+}
+.box_1{
+    width:100%;
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+   
+} 
+.box_1>div{
+    /* border:1px solid green; */
+   
+    display:flex;
+   
+}
+.box_1>div>img{
+    width:20%;
+}
+.box_1>div:nth-child(1){
+    justify-content: space-between;
+    width:20%;
+    /* border:1px solid red; */
+}
+.box_1>div:nth-child(2){
+    width:25%;
+    justify-content: space-evenly;
+    
+   
+}
+button{
+    margin-top:10px ;
+    display:inline-block;
+    width:100%;
+    padding:12px 25px 12px 25px;
+    background-color:#465c4a;
+    color:#e5f0da;
+    font-family:'Segoe UI' ;
+    text-transform: uppercase;
+    font-size:15px;
+    border-radius: 7px;
+    font-weight:700;
+}
+.box_1>div>:nth-child(2){
+    /* border:1px solid green; */
+    text-decoration: line-through;
+    color:#465c4a;
+    font-size: 14px;
+    font-weight: 700;
+}
+.box_1>div>:nth-child(1){
+    /* border:1px solid green; */
+    color:#465c4a;
+    font-size: 17px;
+    font-weight: 600;
+}
+.seller_title{
+    /* border:1px solid red; */
+    width:80%;
+    margin:auto;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.seller_title>h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:#465c4a;
+    font-size: 20px;
+}
+
+
+  
+    
