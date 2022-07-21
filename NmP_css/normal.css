@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+*{
+    margin:  0 ;
+    /* padding: 1px ; */
+    font-family: 'Gothic A1', sans-serif;
+
+    /* font-family: 'Lobster', ; */
+/* font-family: 'Oleo Script', cursive; */
+}
+#top_h{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-image: url(https://cdn1.staticans.com/image/catalog/brandstore/bathandbodyworks/logo/gingham-pattern.svg);
+    background-position: calc(50% - 7px) calc(50% - 21px);
+    background-size: 28px 28px;
+    justify-content: center;
+}
+#top_h>p{
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0px 9px;
+
+    background-color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 1000;
+   
+    color: #005699;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    height: 40px;
+}
+#top2_h{
+    height: 40px;
+    width: 100%;
+    /* width: 1590px; */
+    background-color: #f2f2f2;
+}
+/* #carouselExampleSlidesOnly{
+width: 80%;
+margin: auto;
+margin-top: 30px;
+} */
+#mid_h{
+    width: 86%;
+    margin: auto;
+}
+#celebrate_h{
+  text-align: center;
+  letter-spacing: 2px;
+  width:50%;
+  margin:auto;
+  margin-top: 40px;
+  line-height: 2rem;
+}
+#celebrate_h>a{
+  border: 0px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: #e5e5e5;
+  padding: 15px 20px;
+}
+#celebrate_h>a:hover{
+  background-color: rgb(54, 54, 54);
+  color: white;
+
+}
+.category_h{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  font-size: small;
+  font-weight: 600;
+}
+.category_h>div>a>img{
+  width: 12rem;
+  margin-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 1rem;
+}
+.category_h>div:hover{
+  cursor: pointer;
+  
+}
+.category_h>div>a>div:hover{
+  text-decoration: underline;
+}
+.category_h>div>a{
+  color: #000;
+}
+#gift_h{
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid; */
+  overflow: hidden;
+}
+#gift_h>a>img{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#bars_h>div{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: space-around;
+}
+#bars_h a{
+  border: 0px solid black;
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
+  font-weight: 900;
+  background-color: #e5e5e5;
+  padding: 7px 20px;
+  /* font-size: 0.8rem; */
+}
+#bars_h a:hover{
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+#lastSec2_h{
+    text-align: center;
+  }
+  #lastSec2_h>div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    letter-spacing: 3px;
+    border-top: 5px solid;
+    font-family: cursive;
+    justify-content: center;
+  }
+  #lastSec2_h>div>i{
+    margin-top: 3px;
+    margin-right: 6px;
+  }
+  #lastSec2_h>div+p{
+    font-size: 14px;
+  }
+  #last_h{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  #last_h>h1{
+    font-size: 1.8rem;
+  }
+  #last_h>p{
+    font-size: 1rem;
+    color: #666;
+  }
+  /* #footer_h{
+    width: 90% ;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 22% 15% 15% 14% 10%;
+    gap: 4%;
+  }
+  #social_h{
+  
+    display: flex;
+    justify-content: space-around;
+  }
+  #social_h img{
+    width: 27px;
+    height: 27px;
+    
+  }
+ 
+  #footer_h>div>div>img{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  #footer_h>div>button{
+   border: 0px solid;
+    border-top: #000 solid 1px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid black;
+    padding: 0.06rem;
+    text-decoration: none;
+    color: black;
+  
+    font-weight: 900;
+    background-color: #e5e5e5;
+ 
+  }
+   #footer_h button:hover{
+   cursor: pointer;
+   color: white;
+   background-color: rgb(26, 26, 26);
+  }
+  #footer_h h2{
+    font-size: 14px;
+  }
+  #footer_h a{
+    display: block;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    margin-top: 6%;
+  } */

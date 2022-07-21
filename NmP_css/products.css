@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+}
+#container_h{
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    gap: 30px 20px;
+    justify-content: center;
+}
+#container_h>div{
+    /* border: 1px solid; */
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 1px;
+}
+.proImg_h{
+    width: 300px;
+    height: 400px;
+    /* border: 1px solid; */
+    
+    transition: transform 0.6s;
+
+}
+.proImg_h:hover{
+    transform: scale(1.1);
+}
+.name_h{
+    position: relative;
+    display: block;
+}

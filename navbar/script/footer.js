@@ -1,5 +1,5 @@
-function footer(){
-    return ` <div>
+function footer() {
+  return ` <div>
     <h5 >Get email offers & the latest news from Bath & Body Works!</h5>
 
     <label for="email-alert" style="margin-bottom: -1px;">Enter Email</label><br>
@@ -47,4 +47,4 @@ function footer(){
   </div>`
 }
 
-export {footer} ;
+export { footer };

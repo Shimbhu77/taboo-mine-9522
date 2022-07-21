@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/login.css">
 </head>
+
 <body>
     <div id="login">
         <h1>Login</h1>
@@ -19,86 +21,73 @@
         <p><a href="Signup.html">Create account</a></p>
     </div>
 </body>
+
 </html>
 <script>
-    let x=0;
-    let form=document.querySelector("form");
-    let userDetails=JSON.parse(localStorage.getItem("userinformation"));
-    let LoginUser=Array(1).fill(0);
-    document.querySelector("button").addEventListener("click",()=>{
+    let x = 0;
+    let form = document.querySelector("form");
+    let userDetails = JSON.parse(localStorage.getItem("userinformation"));
+    let LoginUser = Array(1).fill(0);
+    document.querySelector("button").addEventListener("click", () => {
         event.preventDefault();
-        let data={
-           email:form.email.value,
-           password:form.Password.value,
+        let data = {
+            email: form.email.value,
+            password: form.Password.value,
         }
         console.log(data);
-        if(formvalid(data)==false)
-        {
-           alert("Fill all the blanks")
+        if (formvalid(data) == false) {
+            alert("Fill all the blanks")
         }
-        else 
-        {
+        else {
             console.log(data.password);
-            if(validpassword(data.password)==false)
-            {
-              alert ("Password should be atleast 6 characters");
+            if (validpassword(data.password) == false) {
+                alert("Password should be atleast 6 characters");
             }
-            else
-            {
-               if(verifyemail(data.email,data.password)==true)
-               { 
-                  console.log(LoginUser)
-                  alert("Login Successfully");
-                //   window.location.href="index.html";
-               }
-               else if(x==1)
-               {
-                alert("Invalid Password or Email");
-               }
-               else
-               {
-                  alert("Account not found ");
-               }
-            }   
+            else {
+                if (verifyemail(data.email, data.password) == true) {
+                    console.log(LoginUser)
+                    alert("Login Successfully");
+                    //   window.location.href="index.html";
+                }
+                else if (x == 1) {
+                    alert("Invalid Password or Email");
+                }
+                else {
+                    alert("Account not found ");
+                }
+            }
         }
     });
-    let formvalid=(data)=>{
-        for(var x in data)
-        {
-            if(data[x]=="")
-            {
+    let formvalid = (data) => {
+        for (var x in data) {
+            if (data[x] == "") {
                 return false;
             }
         }
         return true;
     }
-    let validpassword=(password)=>{
-        if(password.length>=6)
-        {
+    let validpassword = (password) => {
+        if (password.length >= 6) {
             return true;
         }
-        else
-        {
+        else {
             return false;
         }
     }
     console.log(userDetails);
-    let verifyemail=(email,password)=>{
-        x=0;
-        for(let i=0;i<userDetails.length;i++)
-        {
-            if(userDetails[i].email==email && userDetails[i].password==password)
-            {
-                userDetails[i].loggeduser="true";
+    let verifyemail = (email, password) => {
+        x = 0;
+        for (let i = 0; i < userDetails.length; i++) {
+            if (userDetails[i].email == email && userDetails[i].password == password) {
+                userDetails[i].loggeduser = "true";
                 console.log(userDetails);
-                LoginUser[0]=userDetails[i];
-                localStorage.setItem("LoggedInUser",JSON.stringify(LoginUser));
-                localStorage.setItem("userinformation",JSON.stringify(userDetails));
+                LoginUser[0] = userDetails[i];
+                localStorage.setItem("LoggedInUser", JSON.stringify(LoginUser));
+                localStorage.setItem("userinformation", JSON.stringify(userDetails));
                 return true;
             }
-            else if(userDetails[i].email!==email && userDetails[i].password==password ||userDetails[i].email==email && userDetails[i].password!==password)
-            {
-                x=1;
+            else if (userDetails[i].email !== email && userDetails[i].password == password || userDetails[i].email == email && userDetails[i].password !== password) {
+                x = 1;
             }
         }
         return false;

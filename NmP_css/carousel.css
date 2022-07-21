@@ -1,0 +1,31 @@
+.wrapper_h{
+    width:86%;
+    margin: auto;
+    padding-top: 20px;
+    text-align:center;
+  }
+  h2{
+    font-family:sans-serif;
+    color:rgb(71, 58, 58);
+  }
+  .carousel_h{
+    width:100%;
+    margin:0px auto;
+  }
+  .slick-slide{
+    margin:10px;
+  }
+  .slick-slide img{
+    width:300px;
+    height: 200px;
+    border-radius: 10px;
+  
+  }
+ .wrapper_h .slick-prev:before,
+.slick-next:before{
+    color: black;
+}
+  .wrapper_h .slick-dots li button:before {
+    font-size:7px;
+    color:rgb(2, 2, 2);
+  }

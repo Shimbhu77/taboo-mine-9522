@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sites-BathAndBodyWorks-Sites</title>
+  <link rel="stylesheet" href="ShopAll.css" />
+  <link rel="stylesheet" href="../navbar/style/navbar.css">
+  <link rel="stylesheet" href="../NmP_css/footer_h.css">
+  <link rel="shortcut icon"
+    href="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw9d49eb87/images/favicons/favicon-196x196.png"
+    type="image/x-icon">
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <div id="display_sv">
+    <div id="dummy_sv">
+
+    </div>
+    <div id="details_sv">
+      <p>All Products</p>
+      <div id="filter">
+        <img src="https://github.com/humamul/Cool-Coders/blob/main/images/text.gif?raw=true" alt="" />
+      </div>
+
+      <div id="product_sv">
+        <div id="container_sv"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer_h">Footer</div>
+</body>
+
+</html>
+<script src="ShopAll.js"></script>
+<a href=""></a>
+<script type="module">
+  import { navbar_h } from "../navbar/script/navbar.js";
+  var x = document.querySelector("#navbar");
+  x.innerHTML = navbar_h();
+
+  import { footer } from "../navbar/script/footer.js";
+  // console.log(footer());
+  var y = document.querySelector("#footer_h");
+  y.innerHTML = footer();
+
+  import { sidebar } from "../navbar/script/sidebar.js"
+  let z = document.querySelector("#dummy_sv")
+  z.innerHTML = sidebar();
+</script>

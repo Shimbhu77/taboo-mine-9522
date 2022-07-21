@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,336 +8,371 @@
     <title>Document</title>
 </head>
 <style>
-    *{
+    * {
         padding: 0;
-        margin:0;
+        margin: 0;
         box-sizing: border-box;
     }
-#container{
-    width:90%;
-    margin:auto;
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,470px);
-    gap:30px;
-    margin-top: 30px;
-    border:1px solid red;
-}
-#container>div{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 10px;
-    position: relative;
-    padding:10px;
-    /* overflow: hidden; */
-    /* height:420px; */
-    /* border:1px solid blue; */
 
-}
-#container>div>img{
-    width:100%;
-    box-sizing: border-box;
-    height:300px;
-}
-#container>div>p{
-   font-size: 14px;
-    font-weight: 600;
-    width:90%;
-    font-family: 'Segoe UI';
-    text-transform: uppercase;
-    line-height: 17px;
-    margin-bottom: 10px;
-    /* border:1px solid red; */
-} 
-.front_img{
-    position:absolute;
-    top:0px;
-    left:0px;
-    opacity:0;
-    transition:all 0.9s ease;
-   
-}
-.front_img:hover{
-    opacity:1;
-}
-.discount{
-    border:none;
-    position: absolute;
-    top:0px;
-    right:10px;
-    background-color: #e5f0da;
-    color:#465c4a;
-    font-weight: bolder;
-    padding:5px;
-    border-radius:3px;
-    /* border:1px solid black; */
-}
+    #container {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 470px);
+        gap: 30px;
+        margin-top: 30px;
+        border: 1px solid red;
+    }
 
-.box_1{
-    width:100%;
-    /* border:1px solid red; */
-    display:flex;
-    justify-content: space-between;
-    margin-top: 10px;
-   
-} 
-.box_1>div{
-    /* border:1px solid green; */
-   
-    display:flex;
-   
-}
-.box_1>div>img{
-    width:20%;
-}
-.box_1>div:nth-child(1){
-    justify-content: space-between;
-    width:20%;
-}
-.box_1>div:nth-child(2){
-    width:25%;
-    justify-content: space-evenly;
-    
-   
-}
-button{
-    margin-top:10px ;
-    display:inline-block;
-    width:100%;
-    padding:12px 25px 12px 25px;
-    background-color:#465c4a;
-    color:#e5f0da;
-    font-family:'Segoe UI' ;
-    text-transform: uppercase;
-    font-size:15px;
-    border-radius: 7px;
-    font-weight:700;
-}
-.content{
-    line-height: 15px;
-    /* border:1px solid blue; */
-    font-family:'Segoe UI' ;
-    text-transform: capitalize;
-    font-weight: 200;
-    margin-top: 20px;
-   
+    #container>div {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10px;
+        position: relative;
+        padding: 10px;
+        /* overflow: hidden; */
+        /* height:420px; */
+        /* border:1px solid blue; */
 
-}
-.box_1>div>:nth-child(2){
-    /* border:1px solid green; */
-    text-decoration: line-through;
-    color:#465c4a;
-    font-size: 14px;
-    font-weight: 700;
-}
-.box_1>div>:nth-child(1){
-    /* border:1px solid green; */
-    color:#465c4a;
-    font-size: 17px;
-    font-weight: 600;
-}
+    }
 
-.image_container{
-        width:80%;
-        margin:auto;
+    #container>div>img {
+        width: 100%;
+        box-sizing: border-box;
+        height: 300px;
+    }
+
+    #container>div>p {
+        font-size: 14px;
+        font-weight: 600;
+        width: 90%;
+        font-family: 'Segoe UI';
+        text-transform: uppercase;
+        line-height: 17px;
+        margin-bottom: 10px;
+        /* border:1px solid red; */
+    }
+
+    .front_img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: all 0.9s ease;
+
+    }
+
+    .front_img:hover {
+        opacity: 1;
+    }
+
+    .discount {
+        border: none;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        background-color: #e5f0da;
+        color: #465c4a;
+        font-weight: bolder;
+        padding: 5px;
+        border-radius: 3px;
+        /* border:1px solid black; */
+    }
+
+    .box_1 {
+        width: 100%;
+        /* border:1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+    }
+
+    .box_1>div {
+        /* border:1px solid green; */
+
+        display: flex;
+
+    }
+
+    .box_1>div>img {
+        width: 20%;
+    }
+
+    .box_1>div:nth-child(1) {
+        justify-content: space-between;
+        width: 20%;
+    }
+
+    .box_1>div:nth-child(2) {
+        width: 25%;
+        justify-content: space-evenly;
+
+
+    }
+
+    button {
+        margin-top: 10px;
+        display: inline-block;
+        width: 100%;
+        padding: 12px 25px 12px 25px;
+        background-color: #465c4a;
+        color: #e5f0da;
+        font-family: 'Segoe UI';
+        text-transform: uppercase;
+        font-size: 15px;
+        border-radius: 7px;
+        font-weight: 700;
+    }
+
+    .content {
+        line-height: 15px;
+        /* border:1px solid blue; */
+        font-family: 'Segoe UI';
+        text-transform: capitalize;
+        font-weight: 200;
+        margin-top: 20px;
+
+
+    }
+
+    .box_1>div>:nth-child(2) {
+        /* border:1px solid green; */
+        text-decoration: line-through;
+        color: #465c4a;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .box_1>div>:nth-child(1) {
+        /* border:1px solid green; */
+        color: #465c4a;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .image_container {
+        width: 80%;
+        margin: auto;
         margin-top: 20px;
         border-radius: 15px;
     }
-    .image_container>img{
-        width:100%;
+
+    .image_container>img {
+        width: 100%;
         border-radius: 15px
     }
 
 
 
-    #perfume_box{
-        width:80%;
-        margin:auto;
+    #perfume_box {
+        width: 80%;
+        margin: auto;
         /* border:1px solid red; */
         margin-top: 40px;
-        display:grid;
-        grid-template-columns: repeat(5,1fr);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
-        gap:20px;
+        gap: 20px;
     }
-    #perfume_box>div{
-      /* border:1px solid red; */
-      overflow:hidden;
-      height:200px;
-      border-radius:10px;
-     
-    }
-    #perfume_box>div>img{
-        width:100%;
+
+    #perfume_box>div {
+        /* border:1px solid red; */
+        overflow: hidden;
+        height: 200px;
         border-radius: 10px;
-        height:200px;
-        
-   
+
     }
-    #perfume_box>div>img:hover{
- transform:scale(1.1);
- transition:all 0.3s ease;
-}
-.seller_section{
-    display:flex;
-    width:80%;
-    margin:auto;
-    justify-content: space-evenly;
-    margin-top: 20px;
-   
-}
-.seller_section>div{
-    width:24%;
-    /* border:1px solid red; */
-    position: relative;
-    padding:10px 10px 0px 10px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-radius: 6px;
-}
 
-.seller_section>div>div:nth-child(1){
-    width:100%;
-    overflow: hidden;
-    /* border:1px solid blue; */
-}
-.seller_section>div>div:nth-child(1)>img{
-    width:100%;
-}
-.seller_section>div>div>img:hover{
-    transform:scale(1.1);
-    transition:all 0.1s ease;
-}
-.discount{
-    border:none;
-    position: absolute;
-    top:0px;
-    right:10px;
-    background-color: #e5f0da;
-    color:#465c4a;
-    font-weight: bolder;
-    padding:5px;
-    border-radius:3px;
-    /* border:1px solid black; */
-}
-.bestseller{
-
-    border:none;
-    position: absolute;
-    top:0px;
-    left:10px;
-    background-color: #e5f0da;
-    color:#465c4a;
-    font-weight: bolder;
-    padding:5px;
-    border-radius:3px;
-    text-transform: uppercase;
-    font-size: 12px;
-
-}
-.seller_section>div>p{
-   font-size: 14px;
-    font-weight: 600;
-    width:90%;
-    font-family: 'Segoe UI';
-    text-transform: uppercase;
-    line-height: 17px;
-    margin-bottom: 10px;
-    /* border:1px solid red; */
-} 
-.content{
-    line-height: 15px;
-    /* border:1px solid blue; */
-    font-family:'Segoe UI' ;
-    text-transform: capitalize;
-    font-weight: 200;
-    margin-top: 20px;
-   
-
-}
-.box_1{
-    width:100%;
-    /* border:1px solid red; */
-    display:flex;
-    justify-content: space-between;
-    margin-top: 10px;
-   
-} 
-.box_1>div{
-    /* border:1px solid green; */
-   
-    display:flex;
-   
-}
-.box_1>div>img{
-    width:20%;
-}
-.box_1>div:nth-child(1){
-    justify-content: space-between;
-    width:20%;
-    /* border:1px solid red; */
-}
-.box_1>div:nth-child(2){
-    width:25%;
-    justify-content: space-evenly;
-    
-   
-}
-button{
-    margin-top:10px ;
-    display:inline-block;
-    width:100%;
-    padding:12px 25px 12px 25px;
-    background-color:#465c4a;
-    color:#e5f0da;
-    font-family:'Segoe UI' ;
-    text-transform: uppercase;
-    font-size:15px;
-    border-radius: 7px;
-    font-weight:700;
-}
-.box_1>div>:nth-child(2){
-    /* border:1px solid green; */
-    text-decoration: line-through;
-    color:#465c4a;
-    font-size: 14px;
-    font-weight: 700;
-}
-.box_1>div>:nth-child(1){
-    /* border:1px solid green; */
-    color:#465c4a;
-    font-size: 17px;
-    font-weight: 600;
-}
-.seller_title{
-    /* border:1px solid red; */
-    width:80%;
-    margin:auto;
-    height:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-.seller_title>h1{
-    text-align: center;
-    text-transform: uppercase;
-    color:#465c4a;
-    font-size: 20px;
-}
+    #perfume_box>div>img {
+        width: 100%;
+        border-radius: 10px;
+        height: 200px;
 
 
-  
-    
+    }
+
+    #perfume_box>div>img:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+
+    .seller_section {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+    }
+
+    .seller_section>div {
+        width: 24%;
+        /* border:1px solid red; */
+        position: relative;
+        padding: 10px 10px 0px 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 6px;
+    }
+
+    .seller_section>div>div:nth-child(1) {
+        width: 100%;
+        overflow: hidden;
+        /* border:1px solid blue; */
+    }
+
+    .seller_section>div>div:nth-child(1)>img {
+        width: 100%;
+    }
+
+    .seller_section>div>div>img:hover {
+        transform: scale(1.1);
+        transition: all 0.1s ease;
+    }
+
+    .discount {
+        border: none;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        background-color: #e5f0da;
+        color: #465c4a;
+        font-weight: bolder;
+        padding: 5px;
+        border-radius: 3px;
+        /* border:1px solid black; */
+    }
+
+    .bestseller {
+
+        border: none;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        background-color: #e5f0da;
+        color: #465c4a;
+        font-weight: bolder;
+        padding: 5px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 12px;
+
+    }
+
+    .seller_section>div>p {
+        font-size: 14px;
+        font-weight: 600;
+        width: 90%;
+        font-family: 'Segoe UI';
+        text-transform: uppercase;
+        line-height: 17px;
+        margin-bottom: 10px;
+        /* border:1px solid red; */
+    }
+
+    .content {
+        line-height: 15px;
+        /* border:1px solid blue; */
+        font-family: 'Segoe UI';
+        text-transform: capitalize;
+        font-weight: 200;
+        margin-top: 20px;
+
+
+    }
+
+    .box_1 {
+        width: 100%;
+        /* border:1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+    }
+
+    .box_1>div {
+        /* border:1px solid green; */
+
+        display: flex;
+
+    }
+
+    .box_1>div>img {
+        width: 20%;
+    }
+
+    .box_1>div:nth-child(1) {
+        justify-content: space-between;
+        width: 20%;
+        /* border:1px solid red; */
+    }
+
+    .box_1>div:nth-child(2) {
+        width: 25%;
+        justify-content: space-evenly;
+
+
+    }
+
+    button {
+        margin-top: 10px;
+        display: inline-block;
+        width: 100%;
+        padding: 12px 25px 12px 25px;
+        background-color: #465c4a;
+        color: #e5f0da;
+        font-family: 'Segoe UI';
+        text-transform: uppercase;
+        font-size: 15px;
+        border-radius: 7px;
+        font-weight: 700;
+    }
+
+    .box_1>div>:nth-child(2) {
+        /* border:1px solid green; */
+        text-decoration: line-through;
+        color: #465c4a;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .box_1>div>:nth-child(1) {
+        /* border:1px solid green; */
+        color: #465c4a;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .seller_title {
+        /* border:1px solid red; */
+        width: 80%;
+        margin: auto;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .seller_title>h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #465c4a;
+        font-size: 20px;
+    }
 </style>
+
 <body>
 
     <!-- page header -->
 
     <div id="navbar"></div>
 
-       <!-- image_container -->
+    <!-- image_container -->
 
     <div class="image_container">
-        <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Website_banner__Brave_4b37d769-b387-4563-851f-db1f7f00a03c_1500x.jpg?v=1655616622" alt="error">
+        <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Website_banner__Brave_4b37d769-b387-4563-851f-db1f7f00a03c_1500x.jpg?v=1655616622"
+            alt="error">
 
     </div>
 
@@ -345,7 +381,7 @@ button{
     <!-- best seller section -->
 
     <div class="seller_title">
-        <h1>***   bestseller   ***</h1>
+        <h1>*** bestseller ***</h1>
     </div>
 
     <div class="seller_section">
@@ -354,19 +390,23 @@ button{
 
     <div id="perfume_box">
         <div>
-            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/hair_care_1_x_1.jpg?v=1658235977" alt="error">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/hair_care_1_x_1.jpg?v=1658235977"
+                alt="error">
         </div>
         <div>
             <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/hygeine1x1.jpg?v=1658235962" alt="error">
         </div>
         <div>
-            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Facecare1x1_1.jpg?v=1658235962" alt="error">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Facecare1x1_1.jpg?v=1658235962"
+                alt="error">
         </div>
         <div>
-            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Bodycare_1_x_1.jpg?v=1658235962" alt="error">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Bodycare_1_x_1.jpg?v=1658235962"
+                alt="error">
         </div>
         <div>
-            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Beardcare_1_x_1.jpg?v=1658235962" alt="error"error>
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Beardcare_1_x_1.jpg?v=1658235962"
+                alt="error" error>
         </div>
 
     </div>
@@ -375,319 +415,318 @@ button{
     <div id="container">
 
     </div>
-    
+
 </body>
+
 </html>
 <script>
-    let producArr=[
+    let producArr = [
         {
-            id:1,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/6_1_700x.jpg?v=1652855125",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Spot-clear-pimple-gel_1_533x.jpg?v=1653933473",
-            title:"brave essential-2 in 1 shampoo &styling combo",
-            content:"Nourishes & Stimulates Growth",
-            discount:"30%",
-            rating:4,
-            price:345,
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
-            
+            id: 1,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/6_1_700x.jpg?v=1652855125",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Spot-clear-pimple-gel_1_533x.jpg?v=1653933473",
+            title: "brave essential-2 in 1 shampoo &styling combo",
+            content: "Nourishes & Stimulates Growth",
+            discount: "30%",
+            rating: 4,
+            price: 345,
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+
         },
         {
-            id:2,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_20_533x.jpg?v=1655711584",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DetanFacewash_1_700x.jpg?v=1653933020",
-            title:"brave essentials - complete body essential combo",
-            content:"aqua noir body wash,body scrub",
-            discount:"30%",
-            rating:4,
-            price:"633",
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 2,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_20_533x.jpg?v=1655711584",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DetanFacewash_1_700x.jpg?v=1653933020",
+            title: "brave essentials - complete body essential combo",
+            content: "aqua noir body wash,body scrub",
+            discount: "30%",
+            rating: 4,
+            price: "633",
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:3,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_8352d583-8302-4911-b42a-d6901acf611f_533x.jpg?v=1652855227",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliating-body-wash_1_533x.jpg?v=1653933850",
-            title:"brave essentials-hair oil &massage oil",
-            content:"hair oil |soft massage & anti-bacterial",
-            discount:"30%",
-            rating:4,
-            price:345,
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 3,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_8352d583-8302-4911-b42a-d6901acf611f_533x.jpg?v=1652855227",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliating-body-wash_1_533x.jpg?v=1653933850",
+            title: "brave essentials-hair oil &massage oil",
+            content: "hair oil |soft massage & anti-bacterial",
+            discount: "30%",
+            rating: 4,
+            price: 345,
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:4,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/2_2_700x.jpg?v=1652853851",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Turmeric-body-wash_1_533x.jpg?v=1653933684",
-            title:"brave essentials-everyday skincare combo",
-            content:"detan face wash,sunscreen spf 50",
-            discount:"30%",
-            rating:4,
-            price:499,
-            strikeprice:698,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
-        },
-        {    id:5,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_a654a940-088c-4b09-9f15-dbfb4600513f_533x.jpg?v=1653049227",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Daily-beard-wash_1_533x.jpg?v=1653932743",
-            title:"beardo facewash",
-            content:"mild facewash",
-            discount:"30%",
-            rating:4,
-            price:345,
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 4,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/2_2_700x.jpg?v=1652853851",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Turmeric-body-wash_1_533x.jpg?v=1653933684",
+            title: "brave essentials-everyday skincare combo",
+            content: "detan face wash,sunscreen spf 50",
+            discount: "30%",
+            rating: 4,
+            price: 499,
+            strikeprice: 698,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:6,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_a0b78020-d351-4908-9aa5-e9a6976cb552_533x.jpg?v=1652861079",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/LipBalmListing_1_533x.jpg?v=1653933424",
-            title:"beardo facewash",
-            content:"mild facewash",
-            discount:"30%",
-            rating:4,
-            price:345,
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 5,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_a654a940-088c-4b09-9f15-dbfb4600513f_533x.jpg?v=1653049227",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Daily-beard-wash_1_533x.jpg?v=1653932743",
+            title: "beardo facewash",
+            content: "mild facewash",
+            discount: "30%",
+            rating: 4,
+            price: 345,
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:6,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/1_5_700x.jpg?v=1654254927",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Impression-parfum_700x.jpg?v=1656411151",
-            title:"brave essentials impression perfume, 100ml",
-            content:"a luxurious & long-lasting fragnance",
-            discount:"25%",
-            rating:5,
-            price:449,
-            strikeprice:599,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 6,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_a0b78020-d351-4908-9aa5-e9a6976cb552_533x.jpg?v=1652861079",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/LipBalmListing_1_533x.jpg?v=1653933424",
+            title: "beardo facewash",
+            content: "mild facewash",
+            discount: "30%",
+            rating: 4,
+            price: 345,
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:7,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_7_700x.jpg?v=1652458103",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Charcoal-body-scrub_1_700x.jpg?v=1653932920",
-            title:"brave essentials charcoal body scrub, 100gm",
-            content:"remove dirt & tan exfoliates dead skin cells",
-            discount:"25%",
-            rating:5,
-            price:209,
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 6,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/1_5_700x.jpg?v=1654254927",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Impression-parfum_700x.jpg?v=1656411151",
+            title: "brave essentials impression perfume, 100ml",
+            content: "a luxurious & long-lasting fragnance",
+            discount: "25%",
+            rating: 5,
+            price: 449,
+            strikeprice: 599,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:8,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_10_700x.jpg?v=1652460567",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/LipBalmListing_1_700x.jpg?v=1653933424",
-            title:"brave essentials- roll on deodorant ,50ml",
-            content:"anti perspirant | lighten under arams",
-            discount:"25%",
-            rating:4.7,
-            price:239,
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 7,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_7_700x.jpg?v=1652458103",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Charcoal-body-scrub_1_700x.jpg?v=1653932920",
+            title: "brave essentials charcoal body scrub, 100gm",
+            content: "remove dirt & tan exfoliates dead skin cells",
+            discount: "25%",
+            rating: 5,
+            price: 209,
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:9,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/1_2_c18c3527-cf20-4ace-a9f4-a88671256bb1_700x.jpg?v=1654065362",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/3_1_700x.jpg?v=1654065362",
-            title:"brave essentials -all body washes combo, 200ml each",
-            content:"body washes combo",
-            discount:"40%",
-            rating:5,
-            price:838,
-            strikeprice:1396,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 8,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_10_700x.jpg?v=1652460567",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/LipBalmListing_1_700x.jpg?v=1653933424",
+            title: "brave essentials- roll on deodorant ,50ml",
+            content: "anti perspirant | lighten under arams",
+            discount: "25%",
+            rating: 4.7,
+            price: 239,
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
         {
-            id:10,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/image_700x.jpg?v=1655122401",
-            image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Nourishing-hair-cream_1_700x.jpg?v=1655122401",
-            title:"brave essentials nourishing hair cream, 100gm",
-            content:"non-greasy | soft hold styling",
-            discount:"30%",
-            rating:5,
-            price:209,
-            strikeprice:299,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            id: 9,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/1_2_c18c3527-cf20-4ace-a9f4-a88671256bb1_700x.jpg?v=1654065362",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/3_1_700x.jpg?v=1654065362",
+            title: "brave essentials -all body washes combo, 200ml each",
+            content: "body washes combo",
+            discount: "40%",
+            rating: 5,
+            price: 838,
+            strikeprice: 1396,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        },
+        {
+            id: 10,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/image_700x.jpg?v=1655122401",
+            image2: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Nourishing-hair-cream_1_700x.jpg?v=1655122401",
+            title: "brave essentials nourishing hair cream, 100gm",
+            content: "non-greasy | soft hold styling",
+            discount: "30%",
+            rating: 5,
+            price: 209,
+            strikeprice: 299,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
         },
     ];
 
     append(producArr);
 
-    function append(data){
+    function append(data) {
         data.forEach(element => {
-            let div=document.createElement("div");
+            let div = document.createElement("div");
             //let discount=dcoument.createElement("p");
-           // discount.innerText=element.discount;
-            let img1=document.createElement("img");
-            img1.src=element.image;
-            img1.setAttribute("class","back_img");
-            let img2=document.createElement("img");
-            img2.src=element.image2;
-            img2.setAttribute("class","front_img");
+            // discount.innerText=element.discount;
+            let img1 = document.createElement("img");
+            img1.src = element.image;
+            img1.setAttribute("class", "back_img");
+            let img2 = document.createElement("img");
+            img2.src = element.image2;
+            img2.setAttribute("class", "front_img");
 
-            let p1=document.createElement("p");
-            p1.innerText=element.title;
+            let p1 = document.createElement("p");
+            p1.innerText = element.title;
 
-            let p2=document.createElement("span");
-            p2.innerText=element.discount;
-            p2.setAttribute("class","discount");
+            let p2 = document.createElement("span");
+            p2.innerText = element.discount;
+            p2.setAttribute("class", "discount");
 
 
-            let box_1=document.createElement("div");
-            box_1.setAttribute("class","box_1");
+            let box_1 = document.createElement("div");
+            box_1.setAttribute("class", "box_1");
 
-            let first_box=document.createElement("div");
-           
-            let li1=document.createElement("span");
-            li1.innerText=element.price;
-            let li2=document.createElement("span");
-            li2.innerText=element.strikeprice;
+            let first_box = document.createElement("div");
 
-            let bt1=document.createElement("button");
-            bt1.innerText="add to cart";
-            let p3=document.createElement("span");
-            p3.innerText=element.content;
-            p3.setAttribute("class","content");
+            let li1 = document.createElement("span");
+            li1.innerText = element.price;
+            let li2 = document.createElement("span");
+            li2.innerText = element.strikeprice;
 
-           
-            first_box.append(li1,li2);
+            let bt1 = document.createElement("button");
+            bt1.innerText = "add to cart";
+            let p3 = document.createElement("span");
+            p3.innerText = element.content;
+            p3.setAttribute("class", "content");
 
-            let second_box=document.createElement("div");
 
-           
-            let li3=document.createElement("span");
-            li3.innerText=element.rating;
-            let img_icon=document.createElement("img");
-            img_icon.src=element.icon;
+            first_box.append(li1, li2);
 
-           
-            second_box.append(li3,img_icon);
+            let second_box = document.createElement("div");
 
-            box_1.append(first_box,second_box);
-            div.append(img1,img2,p1,p3,p2,box_1,bt1);
+
+            let li3 = document.createElement("span");
+            li3.innerText = element.rating;
+            let img_icon = document.createElement("img");
+            img_icon.src = element.icon;
+
+
+            second_box.append(li3, img_icon);
+
+            box_1.append(first_box, second_box);
+            div.append(img1, img2, p1, p3, p2, box_1, bt1);
             document.querySelector("#container").append(div);
-            
+
         });
     }
 
 
+    let bestArr = [
+        {
+            id: 1,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_335c1545-0fc8-4689-949d-51d77f268530_533x.jpg?v=1652861341",
+            title: "brave essentials - de-tan face scrub, 75ml",
+            content: "brightens | removes dead skin & blackheads",
+            discount: "30%",
+            rating: 5,
+            price: 228,
+            strikeprice: 325,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
 
-
-
-    let bestArr=[
-    {
-            id:1,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_335c1545-0fc8-4689-949d-51d77f268530_533x.jpg?v=1652861341",
-            title:"brave essentials - de-tan face scrub, 75ml",
-            content:"brightens | removes dead skin & blackheads",
-            discount:"30%",
-            rating:5,
-            price:228,
-            strikeprice:325,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
-            
         },
         {
-            id:2,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_a0b78020-d351-4908-9aa5-e9a6976cb552_533x.jpg?v=1652861079",
-            title:"brave essentials - beard grooming combo",
-            content:"beard wash,beard oil,& moustache wax",
-            discount:"30%",
-            rating:4.7,
-            price:614,
-            strikeprice:877,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
-            
+            id: 2,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_a0b78020-d351-4908-9aa5-e9a6976cb552_533x.jpg?v=1652861079",
+            title: "brave essentials - beard grooming combo",
+            content: "beard wash,beard oil,& moustache wax",
+            discount: "30%",
+            rating: 4.7,
+            price: 614,
+            strikeprice: 877,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+
         },
         {
-            id:3,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/shampoo_1_f4b738d9-6056-4fb9-98e5-618387369ec9_533x.jpg?v=1652856621",
-            title:"brave essentials -top to toe combo",
-            content:"2 in 1 shampoo conditioner turmeric condtioner",
-            discount:"30%",
-            rating:4.6,
-            price:733,
-            strikeprice:1047,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
-            
+            id: 3,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/shampoo_1_f4b738d9-6056-4fb9-98e5-618387369ec9_533x.jpg?v=1652856621",
+            title: "brave essentials -top to toe combo",
+            content: "2 in 1 shampoo conditioner turmeric condtioner",
+            discount: "30%",
+            rating: 4.6,
+            price: 733,
+            strikeprice: 1047,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+
         },
         {
-            id:4,
-            image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_8352d583-8302-4911-b42a-d6901acf611f_533x.jpg?v=1652855227",
-            title:"brave essentials -Hair stylimg combo",
-            content:"hair oil,2-in-1 shampoo wax,massage oil",
-            discount:"25%",
-            rating:5,
-            price:751,
-            strikeprice:1073,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
-            
+            id: 4,
+            image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_8352d583-8302-4911-b42a-d6901acf611f_533x.jpg?v=1652855227",
+            title: "brave essentials -Hair stylimg combo",
+            content: "hair oil,2-in-1 shampoo wax,massage oil",
+            discount: "25%",
+            rating: 5,
+            price: 751,
+            strikeprice: 1073,
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+
         },
 
-        
+
     ];
 
-appendBest(bestArr);
+    appendBest(bestArr);
 
-    function appendBest(data){
-    data.forEach(element => {
-        let div=document.createElement("div");
+    function appendBest(data) {
+        data.forEach(element => {
+            let div = document.createElement("div");
 
-        let pic_container=document.createElement("div");
-        let pic=document.createElement("img");
-          pic.src=element.image;
-          pic_container.append(pic);
+            let pic_container = document.createElement("div");
+            let pic = document.createElement("img");
+            pic.src = element.image;
+            pic_container.append(pic);
 
-        let p1=document.createElement("p");
-            p1.innerText=element.title;
+            let p1 = document.createElement("p");
+            p1.innerText = element.title;
 
-            let p2=document.createElement("span");
-            p2.innerText=element.discount;
-            p2.setAttribute("class","discount");
+            let p2 = document.createElement("span");
+            p2.innerText = element.discount;
+            p2.setAttribute("class", "discount");
 
-            let p4=document.createElement("span");
-            p4.innerText="#1 best seller"
-            p4.setAttribute("class","bestseller");
+            let p4 = document.createElement("span");
+            p4.innerText = "#1 best seller"
+            p4.setAttribute("class", "bestseller");
 
 
 
-            let box_1=document.createElement("div");
-            box_1.setAttribute("class","box_1");
+            let box_1 = document.createElement("div");
+            box_1.setAttribute("class", "box_1");
 
-            let first_box=document.createElement("div");
-           
-            let li1=document.createElement("span");
-            li1.innerText=element.price;
-            let li2=document.createElement("span");
-            li2.innerText=element.strikeprice;
+            let first_box = document.createElement("div");
 
-            let bt1=document.createElement("button");
-            bt1.innerText="add to cart";
-            let p3=document.createElement("span");
-            p3.innerText=element.content;
-            p3.setAttribute("class","content");
+            let li1 = document.createElement("span");
+            li1.innerText = element.price;
+            let li2 = document.createElement("span");
+            li2.innerText = element.strikeprice;
 
-           
-            first_box.append(li1,li2);
+            let bt1 = document.createElement("button");
+            bt1.innerText = "add to cart";
+            let p3 = document.createElement("span");
+            p3.innerText = element.content;
+            p3.setAttribute("class", "content");
 
-            let second_box=document.createElement("div");
 
-           
-            let li3=document.createElement("span");
-            li3.innerText=element.rating;
-            let img_icon=document.createElement("img");
-            img_icon.src=element.icon;
+            first_box.append(li1, li2);
 
-           
-            second_box.append(li3,img_icon);
+            let second_box = document.createElement("div");
 
-            box_1.append(first_box,second_box);
-            div.append(pic_container,p1,p3,p2,p4,box_1,bt1);
+
+            let li3 = document.createElement("span");
+            li3.innerText = element.rating;
+            let img_icon = document.createElement("img");
+            img_icon.src = element.icon;
+
+
+            second_box.append(li3, img_icon);
+
+            box_1.append(first_box, second_box);
+            div.append(pic_container, p1, p3, p2, p4, box_1, bt1);
             document.querySelector(".seller_section").append(div);
 
-    });
-}
+        });
+    }
 </script>

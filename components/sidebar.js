@@ -1,5 +1,5 @@
 function sidebar() {
-    return `<h3> ##Refine By</h3><br />
+  return `<h3> ##Refine By</h3><br />
     <div>
       <h4>Categories</h4>
       <hr>

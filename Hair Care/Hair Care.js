@@ -75,10 +75,10 @@ function appendData(data) {
         })
         let ndiv = document.createElement('div')
         ndiv.setAttribute('class', 'namediv_sv')
-        let name = document.createElement('a')
-        name.setAttribute('class', 'name_sv')
-        name.innerText = el.name
-        ndiv.append(name)
+        let title = document.createElement('a')
+        title.setAttribute('class', 'name_sv')
+        title.innerText = el.title
+        ndiv.append(title)
 
         let subtype = document.createElement('p')
         subtype.setAttribute('class', 'name2_sv')

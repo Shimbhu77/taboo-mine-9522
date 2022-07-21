@@ -1,0 +1,181 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav_A {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 200px;
+    /* margin-bottom: 600px; */
+}
+
+.head1_A {
+    /* border: 1px solid green; */
+    height: 40px;
+    background-image: url(https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1655286872912/css/images/gingham-pattern.svg?yocs=o_s_);
+    background-position: calc(50% - 7px) calc(50% - 21px);
+    background-position-x: calc(50% - 7px);
+    background-position-y: calc(74% - 22px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promocode_A {
+    background-color: white;
+    width: 44%;
+    height: 100%;
+    margin: auto;
+}
+
+.promocode_A>p {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    color: #005699;
+    font-weight: bolder;
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.promocode_A>p>span {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.promocode_A>p>span+span {
+    font-size: 14px;
+}
+
+.promocode_A>p>a {
+    margin-left: 10px;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.head2_A {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 35px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head2_A>div {
+    /* border: 1px solid green; */
+    width: 22%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
+.head2_A>div>span {
+    color: #005699;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+}
+
+.head2_A>div>a {
+    color: black;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.head3_A {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo_A {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logo_A>img {
+    width: 23%;
+    height: 100%;
+    margin: auto;
+    margin-left: 550px;
+}
+
+.logo_A>div{
+    /* border: 1px solid brown; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+.logo_A>div>fieldset{
+    /* border: 1px solid green;  */
+    width: 75%;
+    height: 40%;
+    /* margin-top: -50px; */
+    display: flex;
+    border-style: groove;
+}
+.logo_A>div>fieldset>input{
+    width: 100%;
+    height: 194%;
+    /* border: none; */
+    background-color: white;
+    margin-top: -5px;
+    margin-left: -12px;
+    font-size: 15px;
+    padding-left: 10px;
+    /* outline: none; */
+    border: 1px solid;
+}
+.logo_A>div>fieldset>button{
+    width: 20%;
+    height: 125%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#search_A{
+    position: relative;
+    margin-left: -70px;
+    margin-top: -3px;
+}
+.logo_A>div>fieldset>button>img{
+    height: 100%;
+    margin-top: 0px;
+}
+
+.logo_A>div>a>img{
+    /* border: 1px solid yellow; */
+    height: 80%;
+    width: 30px;
+}
+.logo_A>div>img+img{
+    /* border: 1px solid yellow; */
+    height: 80%;
+    width: 30px;
+}
+
+.category_A {
+    /* border: 1px solid brown; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px 0px 40px;
+
+}
+
+.category_A>a {
+    text-decoration: none;
+    color: rgb(69, 68, 68);
+    font-family: Light, Arial, sans-serif;
+    font-size: 14px;
+}

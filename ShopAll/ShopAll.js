@@ -1,59 +1,7 @@
 
 let data = JSON.parse(localStorage.getItem('all_data')) || []
-
-let dataArray = []
-data.forEach(function (el) {
-    if (el.type == 'Bestseller') {
-
-        dataArray.push(el)
-    }
-})
-
-console.log(dataArray)
-appendData(dataArray)
-
-function handlePrice() {
-    var select = document.querySelector("#price_sv").value
-    if (select == "") {
-        appendData(dataArray)
-    }
-    else if (select == 'HTL') {
-        dataArray.sort(function (a, b) {
-            return b.realPrice - a.realPrice
-
-        })
-        appendData(dataArray)
-    }
-    else if (select == 'LTH') {
-        dataArray.sort(function (a, b) {
-            return a.realPrice - b.realPrice
-
-        })
-        appendData(dataArray)
-    }
-}
-function handleType() {
-    let select = document.querySelector("#type_sv").value
-    if (select == "") {
-        appendData(dataArray)
-        return
-    }
-    let filteredList = dataArray.filter((elem) => {
-        return elem.type === select;
-    });
-    appendData(filteredList)
-}
-function handleSubtype() {
-    let select = document.querySelector("#subtype_sv").value
-    if (select == "") {
-        appendData(dataArray)
-        return
-    }
-    let filteredList = dataArray.filter((elem) => {
-        return elem.subtype === select;
-    });
-    appendData(filteredList)
-}
+console.log(data);
+appendData(data)
 // console.log(dataArray)
 
 function appendData(data) {
