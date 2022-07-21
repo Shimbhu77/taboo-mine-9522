@@ -1,4 +1,6 @@
 
+
+
 let data = JSON.parse(localStorage.getItem('all_data')) || []
 console.log(data)
 
