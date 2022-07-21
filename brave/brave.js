@@ -6,10 +6,10 @@ let producArr=[
         title:"brave essential-2 in 1 shampoo &styling combo",
         content:"Nourishes & Stimulates Growth",
         discount:"30%",
-        rating:4,
+        rating:4.5,
         price:345,
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
         
     },
     {
@@ -19,10 +19,10 @@ let producArr=[
         title:"brave essentials - complete body essential combo",
         content:"aqua noir body wash,body scrub",
         discount:"30%",
-        rating:4,
+        rating:4.8,
         price:"633",
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:3,
@@ -34,7 +34,7 @@ let producArr=[
         rating:4,
         price:345,
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:4,
@@ -46,7 +46,7 @@ let producArr=[
         rating:4,
         price:499,
         strikeprice:698,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {    id:5,
         image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_a654a940-088c-4b09-9f15-dbfb4600513f_533x.jpg?v=1653049227",
@@ -54,10 +54,10 @@ let producArr=[
         title:"beardo facewash",
         content:"mild facewash",
         discount:"30%",
-        rating:4,
+        rating:5,
         price:345,
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:6,
@@ -69,7 +69,7 @@ let producArr=[
         rating:4,
         price:345,
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:6,
@@ -81,7 +81,7 @@ let producArr=[
         rating:5,
         price:449,
         strikeprice:599,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:7,
@@ -93,7 +93,7 @@ let producArr=[
         rating:5,
         price:209,
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:8,
@@ -105,7 +105,7 @@ let producArr=[
         rating:4.7,
         price:239,
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:9,
@@ -117,7 +117,7 @@ let producArr=[
         rating:5,
         price:838,
         strikeprice:1396,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
     {
         id:10,
@@ -129,9 +129,11 @@ let producArr=[
         rating:5,
         price:209,
         strikeprice:299,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
     },
 ];
+
+localStorage.setItem("braveProduct",JSON.stringify(producArr))
 
 append(producArr);
 
@@ -206,7 +208,7 @@ let bestArr=[
         rating:5,
         price:228,
         strikeprice:325,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
         
     },
     {
@@ -218,7 +220,7 @@ let bestArr=[
         rating:4.7,
         price:614,
         strikeprice:877,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
         
     },
     {
@@ -230,7 +232,7 @@ let bestArr=[
         rating:4.6,
         price:733,
         strikeprice:1047,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
         
     },
     {
@@ -242,12 +244,14 @@ let bestArr=[
         rating:5,
         price:751,
         strikeprice:1073,
-        icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+        icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
         
     },
 
     
 ];
+
+localStorage.setItem("brave_sellerData",JSON.stringify(producArr));
 
 appendBest(bestArr);
 
