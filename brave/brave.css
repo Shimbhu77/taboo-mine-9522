@@ -12,7 +12,7 @@
     grid-template-rows: repeat(3,470px);
     gap:30px;
     margin-top: 30px;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 #container>div{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -318,3 +318,109 @@ button{
 
   
     
+/* media queries */
+
+  /* for large screen */
+
+@media all and (min-width:1024px){
+    .image_container{
+        width:95%;
+    }
+    .seller_section{
+       width:95%;
+       flex-wrap: wrap;
+    }
+    .seller_section>div{
+        width:24%;
+     }
+     #perfume_box{
+        width:95%;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+    }
+    .video_container{
+        width:95%;
+       }
+       #container{
+        width:95%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,470px);
+    }
+}
+
+      /* for medium screens */
+
+@media all and (min-width:768px) and (max-width:1024px){
+
+    .image_container{
+        width:95%;
+    }
+    .image_container>img{
+        height: 300px;
+    }
+    .seller_section{
+       width:95%;
+       flex-wrap: wrap;
+    }
+    .seller_section>div{
+        width:48%;
+     }
+     #perfume_box{
+        width:95%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+    }
+    .video_container{
+        width:95%;
+       }
+       #container{
+        width:95%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,470px);
+    }
+
+    
+}
+     
+
+
+
+        /* for small screen */
+
+
+
+@media all and (min-width:320px) and (max-width:767px){
+
+    .image_container{
+        width:95%;
+    }
+    .image_container>img{
+        height: 350px;
+    }
+    .seller_section{
+       width:95%;
+       flex-wrap: wrap;
+    }
+    .seller_section>div{
+        width:98%;
+     }
+
+   #perfume_box{
+        width:95%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+    }
+    .video_container{
+        width:95%;
+       }
+
+       #container{
+        width:95%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,470px);
+    }
+  
+}

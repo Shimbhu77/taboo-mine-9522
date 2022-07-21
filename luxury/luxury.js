@@ -10,7 +10,7 @@
             rating:4.7,
             price:674,
             strikeprice:899,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
             
         },
         {
@@ -22,7 +22,7 @@
             rating:4.9,
             price:499,
             strikeprice:699,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
             
         },
         {
@@ -34,7 +34,7 @@
             rating:4.7,
             price:674,
             strikeprice:899,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
             
         },
         {
@@ -46,12 +46,13 @@
             rating:5,
             price:669,
             strikeprice:999,
-            icon:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsOLVQHyeAAo14YkdU-JOBDLzf9FdTDH_vw&usqp=CAU",
+            icon:"https://m.media-amazon.com/images/I/51cPT0gKmFL.jpghttps://m.media-amazon.com/images/I/51cPT0gKmFL.jpg",
             
         },
 
         
     ];
+    localStorage.setItem("luxuryProduct",JSON.stringify(productArr))
  append(productArr);
 
 function append(data){
