@@ -257,8 +257,9 @@ let navbar = () => {
         </div>
 
     </div>
-    <div title="Cricket Teams" class="icon dropMenu">
-        <a href="../Hair Care/Hair Care.html">HAIR CARE</a>
+    <div title="HAIR CARE" class="icon dropMenu">
+        <a href="">HAIR CARE</a>
+
         <div id="HAIR_CARE_drop">
         
         <div> <div class="header__menu-item-title">
@@ -360,9 +361,9 @@ let navbar = () => {
 </div>
         </div>
     </div>
-    <div title="Cricket Teams" class="icon dropMenu">
-        <a href="../Body Care/Body Care.html">BODY CARE</a>
-       
+    <div title="BODY CARE" class="icon dropMenu">
+        <a href="">BODY CARE</a>
+
        
        
         <div id="body_Drop">
@@ -410,7 +411,7 @@ let navbar = () => {
         <div>
         <div class="header__menu__image">
 <a href="#">
-            <div class="header__menu__image__box">
+            <div id="image__box">
                 <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Body_Care_Megamenu.png?v=1651666035">
             </div>
         </a>
@@ -485,7 +486,7 @@ let navbar = () => {
            <div class="header__menu__image">
 
            <a href="#">
-               <div class="header__menu__image__box">
+               <div id="image__box">
                    <img src="//cdn.shopify.com/s/files/1/0054/6665/2718/files/Perfumes_Megamenu.png?v=1651666123" alt="files/Perfumes_Megamenu.png">
                </div>
            </a>
@@ -568,7 +569,7 @@ let navbar = () => {
       
        </div>
     </div>
-   
+
     `;
 };
 

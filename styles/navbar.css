@@ -177,15 +177,15 @@
 #PERFUMES_drop {
     padding: 10px;
     background-color: #e5f0da;
-    width: 600px;
+    width: 400px;
     display: grid;
-    grid-template-columns: 300px 350px;
-    grid-template-rows: 350px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 250px;
     flex-direction: column;
     position: absolute;
     top: 50px;
     border-radius: 8px;
-    left: -62.5px;
+    left: -162.5px;
     right: inherit;
     border: 1px solid #e5f0da;
     opacity: 0;
@@ -341,18 +341,23 @@ li {
     /* justify-content: space-between; */
     background-color: #e5f0da;
     /* height: 240px; */
-    width: 500px;
+    width: 400px;
     display: grid;
-    grid-template-columns: 380px 200px;
+    grid-template-columns: 200px 200px;
     grid-template-rows: 200px;
     position: absolute;
     top: 50px;
     border-radius: 8px;
-    left: -262.5px;
+    left: -100.5px;
     right: inherit;
     border: 1px solid #e5f0da;
     opacity: 0;
     visibility: hidden;
+}
+
+#image__box>img {
+    width: 110%;
+    margin-left: -50px;
 }
 
 #body_Drop>div {
