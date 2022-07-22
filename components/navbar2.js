@@ -21,7 +21,7 @@ let navbar2 = () => {
        <div>
 
        <div>
-           <a href=""><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683" alt=""></a>
+           <a href="/taboo-mine-9522"><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683" alt=""></a>
        </div>
        <div>
            <a href="/taboo-mine-9522/brave/brave.html"><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701" alt=""></a>

@@ -146,7 +146,7 @@ document.querySelector("#info").addEventListener("click", func)
 function func() {
     console.log("dgfsjg")
     let LoggedUser = JSON.parse(localStorage.getItem("LoggedInUser"));
-    if (LoggedUser.length == 0) {
+    if (LoggedUser == null) {
         window.location.href = "Login.html";
     } else {
         if (LoggedUser[0].loggeduser == "true") {
