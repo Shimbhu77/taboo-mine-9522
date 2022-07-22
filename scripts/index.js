@@ -104,6 +104,9 @@ function appendBest(data) {
 
         let bt1 = document.createElement("button");
         bt1.innerText = "add to cart";
+        bt1.addEventListener("click", () => {
+            AddtoCart(element);
+        });
         let p3 = document.createElement("span");
         p3.innerText = element.content;
         p3.setAttribute("class", "content");
@@ -138,3 +141,50 @@ window.addEventListener('scroll', function() {
         nav.classList.remove("sticky")
     }
 })
+document.querySelector("#info").addEventListener("click", func)
+
+function func() {
+    console.log("dgfsjg")
+    let LoggedUser = JSON.parse(localStorage.getItem("LoggedInUser"));
+    if (LoggedUser.length == 0) {
+        window.location.href = "Login.html";
+    } else {
+        if (LoggedUser[0].loggeduser == "true") {
+            window.location.href = "infoSidebar.html";
+        } else {
+            window.location.href = "Login.html";
+        }
+    }
+
+}
+
+
+
+
+
+
+let AddCart = [];
+
+function AddtoCart(elem) {
+    if (verifyProduct(elem) == true) {
+        elem.quantity = 1;
+        elem.ProductPrice = elem.price;
+        elem.savings = Number(elem.strikeprice) - Number(elem.price);
+        elem.TotalSavings = elem.savings;
+        AddCart.push(elem);
+        localStorage.setItem("CartProducts", JSON.stringify(AddCart));
+        console.log(elem, AddCart);
+        alert("Product Added to Cart Successfully");
+    } else {
+        alert("Product Already exists in Cart ");
+    }
+}
+
+function verifyProduct(elem) {
+    for (var i = 0; i < AddCart.length; i++) {
+        if (elem.id == AddCart[i].id) {
+            return false;
+        }
+    }
+    return true;
+}

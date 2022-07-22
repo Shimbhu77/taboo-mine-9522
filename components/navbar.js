@@ -1,10 +1,10 @@
 let navbar = () => {
-  return `
+    return `
    
    
-    <div id="a1"><a href="../ShopAll/ShopAll.html" title="SHOP ALL">SHOP ALL</a></div>
-    <div id="a2"><a href="../New Arrivals/New Arrival.html" title=" NEW ARRIVALS">NEW ARRIVALS</a></div>
-    <div id="a3"><a href="../Bestseller/Bestsellers.html" title="BESTSELLERS">BESTSELLERS</a></div>
+    <div id="a1"><a href="/taboo-mine-9522/ShopAll/ShopAll.html" title="SHOP ALL">SHOP ALL</a></div>
+    <div id="a2"><a href="/taboo-mine-9522/New Arrivals/New Arrival.html" title=" NEW ARRIVALS">NEW ARRIVALS</a></div>
+    <div id="a3"><a href="/taboo-mine-9522/Bestseller/Bestsellers.html" title="BESTSELLERS">BESTSELLERS</a></div>
      <div id="a4" title="SKIN CARE"  class="icon dropMenu">
         <a href="../Skin Care/Skin_Care.html">SKIN CARE</a>
         
@@ -362,7 +362,7 @@ let navbar = () => {
         </div>
     </div>
     <div title="BODY CARE" class="icon dropMenu">
-        <a href="">BODY CARE</a>
+        <a href="../Body Care/Body Care.html">BODY CARE</a>
 
        
        
