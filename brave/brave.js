@@ -214,7 +214,7 @@ function append(data){
 
 let bestArr=[
 {
-        id:1,
+        id:11,
         image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_335c1545-0fc8-4689-949d-51d77f268530_533x.jpg?v=1652861341",
         title:"brave essentials - de-tan face scrub, 75ml",
         content:"brightens | removes dead skin & blackheads",
@@ -226,7 +226,7 @@ let bestArr=[
         
     },
     {
-        id:2,
+        id:12,
         image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_a0b78020-d351-4908-9aa5-e9a6976cb552_533x.jpg?v=1652861079",
         title:"brave essentials - beard grooming combo",
         content:"beard wash,beard oil,& moustache wax",
@@ -238,7 +238,7 @@ let bestArr=[
         
     },
     {
-        id:3,
+        id:13,
         image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/shampoo_1_f4b738d9-6056-4fb9-98e5-618387369ec9_533x.jpg?v=1652856621",
         title:"brave essentials -top to toe combo",
         content:"2 in 1 shampoo conditioner turmeric condtioner",
@@ -250,7 +250,7 @@ let bestArr=[
         
     },
     {
-        id:4,
+        id:14,
         image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_8352d583-8302-4911-b42a-d6901acf611f_533x.jpg?v=1652855227",
         title:"brave essentials -Hair stylimg combo",
         content:"hair oil,2-in-1 shampoo wax,massage oil",
@@ -332,7 +332,7 @@ data.forEach(element => {
 }
 
 
-let AddCart=[];
+let AddCart=JSON.parse(localStorage.getItem("CartProducts"))||[];
 function AddtoCart(elem)
 {
   if(verifyProduct(elem)==true)
