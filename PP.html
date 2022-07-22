@@ -8,22 +8,53 @@
     <link rel="stylesheet" href="./styles/PP.css">
 </head>
 <body>
-    <div id="login">
+    <div id="edit">
         <form action="">
-            <h1>Hello</h1>
+            <h1 class="hello"></h1>
+            <p>First Name :</p>
             <input type="text" name="" id="First_Name" placeholder=" First Name">
+            <p>Last Name :</p>
             <input type="text" name="" id="Last_Name" placeholder=" Last Name">
+            <p>Email :</p>
             <input type="email" name="" id="email" placeholder=" Email">
+            <p>Contact Number :</p>
             <input type="number" name="" id="number" placeholder=" number">
+            <p>Birthday :</p>
             <input type="date" name="" id="date" placeholder=" ">
+            <p>Gender :</p>
             <select name="" id="gender">
+                <option value="">Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
             </select>
-            <button>Cancel</button>
-            <button>Save</button>
+            <button id="cancelbtn">Cancel</button>
+            <button id="savebtn">Save</button>
+        </form>
+    </div>
+    <div id="update">
+        <form action="">
+            <h1 id="hello"></h1>
+            <p>New Password :</p>
+            <input type="text" name="" id="NP" placeholder="Enter New Password ">
+            <p>Confirm New Password :</p>
+            <input type="text" name="" id="CNP" placeholder=" Enter Confirm New Password">
+            <button id="SPB">Save</button>
         </form>
     </div>
 </body>
 </html>
+<script>
+    let LoggedUser=JSON.parse(localStorage.getItem("LoggedInUser"));
+    console.log(LoggedUser);
+    UpdateProfile(LoggedUser);
+
+    function UpdateProfile(LoggedUser)
+    {
+        console.log(LoggedUser,LoggedUser[0].FirstName)
+        document.querySelector(".hello").innerText="Hello  "+LoggedUser[0].FirstName;
+        document.querySelector("#hello").innerText="Hello  "+LoggedUser[0].FirstName;
+    }    
+
+
+</script>

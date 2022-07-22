@@ -94,7 +94,7 @@ function append(data){
             li2.innerText=element.strikeprice;
 
             let bt1=document.createElement("button");
-            bt1.innerText="add to cart";
+            bt1.innerText="add to cart";                        
             let p3=document.createElement("span");
             p3.innerText=element.content;
             p3.setAttribute("class","content");
