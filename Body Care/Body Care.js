@@ -84,7 +84,7 @@ function appendData(data) {
         subtype.innerText = el.subtype;
 
         let price = document.createElement('p')
-        price.innerText = `$${el.price}`;
+        price.innerText = `₹${el.price}`;
         price.setAttribute('class', 'pricepro_sv')
 
         let button = document.createElement('button')

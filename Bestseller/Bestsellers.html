@@ -7,18 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sites-Bestsellers</title>
   <link rel="stylesheet" href="bestseller.css" />
-  <link rel="stylesheet" href="../navbar/style/navbar.css">
-  <link rel="stylesheet" href="../humam_css/footer_h.css">
-  <link rel="shortcut icon"
-    href="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw9d49eb87/images/favicons/favicon-196x196.png"
-    type="image/x-icon">
+
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <!-- page header -->
+  <div id="navbar2"></div>
+
+  <div id="navbar1"></div>
+
   <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/1200x235_1900x.jpg?v=1655708130" alt=""
     style="width:100%">
-  <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # New Arrivals</h5>
+  <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # Bestsellers</h5>
 
   <div id="display_sv">
     <div id="dummy_sv">
@@ -61,25 +67,32 @@
     </div>
   </div>
 
-  <div id="footer_h">Footer</div>
+  <div id="footer_div">
+
+  </div>
 </body>
 
 </html>
-<script src="products.js"></script>
-<a href=""></a>
+<script src="bestseller.js"></script>
 
 <script type="module">
-  import { navbar_h } from "../navbar/script/navbar.js";
-  var x = document.querySelector("#navbar");
-  x.innerHTML = navbar_h();
 
-  import { footer } from "../navbar/script/footer.js";
-  // console.log(footer());
-  var y = document.querySelector("#footer_h");
-  y.innerHTML = footer();
-
-  import { sidebar } from "../navbar/script/sidebar.js"
+  import { sidebar } from "../scripts/sidebar.js"
   let z = document.querySelector("#dummy_sv")
   z.innerHTML = sidebar();
 
+  import navbar from "../components/navbar.js";
+  import navbar2 from "../components/navbar2.js"
+  import footer from "../components/footer.js"
+
+  document.querySelector("#navbar2").innerHTML = navbar2();
+  document.querySelector("#navbar1").innerHTML = navbar();
+  document.querySelector("#footer_div").innerHTML = footer();
+
 </script>
+
+<script src="https://kit.fontawesome.com/f592b44598.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+  integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>

@@ -1,6 +1,6 @@
 
 let data = JSON.parse(localStorage.getItem('all_data')) || []
-
+console.log(data);
 let dataArray = []
 data.forEach(function (el) {
     if (el.type == 'Bestseller') {
@@ -83,7 +83,7 @@ function appendData(data) {
         subtype.innerText = el.subtype;
 
         let price = document.createElement('p')
-        price.innerText = `$${el.price}`;
+        price.innerText = `₹${el.price}`;
         price.setAttribute('class', 'pricepro_sv')
 
         let button = document.createElement('button')

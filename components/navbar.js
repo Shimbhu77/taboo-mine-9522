@@ -1,12 +1,12 @@
 let navbar = () => {
-    return `
+  return `
    
    
-    <div id="a1"><a href="" title="SHOP ALL">SHOP ALL</a></div>
-    <div id="a2"><a href="" title=" NEW ARRIVALS">NEW ARRIVALS</a></div>
-    <div id="a3"><a href="" title="BESTSELLERS">BESTSELLERS</a></div>
+    <div id="a1"><a href="../ShopAll/ShopAll.html" title="SHOP ALL">SHOP ALL</a></div>
+    <div id="a2"><a href="../New Arrivals/New Arrival.html" title=" NEW ARRIVALS">NEW ARRIVALS</a></div>
+    <div id="a3"><a href="../Bestseller/Bestsellers.html" title="BESTSELLERS">BESTSELLERS</a></div>
      <div id="a4" title="SKIN CARE"  class="icon dropMenu">
-        <a href="">SKIN CARE</a>
+        <a href="../Skin Care/Skin_Care.html">SKIN CARE</a>
         
        
            
@@ -259,6 +259,7 @@ let navbar = () => {
     </div>
     <div title="HAIR CARE" class="icon dropMenu">
         <a href="">HAIR CARE</a>
+
         <div id="HAIR_CARE_drop">
         
         <div> <div class="header__menu-item-title">
@@ -362,7 +363,7 @@ let navbar = () => {
     </div>
     <div title="BODY CARE" class="icon dropMenu">
         <a href="">BODY CARE</a>
-       
+
        
        
         <div id="body_Drop">
@@ -423,8 +424,8 @@ let navbar = () => {
     </div>
     </div>
     <div title="PERFUMES" class="icon dropMenu">
-       <a href="">PERFUMES</a>
-     
+       <a href="../PERFUMES/Perfumes.html">PERFUMES</a>
+ 
        <div id="PERFUMES_drop">
        <div>
        <div class="">
@@ -494,7 +495,7 @@ let navbar = () => {
        </div>
     </div>
     <div title="COMBOS" class="icon dropMenu">
-        <a href="">COMBOS</a>
+        <a href="../Combos/combo.html">COMBOS</a>
        
         <div id="combos_drop">
        
@@ -564,7 +565,7 @@ let navbar = () => {
        </div>
     </div>
     <div class="icon dropMenu">
-       <a>BUILD A BOX</a> 
+       <a href="../Build A Box/Build.html">BUILD A BOX</a> 
       
        </div>
     </div>
