@@ -8,7 +8,7 @@ document.querySelector("#footer_div").innerHTML=footer();
 
     let productArr=[
     {
-            id:1,
+            id:15,
             image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Honey-02_533x.jpg?v=1652423029",
             title:"ceo woman perfume unisex, 100ml",
             content:"Eau de parfum",
@@ -20,7 +20,7 @@ document.querySelector("#footer_div").innerHTML=footer();
             
         },
         {
-            id:2,
+            id:16,
             image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/IMPACT-02_533x.jpg?v=1652422896",
             title:"skai aquatic unisex perfume unisex, 200ml",
             content:"Eau De  cologne",
@@ -32,7 +32,7 @@ document.querySelector("#footer_div").innerHTML=footer();
             
         },
         {
-            id:3,
+            id:17,
             image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CEOWOMAN-02_533x.jpg?v=1652422051",
             title:"ceo woman perfume unisex, 100ml",
             content:"Eau De perfume",
@@ -44,7 +44,7 @@ document.querySelector("#footer_div").innerHTML=footer();
             
         },
         {
-            id:4,
+            id:18,
             image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Honey-02_533x.jpg?v=1652423029",
             title:"honey oud unisex perfume, 100ml",
             content:"parfum",
@@ -123,7 +123,7 @@ function append(data){
     });
 }
 
-let AddCart=[];
+let AddCart=JSON.parse(localStorage.getItem("CartProducts"))||[];
 function AddtoCart(elem)
 {
   if(verifyProduct(elem)==true)
