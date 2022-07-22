@@ -7,13 +7,14 @@
 var data = [
   {
     //Oil
+    id: 21,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Kumkumadi-Face-Oil-01_700x.jpg?v=1652341175",
-    name: "Ayurvedic Kumkumadi Face Oil, 30ml",
+    title: "Ayurvedic Kumkumadi Face Oil, 30ml",
     type: "New Arrivals",
     subtype: "Oil",
     price: 499,
-    realPrice: 599,
+    strikeprice: 599,
     size: "30ml",
     select: "Select @ 40%off",
     Rating: 4.7,
@@ -22,27 +23,28 @@ var data = [
   },
   //Deodrant
   {
+    id: 22,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CEOMan-02_92f67846-d6a1-43fe-ba41-2325b5109710_700x.jpg?v=1651601278",
-    name: "CEO Man Body Parfum No Gas Deodorant, 150ml",
+    title: "CEO Man Body Parfum No Gas Deodorant, 150ml",
     type: "New Arrivals",
     subtype: "Deodorant",
     price: 249,
-    realPrice: 299,
+    strikeprice: 299,
     size: "150ml",
-    select: "Select @ 20%off",
     Rating: 5.0,
     fragrance:
       "Perfect for everyday wear, CEO MAN Body Parfum No Gas Deodorant elevates the 'CEO' in you",
   },
   {
+    id: 23,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CEOWoman-01_cd0b74db-8b24-45b8-83a3-f4d0e78046cc_700x.jpg?v=1651601289",
-    name: "CEO Woman Body Parfum No Gas Deodorant, 150ml",
+    title: "CEO Woman Body Parfum No Gas Deodorant, 150ml",
     type: "New Arrivals",
     subtype: "Deodorant",
     price: 249,
-    realPrice: 299,
+    strikeprice: 299,
     size: "150ml",
     select: "Select @ 20%off",
     Rating: 4.7,
@@ -51,13 +53,14 @@ var data = [
   },
 
   {
+    id: 24,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/GlamWoman-01_700x.jpg?v=1651601300",
-    name: "CEO Woman Body Parfum No Gas Deodorant, 150ml",
+    title: "CEO Woman Body Parfum No Gas Deodorant, 150ml",
     type: "New Arrivals",
     subtype: "Deodorant",
     price: 249,
-    realPrice: 299,
+    strikeprice: 299,
     size: "150ml",
     select: "Select @ 20%off",
     Rating: 5.0,
@@ -66,13 +69,14 @@ var data = [
   },
 
   {
+    id: 25,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Impact-01_9c6b6bbb-48c8-4df9-aa44-f4304cb3529f_700x.jpg?v=1651601271",
-    name: "IMPACT Man Body Parfum No Gas Deodorant, 150ml",
+    title: "IMPACT Man Body Parfum No Gas Deodorant, 150ml",
     type: "New Arrivals",
     subtype: "Deodorant",
     price: 249,
-    realPrice: 299,
+    strikeprice: 299,
     size: "150ml",
     select: "Select @ 20%off",
     Rating: 4.0,
@@ -81,12 +85,13 @@ var data = [
   },
 
   {
+    id: 26,
     image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Skai-01_700x.jpg?v=1651601264",
-    name: "SKAI Aquatic Man Body Parfum No Gas Deodorant, 150ml",
+    title: "SKAI Aquatic Man Body Parfum No Gas Deodorant, 150ml",
     type: "New Arrivals",
     subtype: "Deodorant",
     price: 249,
-    realPrice: 299,
+    strikeprice: 299,
     size: "150ml",
     select: "Select @ 20%off",
     Rating: 5.0,
@@ -95,13 +100,14 @@ var data = [
   },
 
   {
+    id: 27,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/GlamWoman-01_700x.jpg?v=1651601300",
-    name: "GLAM Woman Body Parfum No Gas Deodorant, 150ml",
+    title: "GLAM Woman Body Parfum No Gas Deodorant, 150ml",
     type: "New Arrivals",
     subtype: "Deodorant",
     price: 249,
-    realPrice: 299,
+    strikeprice: 299,
     size: "150ml",
     select: "Select @ 20%off",
     Rating: 4.6,
@@ -110,14 +116,15 @@ var data = [
   },
 
   {
+    id: 28,
     //Face cream
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-glowfacecream-01_fb37c9e3-d5f7-43f6-8b78-7efdd5d94b4b_700x.jpg?v=1652342130",
-    name: "C-Glow Face Cream ,50ml",
+    title: "C-Glow Face Cream ,50ml",
     type: "New Arrivals",
     subtype: "Face cream",
     price: 325,
-    realPrice: 375,
+    strikeprice: 375,
     size: "50ml",
     select: "Mix & Match: Buy 3,Get 1",
     Rating: 4.6,
@@ -126,12 +133,13 @@ var data = [
   },
 
   {
+    id: 29,
     image: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFacePack-01_1_700x.jpg?v=1651698247",
-    name: "C-Glow Face Pack, 100gm",
+    title: "C-Glow Face Pack, 100gm",
     type: "New Arrivals",
     subtype: "Face cream",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "100gm",
     select: "-",
     Rating: 5,
@@ -142,13 +150,14 @@ var data = [
   //gel
 
   {
+    id: 30,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hydra-Plus-Face-Gel-03_700x.jpg?v=1654164918",
-    name: "Hydra-Plus Face Gel ,50gm",
+    title: "Hydra-Plus Face Gel ,50gm",
     type: "New Arrivals",
     subtype: "Gel",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "Mix & Match: Buy 3,Get 1",
     Rating: 4.7,
@@ -157,13 +166,14 @@ var data = [
   },
 
   {
+    id: 31,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hydra-plusNightCream-03_700x.jpg?v=1654165749",
-    name: "Hydra-Plus Night Cream ,50gm",
+    title: "Hydra-Plus Night Cream ,50gm",
     type: "New Arrivals",
     subtype: "Gel",
     price: 381,
-    realPrice: 449,
+    strikeprice: 449,
     size: "50gm",
     select: "Mix & Match: Buy 3,Get 1",
     Rating: 4.5,
@@ -173,13 +183,14 @@ var data = [
 
   //Face Wash
   {
+    id: 32,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HydraplusFaceWash-03_700x.jpg?v=1654164895",
-    name: "Hydra-Plus Face Wash ,100ml",
+    title: "Hydra-Plus Face Wash ,100ml",
     type: "New & Now",
     subtype: "Face Wash",
     price: 225,
-    realPrice: 279,
+    strikeprice: 279,
     size: "100ml",
     select: "Mix & Match: Buy 2, Get 1",
     Rating: 5.0,
@@ -188,13 +199,14 @@ var data = [
   },
 
   {
+    id: 33,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/KumkumadiFaceWash-01_1_700x.jpg?v=1652341314",
-    name: "Kumkumadi Face Wash - 100ml",
+    title: "Kumkumadi Face Wash - 100ml",
     type: "New Arrivals",
     subtype: "Face Wash",
     price: 320,
-    realPrice: 399,
+    strikeprice: 399,
     size: "100ml",
     select: "Mix & Match: Buy 2, Get 1",
     Rating: 4.8,
@@ -202,13 +214,14 @@ var data = [
       "Looking for a gentle cleanser that will clarify, rejuvenate & protect your skin from being stripped of its natural oils",
   },
   {
+    id: 34,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/KumkumadiFaceWash-01_1_700x.jpg?v=1652341314",
-    name: "Kumkumadi Face Wash - 100ml",
+    title: "Kumkumadi Face Wash - 100ml",
     type: "New Arrivals",
     subtype: "Face Wash",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "100ml",
     select: "-",
     Rating: 4.9,
@@ -219,14 +232,14 @@ var data = [
   //Bestseller
   {
     //Scrub
-
+    id: 35,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_1_700x.jpg?v=1655010286",
-    name: "Exfoliate Face And Body Scrub Grit ,75gm",
+    title: "Exfoliate Face And Body Scrub Grit ,75gm",
     type: "Bestseller",
     subtype: "Scrub",
     price: 249,
-    realPrice: 275,
+    strikeprice: 275,
     size: "75gm",
     select: "-",
     Rating: 4.8,
@@ -234,13 +247,14 @@ var data = [
       "Gentle Exfoliation, Nourishing & Skin Brightening",
   },
   {
+    id: 36,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NicoLips-01_77788ac8-4061-459a-bfb5-f5b5068c1dfa_700x.jpg?v=1652340499",
-    name: "NicoLips Lip Brightening Scrub, 20gm",
+    title: "NicoLips Lip Brightening Scrub, 20gm",
     type: "Bestseller",
     subtype: "Scrub",
     price: 399,
-    realPrice: 450,
+    strikeprice: 450,
     size: "20gm",
     select: "-",
     Rating: 4.7,
@@ -248,13 +262,14 @@ var data = [
       "Lip Brightening, Nourishing & Repairing,Your answer to dry, chapped & dehydrated lips is here!",
   },
   {
+    id: 37,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_9_700x.jpg?v=1652459488",
-    name: "Brave Essentials - De-Tan Face Scrub, 75ml",
+    title: "Brave Essentials - De-Tan Face Scrub, 75ml",
     type: "Bestseller",
     subtype: "Scrub",
     price: 228,
-    realPrice: 325,
+    strikeprice: 325,
     size: "75ml",
     select: "30% Off",
     Rating: 5,
@@ -263,13 +278,14 @@ var data = [
   },
   {
     //Face Wash
+    id: 38,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceWash-01_2_700x.jpg?v=1652340405",
-    name: "C-Glow Face Wash, 100ml",
+    title: "C-Glow Face Wash, 100ml",
     type: "Bestseller",
     subtype: "Face Wash",
     price: 225,
-    realPrice: 249,
+    strikeprice: 249,
     size: "100ml",
     select: "-",
     Rating: 4.7,
@@ -277,14 +293,14 @@ var data = [
       "Brighten, purify & de-tan your skin with the Bella Vita Organic C-Glow Face Wash to get glowing skin",
   },
   {
-
+    id: 39,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowey-01_700x.jpg?v=1652169511",
-    name: "GLOWEY 3 In 1 Face Pack, Scrub & Face Wash,100 Gm",
+    title: "GLOWEY 3 In 1 Face Pack, Scrub & Face Wash,100 Gm",
     type: "Bestseller",
     subtype: "Face Wash",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "100gm",
     select: "-",
     Rating: 4.7,
@@ -292,14 +308,14 @@ var data = [
       "A healthy glow is around the corner with Bella Vita Organic's wonder mask Glowey!",
   },
   {
-
+    id: 40,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_24_700x.jpg?v=1652680846",
-    name: "Brave Essentials - De-Tan Face Wash, 100ml",
+    title: "Brave Essentials - De-Tan Face Wash, 100ml",
     type: "Bestseller",
     subtype: "Face Wash",
     price: 209,
-    realPrice: 299,
+    strikeprice: 299,
     size: "100gm",
     select: "30% off",
     Rating: 4.8,
@@ -309,13 +325,14 @@ var data = [
 
   //Perfume
   {
+    id: 41,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Fresh-01_e2d901e0-bcf7-482c-8140-3888f8a6f08c_700x.jpg?v=1652422196",
-    name: "FRESH UNISEX PERFUME, 100ml",
+    title: "FRESH UNISEX PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 599,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "-",
     Rating: 4.8,
@@ -323,13 +340,14 @@ var data = [
       "Twisted Tale of Modern Classic.A mythical fragrance that rephrases ancient elegance!",
   },
   {
+    id: 42,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/WhiteOUD-01_5eb2f95c-36ef-4c3b-a450-657c6dc6f420_700x.jpg?v=1652422287",
-    name: "WHITE OUD UNISEX, 100ml",
+    title: "WHITE OUD UNISEX, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 674,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "40% Off",
     Rating: 4.8,
@@ -337,13 +355,14 @@ var data = [
       "The Spice Odyssey.",
   },
   {
+    id: 43,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/IMPACT-01_700x.jpg?v=1652422894",
-    name: "IMPACT MAN PERFUME, 100ml",
+    title: "IMPACT MAN PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 594,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "40% Off",
     Rating: 4.8,
@@ -351,13 +370,14 @@ var data = [
       "For the Hustler, The High Flyer!",
   },
   {
+    id: 44,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glam-01_700x.jpg?v=1652422496",
-    name: "GLAM WOMAN PERFUME, 100ml",
+    title: "GLAM WOMAN PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 669,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "40% Off",
     Rating: 4.5,
@@ -365,13 +385,14 @@ var data = [
       "Unconventional-Eccentric-Versatile.",
   },
   {
+    id: 45,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Dominus-01_700x.jpg?v=1652422970",
-    name: "DOMINUS MAN PERFUME, 100ml",
+    title: "DOMINUS MAN PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 599,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "40% Off",
     Rating: 4.7,
@@ -379,13 +400,14 @@ var data = [
       "Breaking Dawn.The Dominus Eau De Parfum is an unforgettable romantic saga with a dark twist!",
   },
   {
+    id: 46,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CEOMAN-01_cf6cf834-200c-42bf-81a7-e80dbee17c7d_700x.jpg?v=1652421979",
-    name: "CEO MAN LUXURY PERFUME, 100ml",
+    title: "CEO MAN LUXURY PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 599,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "33% Off",
     Rating: 4.6,
@@ -393,13 +415,14 @@ var data = [
       "Life in the Fast Lane! Perfect for everyday wear, CEO MAN Eau De Parfum elevates the 'CEO' in you",
   },
   {
+    id: 47,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Rose-01_700x.jpg?v=1652422566",
-    name: "CEO MAN LUXURY PERFUME, 100ml",
+    title: "CEO MAN LUXURY PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 599,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "33% Off",
     Rating: 4.6,
@@ -407,13 +430,14 @@ var data = [
       "An iconic bouquet of rose, jasmine and peach, capturing the essence of classic romance.",
   },
   {
+    id: 48,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Fresh-01_e2d901e0-bcf7-482c-8140-3888f8a6f08c_700x.jpg?v=1652422196",
-    name: "FRESH UNISEX PERFUME, 100ml",
+    title: "FRESH UNISEX PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 599,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "33% Off",
     Rating: 4.8,
@@ -421,13 +445,14 @@ var data = [
       "Twisted Tale of Modern Classic.A mythical fragrance that rephrases ancient elegance!",
   },
   {
+    id: 49,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/WhiteOUD-01_5eb2f95c-36ef-4c3b-a450-657c6dc6f420_700x.jpg?v=1652422287",
-    name: "WHITE OUD UNISEX, 100ml",
+    title: "WHITE OUD UNISEX, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 674,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "33% Off",
     Rating: 4.7,
@@ -435,13 +460,14 @@ var data = [
       "The Spice Odyssey.Charmed by the tangy Artemisian Lemon at the top",
   },
   {
+    id: 50,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/IMPACT-01_700x.jpg?v=1652422894",
-    name: "IMPACT MAN PERFUME, 100ml",
+    title: "IMPACT MAN PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 599,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "33% Off",
     Rating: 4.7,
@@ -449,13 +475,14 @@ var data = [
       "For the Hustler, The High Flyer!Make a long-lasting first impression with the 'Impact Eau De Cologne'.",
   },
   {
+    id: 51,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glam-01_700x.jpg?v=1652422496",
-    name: "GLAM WOMAN PERFUME, 100ml",
+    title: "GLAM WOMAN PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 669,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "33% Off",
     Rating: 4.5,
@@ -463,13 +490,14 @@ var data = [
       "Unconventional-Eccentric-Versatile.The Glam Woman Eau De Parfum celebrates versatility breaking conventional floral accents.",
   },
   {
+    id: 52,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Honey-01_700x.jpg?v=1652423027",
-    name: "HONEY OUD UNISEX PERFUME, 100ml",
+    title: "HONEY OUD UNISEX PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 669,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "33% Off",
     Rating: 5,
@@ -477,13 +505,14 @@ var data = [
       "An Enchanting Encounter.Honey Oud Parfum is a fruity-floral flavour symphony, harmoniously coexisting to bring out colourful ways of life.",
   },
   {
+    id: 53,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/SkaiAquatic-02_360x.jpg?v=1652422770",
-    name: "SKAI AQUATIC UNISEX PERFUME, 100ml",
+    title: "SKAI AQUATIC UNISEX PERFUME, 100ml",
     type: "Bestseller",
     subtype: "Perfume",
     price: 499,
-    realPrice: 699,
+    strikeprice: 699,
     size: "100ml",
     select: "29% Off",
     Rating: 4.9,
@@ -492,13 +521,14 @@ var data = [
   },
   //combo
   {
+    id: 54,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-Us-Out-Combo-01_700x.jpg?v=1651698312",
-    name: "Complete Hair Care Combo",
+    title: "Complete Hair Care Combo",
     type: "Bestseller",
     subtype: "combo",
     price: 837,
-    realPrice: 1047,
+    strikeprice: 1047,
     size: "-",
     select: "20% Off",
     Rating: 4.8,
@@ -506,13 +536,14 @@ var data = [
       "Growth Protein Shampoo, Growth Protein Conditioner, Growth Protein Hair Oil",
   },
   {
+    id: 55,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-For-You-Combo-01_700x.jpg?v=1651698311",
-    name: "Hair For You Combo",
+    title: "Hair For You Combo",
     type: "Bestseller",
     subtype: "combo",
     price: 598,
-    realPrice: 748,
+    strikeprice: 748,
     size: "-",
     select: "20% Off",
     Rating: 4.9,
@@ -523,13 +554,14 @@ var data = [
 
   // 1)Face cream
   {
+    id: 56,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-glowfacecream-02_533x.jpg?v=1652342130",
-    name: "C-Glow Face Cream ,50ml",
+    title: "C-Glow Face Cream ,50ml",
     type: "Skin Care",
     subtype: "Face cream",
     price: 325,
-    realPrice: 375,
+    strikeprice: 375,
     size: "50ml",
     select: "13% Off",
     Rating: 5,
@@ -537,13 +569,14 @@ var data = [
       "The C-Glow Face cream is your lightweight answer to dull, uneven and pigmented skin! An advanced formula",
   },
   {
+    id: 57,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/KumkumadiDayCream-01_757f9cf0-0c09-4baa-8a13-c6803a6e1f94_700x.jpg?v=1652341381",
-    name: "Kumkumadi Day Cream ,50gm",
+    title: "Kumkumadi Day Cream ,50gm",
     type: "Skin Care",
     subtype: "Face cream",
     price: 449,
-    realPrice: 549,
+    strikeprice: 549,
     size: "50gm",
     select: "18% Off",
     Rating: 5,
@@ -551,13 +584,14 @@ var data = [
       "The Bella Vita Organic Kumkumadi Day Cream sits tall in a skin care regime that’s created to give your skin",
   },
   {
+    id: 58,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hydra-plusNightCream-02_360x.jpg?v=1654165750",
-    name: "Hydra-Plus Night Cream ,50gm",
+    title: "Hydra-Plus Night Cream ,50gm",
     type: "Skin Care",
     subtype: "Face cream",
     price: 381,
-    realPrice: 449,
+    strikeprice: 449,
     size: "50gm",
     select: "15% Off",
     Rating: 5,
@@ -566,13 +600,14 @@ var data = [
   },
   //Face Moisturisers
   {
+    id: 59,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-AcneFaceGel-01_0b665e08-c71f-409a-82ef-10b68c67e453_700x.jpg?v=1651699935",
-    name: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
+    title: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
     type: "Skin Care",
     subtype: "Face Moisturisers",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.8,
@@ -580,13 +615,14 @@ var data = [
       "A powerful yet gentle formula, The Anti-Acne Face Gel is an everyday essential for you!",
   },
   {
+    id: 60,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Kumkumadi-Face-Oil-01_700x.jpg?v=1652341175",
-    name: "Ayurvedic Kumkumadi Face Oil, 30ml",
+    title: "Ayurvedic Kumkumadi Face Oil, 30ml",
     type: "Skin Care",
     subtype: "Face Moisturisers",
     price: 499,
-    realPrice: 599,
+    strikeprice: 599,
     size: "30ml",
     select: "6% Off",
     Rating: 4.7,
@@ -594,13 +630,14 @@ var data = [
       "Renewed, youthful skin is just a few drops out! Bella Vita Organic Kumkumadi Face Oil is your answer to dull",
   },
   {
+    id: 61,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceSerum-01_1_700x.jpg?v=1651698248",
-    name: "C-Glow Face Serum ,30ml",
+    title: "C-Glow Face Serum ,30ml",
     type: "Skin Care",
     subtype: "Face Moisturisers",
     price: 349,
-    realPrice: 375,
+    strikeprice: 375,
     size: "30ml",
     select: "7% Off",
     Rating: 5.0,
@@ -608,13 +645,14 @@ var data = [
       "Nothing short of a magic potion, The C-Glow Face Serum is carefully formulated, powered by several natural",
   },
   {
+    id: 62,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-glowfacecream-01_fb37c9e3-d5f7-43f6-8b78-7efdd5d94b4b_700x.jpg?v=1652342130",
-    name: "C-Glow Face Cream ,50ml",
+    title: "C-Glow Face Cream ,50ml",
     type: "Skin Care",
     subtype: "Face Moisturisers",
     price: 325,
-    realPrice: 375,
+    strikeprice: 375,
     size: "50ml",
     select: "13% Off",
     Rating: 5.0,
@@ -622,13 +660,14 @@ var data = [
       "The C-Glow Face cream is your lightweight answer to dull, uneven and pigmented skin!",
   },
   {
+    id: 63,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowtion-01_cab54ba7-e00c-4426-87c1-249ee10304c6_700x.jpg?v=1651571277",
-    name: "Glowtion - Face & Body Lotion,100ml",
+    title: "Glowtion - Face & Body Lotion,100ml",
     type: "Skin Care",
     subtype: "Face Moisturisers",
     price: 275,
-    realPrice: 299,
+    strikeprice: 299,
     size: "100ml",
     select: "13% Off",
     Rating: 5.0,
@@ -636,13 +675,14 @@ var data = [
       "A non-greasy formula, the Bella Vita Organic Glowtion has the power to deeply nourish and moisturise your skin.",
   },
   {
+    id: 64,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/KumkumadiDayCream-01_757f9cf0-0c09-4baa-8a13-c6803a6e1f94_700x.jpg?v=1652341381",
-    name: "Kumkumadi Day Cream ,50gm",
+    title: "Kumkumadi Day Cream ,50gm",
     type: "Skin Care",
     subtype: "Face Moisturisers",
     price: 449,
-    realPrice: 549,
+    strikeprice: 549,
     size: "50gm",
     select: "18% Off",
     Rating: 5.0,
@@ -650,13 +690,14 @@ var data = [
       "The Bella Vita Organic Kumkumadi Day Cream sits tall in a skin care regime that's created to give your skin",
   },
   {
+    id: 65,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowOil-FreeFaceGel-01_700x.jpg?v=1652176030",
-    name: "C-Glow Oil-Free Face Gel, 50gm",
+    title: "C-Glow Oil-Free Face Gel, 50gm",
     type: "Skin Care",
     subtype: "Face Moisturisers",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -665,13 +706,14 @@ var data = [
   },
   //Gel
   {
+    id: 66,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-AcneFaceGel-01_0b665e08-c71f-409a-82ef-10b68c67e453_700x.jpg?v=1651699935",
-    name: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
+    title: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
     type: "Skin Care",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.8,
@@ -679,13 +721,14 @@ var data = [
       "A powerful yet gentle formula, The Anti-Acne Face Gel is an everyday essential for you! ",
   },
   {
+    id: 67,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowOil-FreeFaceGel-01_700x.jpg?v=1652176030",
-    name: "C-Glow Oil-Free Face Gel, 50gm",
+    title: "C-Glow Oil-Free Face Gel, 50gm",
     type: "Skin Care",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -693,13 +736,14 @@ var data = [
       "Your fuss-free route to even skin tone is here! An oil control hydration gel, formulated with Vitamin C",
   },
   {
+    id: 68,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hydra-Plus-Face-Gel-03_700x.jpg?v=1654164918",
-    name: "Hydra-Plus Face Gel ,50gm",
+    title: "Hydra-Plus Face Gel ,50gm",
     type: "Skin Care",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -709,13 +753,14 @@ var data = [
 
   //By Skin Care (isme || condition apply)
   {
+    id: 69,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowtion-01_cab54ba7-e00c-4426-87c1-249ee10304c6_700x.jpg?v=1651571277",
-    name: "Glowtion - Face & Body Lotion,100ml",
+    title: "Glowtion - Face & Body Lotion,100ml",
     type: "By Product Type",
     subtype: "Face Moisturisers",
     price: 275,
-    realPrice: 299,
+    strikeprice: 299,
     size: "100ml",
     select: "13% Off",
     Rating: 5.0,
@@ -723,13 +768,14 @@ var data = [
       "A non-greasy formula, the Bella Vita Organic Glowtion has the power to deeply nourish and moisturise your skin.",
   },
   {
+    id: 70,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/KumkumadiDayCream-01_757f9cf0-0c09-4baa-8a13-c6803a6e1f94_700x.jpg?v=1652341381",
-    name: "Kumkumadi Day Cream ,50gm",
+    title: "Kumkumadi Day Cream ,50gm",
     type: "By Product Type",
     subtype: "Face Moisturisers",
     price: 449,
-    realPrice: 549,
+    strikeprice: 549,
     size: "50gm",
     select: "18% Off",
     Rating: 5.0,
@@ -737,13 +783,14 @@ var data = [
       "The Bella Vita Organic Kumkumadi Day Cream sits tall in a skin care regime that's created to give your skin",
   },
   {
+    id: 71,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowOil-FreeFaceGel-01_700x.jpg?v=1652176030",
-    name: "C-Glow Oil-Free Face Gel, 50gm",
+    title: "C-Glow Oil-Free Face Gel, 50gm",
     type: "By Product Type",
     subtype: "Face Moisturisers",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -752,13 +799,14 @@ var data = [
   },
   //Gel
   {
+    id: 72,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-AcneFaceGel-01_0b665e08-c71f-409a-82ef-10b68c67e453_700x.jpg?v=1651699935",
-    name: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
+    title: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
     type: "By Product Type",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.8,
@@ -766,13 +814,14 @@ var data = [
       "A powerful yet gentle formula, The Anti-Acne Face Gel is an everyday essential for you! ",
   },
   {
+    id: 73,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowOil-FreeFaceGel-01_700x.jpg?v=1652176030",
-    name: "C-Glow Oil-Free Face Gel, 50gm",
+    title: "C-Glow Oil-Free Face Gel, 50gm",
     type: "By Product Type",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -780,13 +829,14 @@ var data = [
       "Your fuss-free route to even skin tone is here! An oil control hydration gel, formulated with Vitamin C",
   },
   {
+    id: 74,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hydra-Plus-Face-Gel-03_700x.jpg?v=1654164918",
-    name: "Hydra-Plus Face Gel ,50gm",
+    title: "Hydra-Plus Face Gel ,50gm",
     type: "By Product Type",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -794,13 +844,14 @@ var data = [
       "A well-tested Ayurvedic formulation that’s here to give your skin an instant dose of hydration with each application.",
   },
   {
+    id: 75,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/De-TanFacePack-01_700x.jpg?v=1652168815",
-    name: "De Tan Face Pack For Glowing Skin,100gm",
+    title: "De Tan Face Pack For Glowing Skin,100gm",
     type: "By Product Type",
     subtype: "Face wash",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "100gm",
     select: "6% Off",
     Rating: 4.8,
@@ -814,13 +865,14 @@ var data = [
 
   //1)Face Wash
   {
+    id: 76,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceWash-02_360x.jpg?v=1652340405",
-    name: "C-Glow Face Wash, 100ml",
+    title: "C-Glow Face Wash, 100ml",
     type: "By concern",
     subtype: "Face wash",
     price: 225,
-    realPrice: 249,
+    strikeprice: 249,
     size: "100ml",
     select: "10% Off",
     Rating: 4.7,
@@ -828,13 +880,14 @@ var data = [
       "Brighten, purify & de-tan your skin with the Bella Vita Organic C-Glow Face Wash to get glowing skin",
   },
   {
+    id: 77,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/De-TanFacePack-01_700x.jpg?v=1652168815",
-    name: "De Tan Face Pack For Glowing Skin,100gm",
+    title: "De Tan Face Pack For Glowing Skin,100gm",
     type: "By concern",
     subtype: "Face wash",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "100gm",
     select: "6% Off",
     Rating: 4.8,
@@ -842,13 +895,14 @@ var data = [
       "De-Tan Face Pack by Bella Vita Organic is crafted by experts to improve your skin tone, brighten your face and give you a glowing skin while helping with oil control.",
   },
   {
+    id: 78,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceSerum-01_1_700x.jpg?v=1651698248",
-    name: "C-Glow Face Serum ,30ml",
+    title: "C-Glow Face Serum ,30ml",
     type: "By concern",
     subtype: "Face wash",
     price: 349,
-    realPrice: 375,
+    strikeprice: 375,
     size: "30ml",
     select: "6% Off",
     Rating: 5.0,
@@ -856,13 +910,14 @@ var data = [
       "Nothing short of a magic potion, The C-Glow Face Serum is carefully formulated, powered by several natural",
   },
   {
+    id: 79,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFacePack-01_1_700x.jpg?v=1651698247",
-    name: "C-Glow Face Pack, 100gm",
+    title: "C-Glow Face Pack, 100gm",
     type: "By concern",
     subtype: "Face wash",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "100gm",
     select: "13% Off",
     Rating: 5.0,
@@ -870,13 +925,14 @@ var data = [
       "Once you start using the C-Glow Face Pack, there's no going back!",
   },
   {
+    id: 80,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DayGlow-01_71da5efa-5c75-4c19-9c32-6eab59310210_700x.jpg?v=1652169110",
-    name: "Day Glow SPF 30+ Sunscreen,100ml",
+    title: "Day Glow SPF 30+ Sunscreen,100ml",
     type: "By concern",
     subtype: "Face wash",
     price: 325,
-    realPrice: 349,
+    strikeprice: 349,
     size: "100gm",
     select: "7% Off",
     Rating: 4.7,
@@ -884,13 +940,14 @@ var data = [
       "Protects the skin from sun damage with the Bella Vita Organic Day Glow Face & Body Lotion!",
   },
   {
+    id: 81,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HydraplusFaceWash-03_700x.jpg?v=1654164895",
-    name: "Hydra-Plus Face Wash ,100ml",
+    title: "Hydra-Plus Face Wash ,100ml",
     type: "By concern",
     subtype: "Face wash",
     price: 225,
-    realPrice: 279,
+    strikeprice: 279,
     size: "100ml",
     select: "19% Off",
     Rating: 5.0,
@@ -900,13 +957,14 @@ var data = [
 
   //By Skin Type
   {
+    id: 82,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceWash-02_360x.jpg?v=1652340405",
-    name: "C-Glow Face Wash, 100ml",
+    title: "C-Glow Face Wash, 100ml",
     type: "By Skin Type",
     subtype: "Face wash",
     price: 225,
-    realPrice: 249,
+    strikeprice: 249,
     size: "100ml",
     select: "10% Off",
     Rating: 4.7,
@@ -914,13 +972,14 @@ var data = [
       "Brighten, purify & de-tan your skin with the Bella Vita Organic C-Glow Face Wash to get glowing skin from within! Power-packed with natural ingredients",
   },
   {
+    id: 83,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeoWhiteMen-01_2_700x.jpg?v=1651698262",
-    name: "Deo White Natural Roll On Deodorant For Men, 50ml",
+    title: "Deo White Natural Roll On Deodorant For Men, 50ml",
     type: "By Skin Type",
     subtype: "Deodorant",
     price: 199,
-    realPrice: 199,
+    strikeprice: 199,
     size: "50ml",
     select: "10% Off",
     Rating: 4.7,
@@ -928,27 +987,29 @@ var data = [
       "A blend of natural goodness, the Deowhite Underarm Whitening Natural Roll-On Deodorant For Men is a holy grail addition to your AM self-care regime.",
   },
   {
+    id: 84,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Supreme-Men-Combo-01_700x.jpg?v=1651698398",
-    name: "Supreme Men Combo",
+    title: "Supreme Men Combo",
     type: "By Skin Type",
     subtype: "Combo",
     price: 1198,
-    realPrice: 1498,
+    strikeprice: 1498,
     size: "-",
     select: "10% Off",
     Rating: 4.7,
     fragrance:
-      "The Supreme Men Combo, rightfully named, is your very own skin care arsenal that will hydrate, protect, nourish and exfoliate your skin!",
+      "The Supreme Men Combo, rightfully titled, is your very own skin care arsenal that will hydrate, protect, nourish and exfoliate your skin!",
   },
   {
+    id: 85,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_1_700x.jpg?v=1655010286",
-    name: "Exfoliate Face And Body Scrub Grit ,75gm",
+    title: "Exfoliate Face And Body Scrub Grit ,75gm",
     type: "By Skin Type",
     subtype: "Deodorant",
     price: 249,
-    realPrice: 275,
+    strikeprice: 275,
     size: "75gm",
     select: "10% Off",
     Rating: 4.8,
@@ -956,13 +1017,14 @@ var data = [
       "The Bella Vita Organic Exfoliate Face & Body Scrub is a holy grail gentle exfoliator that is enriched",
   },
   {
+    id: 86,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowOil-FreeFaceGel-01_700x.jpg?v=1652176030",
-    name: "C-Glow Oil-Free Face Gel, 50gm",
+    title: "C-Glow Oil-Free Face Gel, 50gm",
     type: "By Skin Type",
     subtype: "Face Moisturisers",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -970,13 +1032,14 @@ var data = [
       "Your fuss-free route to even skin tone is here! An oil control hydration gel, formulated with Vitamin C",
   },
   {
+    id: 87,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-AcneFaceGel-01_0b665e08-c71f-409a-82ef-10b68c67e453_700x.jpg?v=1651699935",
-    name: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
+    title: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
     type: "By Skin Type",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.8,
@@ -984,13 +1047,14 @@ var data = [
       "A powerful yet gentle formula, The Anti-Acne Face Gel is an everyday essential for you! ",
   },
   {
+    id: 88,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowOil-FreeFaceGel-01_700x.jpg?v=1652176030",
-    name: "C-Glow Oil-Free Face Gel, 50gm",
+    title: "C-Glow Oil-Free Face Gel, 50gm",
     type: "By Skin Type",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -998,13 +1062,14 @@ var data = [
       "Your fuss-free route to even skin tone is here! An oil control hydration gel, formulated with Vitamin C",
   },
   {
+    id: 89,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hydra-Plus-Face-Gel-03_700x.jpg?v=1654164918",
-    name: "Hydra-Plus Face Gel ,50gm",
+    title: "Hydra-Plus Face Gel ,50gm",
     type: "By Skin Type",
     subtype: "Gel",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "50gm",
     select: "6% Off",
     Rating: 4.9,
@@ -1016,13 +1081,14 @@ var data = [
   {
     //Hair Product Types
     //Shampoo
+    id: 90,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ReverseShampoo_Conditinor-01_1_700x.jpg?v=1651698374",
-    name: "Reverse Hairwash Pack Of Conditioner & Shampoo, 200ml Each",
+    title: "Reverse Hairwash Pack Of Conditioner & Shampoo, 200ml Each",
     type: "Hair Care",
     subtype: "Shampoo",
     price: 499,
-    realPrice: 599,
+    strikeprice: 599,
     size: "200ml",
     select: "17% Off",
     Rating: 4.9,
@@ -1030,13 +1096,14 @@ var data = [
       "Anti Frizz, Anti Hairfall & Nourishing",
   },
   {
+    id: 91,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protin-Hair-Shampoo-01_700x.jpg?v=1652169655",
-    name: "Growth Protein Shampoo, 200ml",
+    title: "Growth Protein Shampoo, 200ml",
     type: "Hair Care",
     subtype: "Shampoo",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "200ml",
     select: "14% Off",
     Rating: 4.8,
@@ -1045,13 +1112,14 @@ var data = [
   },
   {
     //Conditioner
+    id: 92,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protein-Hair-Conditioner-01_ef846ab9-d1dc-4c51-ab39-41a3031812dd_700x.jpg?v=1651698301",
-    name: "Growth Protein Hair Conditioner, 200ml",
+    title: "Growth Protein Hair Conditioner, 200ml",
     type: "Hair Care",
     subtype: "Conditioner",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "200ml",
     select: "14% Off",
     Rating: 4.7,
@@ -1059,13 +1127,14 @@ var data = [
       "The Ayurvedic answer to frizzy & rough hair is here! The Bella Vita Organic Growth Protein Hair Conditioner",
   },
   {
+    id: 93,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth-Protein-Hair-Oil-01_700x.jpg?v=1651698303",
-    name: "Growth Protein Hair Oil, 200ml",
+    title: "Growth Protein Hair Oil, 200ml",
     type: "Hair Care",
     subtype: "oil",
     price: 275,
-    realPrice: 299,
+    strikeprice: 299,
     size: "200ml",
     select: "8% Off",
     Rating: 4.7,
@@ -1073,13 +1142,14 @@ var data = [
       "Here's to your at-home hair treatment! The Bella Vita Organic Growth Protein Hair Oil is the perfect Ayurveda",
   },
   {
+    id: 94,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protein-Hair-Mask-01_700x.jpg?v=1651698302",
-    name: "Growth Protein Hair Mask, 200gm",
+    title: "Growth Protein Hair Mask, 200gm",
     type: "Hair Care",
     subtype: "Shampoo",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "200gm",
     select: "8% Off",
     Rating: 4.7,
@@ -1088,13 +1158,14 @@ var data = [
   },
   {
     //combo
+    id: 95,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-For-You-Combo-01_700x.jpg?v=1651698311",
-    name: "Hair For You Combo",
+    title: "Hair For You Combo",
     type: "Hair Care",
     subtype: "combo",
     price: 598,
-    realPrice: 748,
+    strikeprice: 748,
     size: "200gm",
     select: "20% Off",
     Rating: 4.9,
@@ -1102,13 +1173,14 @@ var data = [
       "The Bella Vita Organic Growth Protein duo of shampoo & conditioner is truly the easiest route to shinier, thicker & nourished hair!",
   },
   {
+    id: 96,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-Us-Out-Combo-01_700x.jpg?v=1651698312",
-    name: "Complete Hair Care Combo",
+    title: "Complete Hair Care Combo",
     type: "Hair Care",
     subtype: "combo",
     price: 837,
-    realPrice: 1047,
+    strikeprice: 1047,
     size: "200gm",
     select: "20% Off",
     Rating: 4.8,
@@ -1117,13 +1189,14 @@ var data = [
   },
   {
     //perfume
+    id: 97,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HairPerfume-01_700x.jpg?v=1626681100",
-    name: "Hair Perfume Mist Spray Unisex, 50ml",
+    title: "Hair Perfume Mist Spray Unisex, 50ml",
     type: "Hair Care",
     subtype: "Perfume",
     price: 338,
-    realPrice: 450,
+    strikeprice: 450,
     size: "50ml",
     select: "20% Off",
     Rating: 4.6,
@@ -1132,13 +1205,14 @@ var data = [
   },
   {
     //comb
+    id: 98,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NeemCombWideTeeth-01_700x.jpg?v=1652170954",
-    name: "Neem Wooden Wide Tooth Comb",
+    title: "Neem Wooden Wide Tooth Comb",
     type: "Hair Care",
     subtype: "comb",
     price: 170,
-    realPrice: 170,
+    strikeprice: 170,
     size: "-",
     select: "20% Off",
     Rating: 4.7,
@@ -1146,13 +1220,14 @@ var data = [
       "The wide-toothed neem wooden comb is handcrafted in India with 100% long neem wood.",
   },
   {
+    id: 99,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NeemCombDualTeeth-01_700x.jpg?v=1633437311",
-    name: "Neem Wooden Wide Tooth Comb",
+    title: "Neem Wooden Wide Tooth Comb",
     type: "Hair Care",
     subtype: "comb",
     price: 170,
-    realPrice: 199,
+    strikeprice: 199,
     size: "-",
     select: "20% Off",
     Rating: 4.7,
@@ -1160,13 +1235,14 @@ var data = [
       "The wide-toothed neem wooden comb is handcrafted in India with 100% long neem wood.",
   },
   {
+    id: 100,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/OilControlShampoo-03_c650cdd1-e70d-40b3-8dea-1068c6532363_700x.jpg?v=1656497313",
-    name: "Oil Control Shampoo",
+    title: "Oil Control Shampoo",
     type: "Hair Care",
     subtype: "Shampoo",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "100ml",
     select: "14% Off",
     Rating: 5.0,
@@ -1177,13 +1253,14 @@ var data = [
 
   //Hair Concern Types
   {
+    id: 101,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protin-Hair-Shampoo-01_700x.jpg?v=1652169655",
-    name: "Growth Protein Shampoo, 200ml",
+    title: "Growth Protein Shampoo, 200ml",
     type: "Hair Care",
     subtype: "Shampoo",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "200ml",
     select: "14% Off",
     Rating: 4.8,
@@ -1191,13 +1268,14 @@ var data = [
       "New age hair care with age-old blends! The Bella Vita Organic Growth Protein Shampoo is here to take your hair",
   },
   {
+    id: 102,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth-Protein-Hair-Oil-01_700x.jpg?v=1651698303",
-    name: "Growth Protein Hair Oil, 200ml",
+    title: "Growth Protein Hair Oil, 200ml",
     type: "Hair Care",
     subtype: "oil",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "200ml",
     select: "8% Off",
     Rating: 4.8,
@@ -1205,13 +1283,14 @@ var data = [
       "Here's to your at-home hair treatment! The Bella Vita Organic Growth Protein Hair Oil is the perfect Ayurveda",
   },
   {
+    id: 103,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-For-You-Combo-01_700x.jpg?v=1651698311",
-    name: "Hair For You Combo",
+    title: "Hair For You Combo",
     type: "Hair Care",
     subtype: "combo",
     price: 598,
-    realPrice: 748,
+    strikeprice: 748,
     size: "-",
     select: "20% Off",
     Rating: 4.8,
@@ -1220,13 +1299,14 @@ var data = [
   },
   {
     //conditioner
+    id: 104,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protein-Hair-Conditioner-01_ef846ab9-d1dc-4c51-ab39-41a3031812dd_700x.jpg?v=1651698301",
-    name: "Growth Protein Hair Conditioner, 200ml",
+    title: "Growth Protein Hair Conditioner, 200ml",
     type: "Hair Care",
     subtype: "Conditioner",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "200ml",
     select: "13% Off",
     Rating: 4.7,
@@ -1234,13 +1314,14 @@ var data = [
       "The Ayurvedic answer to frizzy & rough hair is here! The Bella Vita Organic Growth Protein Hair Conditioner",
   },
   {
+    id: 105,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NeemCombDualTeeth-06_700x.jpg?v=1633437312",
-    name: "Neem Wooden Dual Tooth Comb",
+    title: "Neem Wooden Dual Tooth Comb",
     type: "Hair Care",
     subtype: "comb",
     price: 170,
-    realPrice: 199,
+    strikeprice: 199,
     size: "200ml",
     select: "15% Off",
     Rating: 5,
@@ -1251,13 +1332,14 @@ var data = [
   // By Product Type
   {
     //Shampoo
+    id: 106,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ReverseShampoo_Conditinor-01_1_700x.jpg?v=1651698374",
-    name: "Reverse Hairwash Pack Of Conditioner & Shampoo, 200ml Each",
+    title: "Reverse Hairwash Pack Of Conditioner & Shampoo, 200ml Each",
     type: "By Product Type",
     subtype: "Shampoo",
     price: 499,
-    realPrice: 599,
+    strikeprice: 599,
     size: "200ml",
     select: "17% Off",
     Rating: 4.9,
@@ -1265,13 +1347,14 @@ var data = [
       "Anti Frizz, Anti Hairfall & Nourishing",
   },
   {
+    id: 107,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protin-Hair-Shampoo-01_700x.jpg?v=1652169655",
-    name: "Growth Protein Shampoo, 200ml",
+    title: "Growth Protein Shampoo, 200ml",
     type: "By Product Type",
     subtype: "Shampoo",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "200ml",
     select: "14% Off",
     Rating: 4.8,
@@ -1280,13 +1363,14 @@ var data = [
   },
   {
     //Conditioner
+    id: 108,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protein-Hair-Conditioner-01_ef846ab9-d1dc-4c51-ab39-41a3031812dd_700x.jpg?v=1651698301",
-    name: "Growth Protein Hair Conditioner, 200ml",
+    title: "Growth Protein Hair Conditioner, 200ml",
     type: "By Product Type",
     subtype: "Conditioner",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "200ml",
     select: "14% Off",
     Rating: 4.7,
@@ -1294,13 +1378,14 @@ var data = [
       "The Ayurvedic answer to frizzy & rough hair is here! The Bella Vita Organic Growth Protein Hair Conditioner",
   },
   {
+    id: 109,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth-Protein-Hair-Oil-01_700x.jpg?v=1651698303",
-    name: "Growth Protein Hair Oil, 200ml",
+    title: "Growth Protein Hair Oil, 200ml",
     type: "By Product Type",
     subtype: "oil",
     price: 275,
-    realPrice: 299,
+    strikeprice: 299,
     size: "200ml",
     select: "8% Off",
     Rating: 4.7,
@@ -1308,13 +1393,14 @@ var data = [
       "Here's to your at-home hair treatment! The Bella Vita Organic Growth Protein Hair Oil is the perfect Ayurveda",
   },
   {
+    id: 110,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protein-Hair-Mask-01_700x.jpg?v=1651698302",
-    name: "Growth Protein Hair Mask, 200gm",
+    title: "Growth Protein Hair Mask, 200gm",
     type: "By Product Type",
     subtype: "Shampoo",
     price: 375,
-    realPrice: 399,
+    strikeprice: 399,
     size: "200gm",
     select: "8% Off",
     Rating: 4.7,
@@ -1323,13 +1409,14 @@ var data = [
   },
   {
     //combo
+    id: 111,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-For-You-Combo-01_700x.jpg?v=1651698311",
-    name: "Hair For You Combo",
+    title: "Hair For You Combo",
     type: "By Product Type",
     subtype: "combo",
     price: 598,
-    realPrice: 748,
+    strikeprice: 748,
     size: "200gm",
     select: "20% Off",
     Rating: 4.9,
@@ -1337,13 +1424,14 @@ var data = [
       "The Bella Vita Organic Growth Protein duo of shampoo & conditioner is truly the easiest route to shinier, thicker & nourished hair!",
   },
   {
+    id: 112,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-Us-Out-Combo-01_700x.jpg?v=1651698312",
-    name: "Complete Hair Care Combo",
+    title: "Complete Hair Care Combo",
     type: "By Product Type",
     subtype: "combo",
     price: 837,
-    realPrice: 1047,
+    strikeprice: 1047,
     size: "200gm",
     select: "20% Off",
     Rating: 4.8,
@@ -1352,13 +1440,14 @@ var data = [
   },
   {
     //perfume
+    id: 113,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HairPerfume-01_700x.jpg?v=1626681100",
-    name: "Hair Perfume Mist Spray Unisex, 50ml",
+    title: "Hair Perfume Mist Spray Unisex, 50ml",
     type: "By Product Type",
     subtype: "Perfume",
     price: 338,
-    realPrice: 450,
+    strikeprice: 450,
     size: "50ml",
     select: "20% Off",
     Rating: 4.6,
@@ -1367,13 +1456,14 @@ var data = [
   },
   {
     //comb
+    id: 114,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NeemCombWideTeeth-01_700x.jpg?v=1652170954",
-    name: "Neem Wooden Wide Tooth Comb",
+    title: "Neem Wooden Wide Tooth Comb",
     type: "By Product Type",
     subtype: "comb",
     price: 170,
-    realPrice: 170,
+    strikeprice: 170,
     size: "-",
     select: "20% Off",
     Rating: 4.7,
@@ -1381,13 +1471,14 @@ var data = [
       "The wide-toothed neem wooden comb is handcrafted in India with 100% long neem wood.",
   },
   {
+    id: 115,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NeemCombDualTeeth-01_700x.jpg?v=1633437311",
-    name: "Neem Wooden Wide Tooth Comb",
+    title: "Neem Wooden Wide Tooth Comb",
     type: "By Product Type",
     subtype: "comb",
     price: 170,
-    realPrice: 199,
+    strikeprice: 199,
     size: "-",
     select: "20% Off",
     Rating: 4.7,
@@ -1395,13 +1486,14 @@ var data = [
       "The wide-toothed neem wooden comb is handcrafted in India with 100% long neem wood.",
   },
   {
+    id: 116,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/OilControlShampoo-03_c650cdd1-e70d-40b3-8dea-1068c6532363_700x.jpg?v=1656497313",
-    name: "Oil Control Shampoo",
+    title: "Oil Control Shampoo",
     type: "By Product Type",
     subtype: "Shampoo",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "100ml",
     select: "14% Off",
     Rating: 5.0,
@@ -1410,13 +1502,14 @@ var data = [
   },
   //Hair concern Types
   {
+    id: 117,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protin-Hair-Shampoo-01_700x.jpg?v=1652169655",
-    name: "Growth Protein Shampoo, 200ml",
+    title: "Growth Protein Shampoo, 200ml",
     type: "By Hair Concern",
     subtype: "Shampoo",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "200ml",
     select: "14% Off",
     Rating: 4.8,
@@ -1424,13 +1517,14 @@ var data = [
       "New age hair care with age-old blends! The Bella Vita Organic Growth Protein Shampoo is here to take your hair",
   },
   {
+    id: 118,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth-Protein-Hair-Oil-01_700x.jpg?v=1651698303",
-    name: "Growth Protein Hair Oil, 200ml",
+    title: "Growth Protein Hair Oil, 200ml",
     type: "By Hair Concern",
     subtype: "oil",
     price: 299,
-    realPrice: 349,
+    strikeprice: 349,
     size: "200ml",
     select: "8% Off",
     Rating: 4.8,
@@ -1438,13 +1532,14 @@ var data = [
       "Here's to your at-home hair treatment! The Bella Vita Organic Growth Protein Hair Oil is the perfect Ayurveda",
   },
   {
+    id: 119,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-For-You-Combo-01_700x.jpg?v=1651698311",
-    name: "Hair For You Combo",
+    title: "Hair For You Combo",
     type: "By Hair Concern",
     subtype: "combo",
     price: 598,
-    realPrice: 748,
+    strikeprice: 748,
     size: "-",
     select: "20% Off",
     Rating: 4.8,
@@ -1453,13 +1548,14 @@ var data = [
   },
   {
     //conditioner
+    id: 120,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Growth--Protein-Hair-Conditioner-01_ef846ab9-d1dc-4c51-ab39-41a3031812dd_700x.jpg?v=1651698301",
-    name: "Growth Protein Hair Conditioner, 200ml",
+    title: "Growth Protein Hair Conditioner, 200ml",
     type: "By Hair Concern",
     subtype: "Conditioner",
     price: 349,
-    realPrice: 399,
+    strikeprice: 399,
     size: "200ml",
     select: "13% Off",
     Rating: 4.7,
@@ -1467,13 +1563,14 @@ var data = [
       "The Ayurvedic answer to frizzy & rough hair is here! The Bella Vita Organic Growth Protein Hair Conditioner",
   },
   {
+    id: 121,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NeemCombDualTeeth-06_700x.jpg?v=1633437312",
-    name: "Neem Wooden Dual Tooth Comb",
+    title: "Neem Wooden Dual Tooth Comb",
     type: "By Hair Concern",
     subtype: "comb",
     price: 170,
-    realPrice: 199,
+    strikeprice: 199,
     size: "200ml",
     select: "15% Off",
     Rating: 5,
@@ -1486,13 +1583,14 @@ var data = [
 
   {
     //Soap
+    id: 122,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-Glow-01_c664d6e2-165a-4f18-824a-461daed32c3f_700x.jpg?v=1651696252",
-    name: "C-Glow Body Wash Bar, 150gm",
+    title: "C-Glow Body Wash Bar, 150gm",
     type: "Body Care",
     subtype: "soap",
     price: 149,
-    realPrice: 199,
+    strikeprice: 199,
     size: "150gm",
     select: "25%off",
     Rating: 5,
@@ -1500,13 +1598,14 @@ var data = [
       "Immerse yourself in some Vitamin C aka the goodness of Orange! ",
   },
   {
+    id: 123,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Coalwave-01_700x.jpg?v=1651696320",
-    name: "CoalWave Body Wash Bar, 150gm",
+    title: "CoalWave Body Wash Bar, 150gm",
     type: "Body Care",
     subtype: "soap",
     price: 149,
-    realPrice: 199,
+    strikeprice: 199,
     size: "150gm",
     select: "25%off",
     Rating: 5,
@@ -1514,13 +1613,14 @@ var data = [
       "Formulated with Charcoal, Shea Butter, and Basil, the CoalWave Body Wash Bar is an exceptional exfoliator.",
   },
   {
+    id: 124,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/UbtanPlus-01_700x.jpg?v=1651696408",
-    name: "Ubtan Plus Body Wash Bar,150gm",
+    title: "Ubtan Plus Body Wash Bar,150gm",
     type: "Body Care",
     subtype: "soap",
     price: 149,
-    realPrice: 199,
+    strikeprice: 199,
     size: "150gm",
     select: "25%off",
     Rating: 5,
@@ -1528,13 +1628,14 @@ var data = [
       "Crafted with the natural goodness of Haldi, Kesar, and Chandan, our handmade Ubtan Plus Body Wash Bar",
   },
   {
+    id: 125,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Chakracleanse-01_700x.jpg?v=1651696291",
-    name: "Chakra Cleanse Body Wash Bar,150gm",
+    title: "Chakra Cleanse Body Wash Bar,150gm",
     type: "Body Care",
     subtype: "soap",
     price: 149,
-    realPrice: 199,
+    strikeprice: 199,
     size: "150gm",
     select: "25%off",
     Rating: 5,
@@ -1543,13 +1644,14 @@ var data = [
   },
   //Scrub
   {
+    id: 126,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_1_700x.jpg?v=1655010286",
-    name: "Exfoliate Face And Body Scrub Grit ,75gm",
+    title: "Exfoliate Face And Body Scrub Grit ,75gm",
     type: "Body Care",
     subtype: "Scrub",
     price: 249,
-    realPrice: 275,
+    strikeprice: 275,
     size: "75gm",
     select: "25%off",
     Rating: 4.8,
@@ -1558,13 +1660,14 @@ var data = [
   },
   //Lotion
   {
+    id: 127,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CelebshineNude-01_700x.jpg?v=1651698235",
-    name: "Celeb Shine Body Lotion Nude, 50ml",
+    title: "Celeb Shine Body Lotion Nude, 50ml",
     type: "Body Care",
     subtype: "Lotion",
     price: 399,
-    realPrice: 499,
+    strikeprice: 499,
     size: "50ml",
     select: "20%off",
     Rating: 4.8,
@@ -1572,13 +1675,14 @@ var data = [
       "Say hello to the ultimate glow-getter! ",
   },
   {
+    id: 128,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowtion-01_cab54ba7-e00c-4426-87c1-249ee10304c6_700x.jpg?v=1651571277",
-    name: "Glowtion - Face & Body Lotion,100ml",
+    title: "Glowtion - Face & Body Lotion,100ml",
     type: "Body Care",
     subtype: "Lotion",
     price: 275,
-    realPrice: 299,
+    strikeprice: 299,
     size: "100ml",
     select: "8%off",
     Rating: 5,
@@ -1586,13 +1690,14 @@ var data = [
       "A non-greasy formula, the Bella Vita Organic Glowtion has the power to deeply nourish and moisturise your skin."
   },
   {
+    id: 129,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CelebshineGold-01_e00fff97-54c2-489f-b054-88b90a7e8cac_700x.jpg?v=1652176140",
-    name: "Celebshine Body Lotion Gold - 50ml",
+    title: "Celebshine Body Lotion Gold - 50ml",
     type: "Body Care",
     subtype: "Lotion",
     price: 399,
-    realPrice: 499,
+    strikeprice: 499,
     size: "50ml",
     select: "8%off",
     Rating: 4.8,
@@ -1600,13 +1705,14 @@ var data = [
       "Say hello to the ultimate glow-getter! A radiant and exceptionally rich Body Illuminiser that adds shine"
   },
   {
+    id: 130,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/SkinSolve-01_1_700x.jpg?v=1655122264",
-    name: "Skinsolve - Multi-Benefit Butter Balm",
+    title: "Skinsolve - Multi-Benefit Butter Balm",
     type: "Body Care",
     subtype: "Lotion",
     price: 285,
-    realPrice: 325,
+    strikeprice: 325,
     size: "50ml",
     select: "12%off",
     Rating: 4.8,
@@ -1615,13 +1721,14 @@ var data = [
   },
   //Perfumes Categories
   {
+    id: 131,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/OUD-01_5d17f334-cc6c-4fe1-b230-cb95f79726ab_700x.jpg?v=1652422383",
-    name: "OUD UNISEX LUXURY PERFUME, 100ml",
+    title: "OUD UNISEX LUXURY PERFUME, 100ml",
     type: "PERFUMES",
     subtype: "Perfume",
     price: 669,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "33%off",
     Rating: 4.6,
@@ -1629,13 +1736,14 @@ var data = [
       "Anatomy of Aristocracy.Bursting with heritage and regal opulence"
   },
   {
+    id: 132,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Patchouli-01_82546528-2724-4089-89ac-409327d09013_700x.jpg?v=1652422699",
-    name: "PATCHOULI UNISEX PERFUME , 100ml",
+    title: "PATCHOULI UNISEX PERFUME , 100ml",
     type: "PERFUMES",
     subtype: "Perfume",
     price: 669,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "33%off",
     Rating: 4.9,
@@ -1643,13 +1751,14 @@ var data = [
       "Pragmatic Patchouli!A uniquely exciting blend that transpires us into the Imperial apothecary"
   },
   {
+    id: 133,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Patchouli-01_82546528-2724-4089-89ac-409327d09013_700x.jpg?v=1652422699",
-    name: "PATCHOULI UNISEX PERFUME , 100ml",
+    title: "PATCHOULI UNISEX PERFUME , 100ml",
     type: "PERFUMES",
     subtype: "Perfume",
     price: 669,
-    realPrice: 999,
+    strikeprice: 999,
     size: "100ml",
     select: "33%off",
     Rating: 4.6,
@@ -1657,13 +1766,14 @@ var data = [
       "Pragmatic Patchouli!A uniquely exciting blend that transpires us into the Imperial apothecary"
   },
   {
+    id: 134,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Patchouli-01_82546528-2724-4089-89ac-409327d09013_700x.jpg?v=1652422699",
-    name: "ROSE WOMAN LUXURY PERFUME - 100ml",
+    title: "ROSE WOMAN LUXURY PERFUME - 100ml",
     type: "PERFUMES",
     subtype: "Perfume",
     price: 599,
-    realPrice: 899,
+    strikeprice: 899,
     size: "100ml",
     select: "33%off",
     Rating: 4.6,
@@ -1671,13 +1781,14 @@ var data = [
       "Pragmatic Patchouli!A uniquely exciting blend that transpires us into the Imperial apothecary"
   },
   {
+    id: 135,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HairPerfume-01_700x.jpg?v=1626681100",
-    name: "ROSE WOMAN LUXURY PERFUME - 100ml",
+    title: "ROSE WOMAN LUXURY PERFUME - 100ml",
     type: "PERFUMES",
     subtype: "Perfume",
     price: 338,
-    realPrice: 450,
+    strikeprice: 450,
     size: "50ml",
     select: "33%off",
     Rating: 4.5,
@@ -1685,13 +1796,14 @@ var data = [
       "Our sweet & floral Hair perfume for women and men will help you take your hair game to the next level"
   },
   {
+    id: 136,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HoneyOUD20ml-02_360x.jpg?v=1649504932",
-    name: "ROSE WOMAN LUXURY PERFUME - 100ml",
+    title: "ROSE WOMAN LUXURY PERFUME - 100ml",
     type: "PERFUMES",
     subtype: "Perfume",
     price: 338,
-    realPrice: 450,
+    strikeprice: 450,
     size: "50ml",
     select: "33%off",
     Rating: 4.7,
@@ -1699,13 +1811,14 @@ var data = [
       "Our sweet & floral Hair perfume for women and men will help you take your hair game to the next level"
   },
   {
+    id: 137,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Patchouli20ml-02_360x.jpg?v=1649512588",
-    name: "ROSE WOMAN LUXURY PERFUME - 100ml",
+    title: "ROSE WOMAN LUXURY PERFUME - 100ml",
     type: "PERFUMES",
     subtype: "Perfume",
     price: 338,
-    realPrice: 450,
+    strikeprice: 450,
     size: "50ml",
     select: "33%off",
     Rating: 4.9,
@@ -1716,13 +1829,14 @@ var data = [
   //COMBOS
 
   {
+    id: 138,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Brighter-Days-Combo-02_360x.jpg?v=1651698233",
-    name: "Natural Anti Pollution Combo",
+    title: "Natural Anti Pollution Combo",
     type: "Combos",
     subtype: "Combo",
     price: 444,
-    realPrice: 524,
+    strikeprice: 524,
     size: "-",
     select: "15%off",
     Rating: 4.7,
@@ -1730,13 +1844,14 @@ var data = [
       "Face care made easy! Buff away dead skin cells, white & blackheads and stubborn tanning with the easy-to-use combination of C-Glow Face Wash"
   },
   {
+    id: 139,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/TheUltimateGlowBoosterCombo-02_360x.jpg?v=1652276281",
-    name: "The Ultimate Glow Booster Combo",
+    title: "The Ultimate Glow Booster Combo",
     type: "Combos",
     subtype: "Combo",
     price: 927,
-    realPrice: 1547,
+    strikeprice: 1547,
     size: "-",
     select: "40%off",
     Rating: 4.7,
@@ -1744,13 +1859,14 @@ var data = [
       "Face care made easy! Buff away dead skin cells, white & blackheads and stubborn tanning with the easy-to-use combination of C-Glow Face Wash"
   },
   {
+    id: 140,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeoWhiteRollonDeodorantMenPackof2Combo_1_700x.jpg?v=1651698356",
-    name: "Roll On Deo - Men (Pack Of 2), 50ml",
+    title: "Roll On Deo - Men (Pack Of 2), 50ml",
     type: "Combos",
     subtype: "Combo",
     price: 318,
-    realPrice: 398,
+    strikeprice: 398,
     size: "-",
     select: "20%off",
     Rating: 4.8,
@@ -1758,13 +1874,14 @@ var data = [
       "Face care made easy! Buff away dead skin cells, white & blackheads and stubborn tanning with the easy-to-use combination of C-Glow Face Wash"
   },
   {
+    id: 141,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/LipBalm_-NicoLips-Lip-Scrub-Combo_700x.jpg?v=1647863372",
-    name: "Natural Lip Care Kit- Nicolips & Lip Balm",
+    title: "Natural Lip Care Kit- Nicolips & Lip Balm",
     type: "Combos",
     subtype: "Combo",
     price: 540,
-    realPrice: 675,
+    strikeprice: 675,
     size: "-",
     select: "20%off",
     Rating: 4.7,
@@ -1772,13 +1889,14 @@ var data = [
       "Here's your sign to build a lip care routine! Exfoliate, nourish & condition your lips with the prowess of Nicolips"
   },
   {
+    id: 142,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceWash-01_3f99b360-1812-4e25-a1eb-01d2e4b735bd_360x.jpg?v=1647935818",
-    name: "Natural Lip Care Kit- Nicolips & Lip Balm",
+    title: "Natural Lip Care Kit- Nicolips & Lip Balm",
     type: "Combos",
     subtype: "Combo",
     price: 540,
-    realPrice: 675,
+    strikeprice: 675,
     size: "-",
     select: "20%off",
     Rating: 4.7,
@@ -1786,13 +1904,14 @@ var data = [
       "Here's your sign to build a lip care routine! Exfoliate, nourish & condition your lips with the prowess of Nicolips"
   },
   {
+    id: 143,
     image:
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NaturalRadianceCombo-02_360x.jpg?v=1652277008",
-    name: "Natural Lip Care Kit- Nicolips & Lip Balm",
+    title: "Natural Lip Care Kit- Nicolips & Lip Balm",
     type: "Combos",
     subtype: "Combo",
     price: 550,
-    realPrice: 875,
+    strikeprice: 875,
     size: "-",
     select: "30%off",
     Rating: 4.9,
