@@ -20,14 +20,14 @@ let navbar2 = () => {
        <div id="info"><i  class='far fa-user-circle changeOfNavi'></i></div>
        <div>
 
-       <div>
-           <a href="/taboo-mine-9522"><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683" alt=""></a>
+       <div id="imglogo" >
+           <a href="/index.html"><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683" alt=""></a>
        </div>
        <div>
-           <a href="/taboo-mine-9522/brave/brave.html"><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701" alt=""></a>
+           <a href="/brave/brave.html"><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701" alt=""></a>
        </div>
        <div>
-           <a href="/taboo-mine-9522/luxury/luxury.html"> <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721" alt=""></a>
+           <a href="/luxury/luxury.html"> <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721" alt=""></a>
        </div></div>
        <div>
        <button id="navBar_btn"></button>
@@ -35,7 +35,7 @@ let navbar2 = () => {
      
        <i class="fa-regular fa-heart"></i>
        
-    <a href="/taboo-mine-9522/cartpage.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    <a href="/cartpage.html"><i class="fa-solid fa-bag-shopping"></i></a>
        </div>
    </div> `;
 }
