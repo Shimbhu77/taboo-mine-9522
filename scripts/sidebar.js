@@ -3,9 +3,9 @@ function sidebar() {
     <div>
       <h4>Categories</h4>
       <hr>
-      <p style="font-size: 16px">Shop All</p>
-      <p style="font-size: 16px"><a href="New Arrival.html" style="text-decoration: none;">New Arrivals</a></p>
-      <p style="font-size: 16px">Bestsellers</p>
+      <p style="font-size: 16px"><a href="../ShopAll/ShopAll.html" style="text-decoration: none;">Shop All</a></p>
+      <p style="font-size: 16px"><a href="../New Arrivals/New Arrival.html" style="text-decoration: none;">New Arrivals</a></p>
+      <p style="font-size: 16px"><a href="../Bestseller/Bestsellers.html" style="text-decoration: none;"> Bestsellers</a></p>
       <select id="" aria-placeholder="Skin Care" style="border:none; font-size: 15px;">
         <option value="">Skin Care</option>
         <option value="">By Product type</option>
@@ -38,6 +38,6 @@ function sidebar() {
         <option value="">C Glow Range</option>
         <option value="">Kumkumadi Range</option>
       </select><br>
-      <p style="font-size: 16px">Build a Box</p>`
+      <p style="font-size: 16px"><a href="../Build A Box/Build.html" style="text-decoration: none;">Build a Box</a> </p>`
 }
 export { sidebar }

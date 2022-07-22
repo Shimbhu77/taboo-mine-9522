@@ -184,6 +184,6 @@ let footer = () => {
 <div id="span"><div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-footer_256x256_e_400x.png?v=1650369513" alt=""></div>
 <div><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-youtube"></i>
 <i class="fa-brands fa-pinterest"></i></div>
-<div>© 2022, Bella Vita Organic</div> </div>`;
+<div><p>© 2022, Bella Vita Organic</p></div> </div>`;
 }
 export default footer;
