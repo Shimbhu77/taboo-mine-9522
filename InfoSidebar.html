@@ -6,11 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/infosidebar.css">
+    <!-- <link rel="stylesheet" href="./styles/PP.css"> -->
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: gray;
+}
+#edit {
+    width: 50%;
+    height: 700px;
+    /* margin: auto; */
+    /* border: 4px solid green; */
+    text-align: center;
+    margin-top: 70px;
+    padding-left: -50px;
+}
+#edit form>p{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-left: -200px;
+    padding-left: -300px;
+    /* border:4px solid red; */
+}
+
+#edit form h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: black;
+    font-weight: 500;
+}
+#edit form input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+#edit form>button{
+    /* text-align: left; */
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    /* border: 4px solid green; */
+}
+#edit form >button{
+    width: 250px;
+    height: 45px;
+    /* background-color:gray; */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* color: white; */
+    border: none;
+    margin-left: 0px; 
+    display: inline-block;   
+}
+#cancelbtn{
+    background-color:  #475d4b;
+    color: white;
+}
+#cancelbtn:hover{
+    margin-left: 0px;
+    background-color:gray;
+    color:white;
+}
+#savebtn:hover{
+    background-color:  #475d4b;
+    color: white;
+}
+
+#edit form> select{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+#update{
+    width: 35%;
+    height: 400px;
+    /* margin: auto; */
+    /* border: 4px solid blue; */
+    text-align: center;
+    margin-top: 70px;
+}
+#update p{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    /* margin-left: 0px; */
+}
+
+#update h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: black;
+    font-weight: 500;
+}
+#update input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+#update button{
+    /* text-align: left; */
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#update button{
+    width: 100px;
+    height: 45px;
+    background-color:rgb(95, 78, 78);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-left: 0px; 
+    display: inline-block;   
+}
+#SPB:hover{
+    background-color:#475d4b;
+}
+#homebtn a{
+    color: gray;
+}
+    </style>
 </head>
 <body>
+    <div id="navbar2"></div>
+
+    <div id="navbar1">< /div>
+
     <div id="sidebar">
         <div>
-            <p> <a href="index.html">Home</a> > Account > My Profile</p>
+            <p id="homebtn"> <a href="index.html">Home</a> > Account > My Profile</p>
             <button id="MP">My Profile</button>
             <button id="DA">Delivery Address</button>
             <button id="MO">My orders</button>
@@ -25,13 +170,37 @@
         <div id="ShowDetailsPage">
         </div>
     </div>
+    <div id="footer_div">
+
+    </div> 
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/f592b44598.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
 <script type="module">
+    import navbar from "./components/navbar.js";
+    import navbar2 from "./components/navbar2.js"
+    import footer from "./components/footer.js"
+
+document.querySelector("#navbar2").innerHTML=navbar2();
+document.querySelector("#navbar1").innerHTML=navbar();
+document.querySelector("#footer_div").innerHTML=footer();
+
+    import {UpdateProfile,UpdatePassword} from "./scripts/Signup.js";
     let LoggedUser=JSON.parse(localStorage.getItem("LoggedInUser"));
+    // let User=JSON.parse(localStorage.getItem("userinformation"));
      document.querySelector("#MP").addEventListener("click",()=>{
            displaydata(LoggedUser);
      })
+     document.querySelector("#LO").addEventListener("click",()=>{
+           LogOut(LoggedUser);
+     });
+     document.querySelector("#CP").addEventListener("click",()=>{
+           updatepass();
+     });
      console.log(LoggedUser,LoggedUser[0].FirstName);
      displaydata(LoggedUser);
      function displaydata(LoggedUser){
@@ -41,26 +210,114 @@
         h1.innerText="Hello  "+LoggedUser[0].FirstName;
         let FirstName=document.createElement("p");
         FirstName.innerText="FirstName: "+LoggedUser[0].FirstName;
+        FirstName.style.wordSpacing="15px";
         let LastName=document.createElement("p");
         LastName.innerText="LastName: "+LoggedUser[0].LastName;
+        LastName.style.wordSpacing="15px";
         let email=document.createElement("p");
         email.innerText="Email: "+LoggedUser[0].email;
+        email.style.wordSpacing="15px";
         let ContactNumber=document.createElement("p");
-        ContactNumber.innerText="ContactNumber:  ";
+        ContactNumber.innerText="Contact-Number:  "+LoggedUser[0].ContactNumber;
+        ContactNumber.style.wordSpacing="15px";
         let Birthday=document.createElement("p");
-        Birthday.innerText="Birthday: ";
+        Birthday.style.wordSpacing="15px";
+        Birthday.innerText="Birthday: "+LoggedUser[0].Birthday;
         let Gender=document.createElement("p");
-        Gender.innerText="Gender:";
+        Gender.style.wordSpacing="15px";
+        Gender.innerText="Gender: "+LoggedUser[0].Gender;
         let button=document.createElement("button");
         button.innerText="EDIT";
         button.addEventListener("click",()=>{
-            showdata();
+            updatedata();
         })
         div.append(h1,FirstName,LastName,email,ContactNumber,Birthday,Gender,button);
         document.querySelector("#ShowDetailsPage").append(div);
      }
-     function showdata()
+     function LogOut(data)
      {
-
+         console.log(data);
+         data[0].loggeduser="false";
+         localStorage.setItem("LoggedInUser",JSON.stringify(data));
+         window.location.href="index.html";
      }
+    //  CheckUserLoginOrNot();
+     function CheckUserLoginOrNot()
+     {
+        if(LoggedUser[0].loggeduser=="true")
+        {
+            alert("User Logged  in")
+        }
+        else
+        {
+            alert("User not login");
+        }
+     }
+    function updatedata()
+    {
+        document.querySelector("#ShowDetailsPage").innerHTML=UpdateProfile();
+        updateprofile(LoggedUser);
+        function updateprofile(LoggedUser)
+        {
+         console.log(LoggedUser,LoggedUser[0].FirstName)
+         document.querySelector(".hello").innerText="Hello  "+LoggedUser[0].FirstName;
+        } 
+        document.querySelector("#cancelbtn").addEventListener("click",()=>{
+            displaydata(LoggedUser);
+        });
+        document.querySelector("#savebtn").addEventListener("click",()=>{
+            savenewdata(LoggedUser);
+        })
+    } 
+    let xy=LoggedUser;
+    function updatepass()
+    {
+        document.querySelector("#ShowDetailsPage").innerHTML=UpdatePassword();
+        updateprofile(LoggedUser);
+        function updateprofile(LoggedUser)
+        {
+         console.log(LoggedUser,LoggedUser[0].FirstName)
+         document.querySelector("#hello").innerText="Hello  "+LoggedUser[0].FirstName;
+         document.querySelector("#SPB").addEventListener("click",()=>{
+            SavePassword(LoggedUser);
+         })
+       }
+    } 
+    function savenewdata(LoggedUser)
+    {
+        console.log(LoggedUser);
+        LoggedUser[0].FirstName=document.querySelector("#First_Name").value;
+        LoggedUser[0].LastName=document.querySelector("#Last_Name").value;
+        LoggedUser[0].email=document.querySelector("#email").value;
+        LoggedUser[0].ContactNumber=document.querySelector("#number").value;
+        LoggedUser[0].Birthday=document.querySelector("#date").value;
+        LoggedUser[0].Gender=document.querySelector("#gender").value;
+        localStorage.setItem("LoggedInUser",JSON.stringify(LoggedUser));
+        console.log(LoggedUser);
+        let xyz=JSON.parse(localStorage.getItem("LoggedInUser"));
+        console.log(xyz);
+        displaydata(LoggedUser);
+    } 
+    function SavePassword(LoggedUser)
+    {
+        console.log(LoggedUser);
+        let NP=document.querySelector("#NP").value;
+        let CNP=document.querySelector("#CNP").value;
+        if(NP==CNP)
+        {
+          LoggedUser[0].password=document.querySelector("#CNP").value;
+          localStorage.setItem("LoggedInUser",JSON.stringify(LoggedUser));
+
+          console.log(LoggedUser);
+          alert("Password Update Succussfully");
+        }  
+        else
+        {
+           alert("Password Not Match");
+           updatepass();
+        }
+        let xyz=JSON.parse(localStorage.getItem("LoggedInUser"));
+        console.log(xyz);
+        displaydata(LoggedUser);
+    }   
 </script>

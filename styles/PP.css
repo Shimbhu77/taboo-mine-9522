@@ -4,52 +4,120 @@
     box-sizing: border-box;
     color: gray;
 }
-#login{
+#edit{
     width: 35%;
-    height: 400px;
+    height: 700px;
     margin: auto;
-    /* border: 4px solid red; */
+    border: 4px solid red;
     text-align: center;
     margin-top: 70px;
 }
-#login p{
+#edit p{
     font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    /* margin-left: -30px; */
 }
 
-#login h1{
+#edit h1{
     margin-bottom: 20px;
     font-size: 40px;
     color: black;
     font-weight: 500;
 }
-#login input{
+#edit input{
     width: 100%;
     height: 50px;
     font-size: 20px;
     margin-top: 20px;
 }
-#login button{
-    /* text-align: center; */
+#edit button{
+    /* text-align: left; */
+    display: block;
     margin-top: 30px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
-#login button{
+#edit button{
     width: 100px;
     height: 45px;
-    background-color: #475d4b;
+    /* background-color:gray; */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* color: white; */
+    border: none;
+    margin-left: 0px; 
+    display: inline-block;   
+}
+#cancelbtn{
+    background-color:  #475d4b;
+    color: white;
+}
+#cancelbtn:hover{
+    margin-left: 0px;
+    background-color:gray;
+    color:white;
+}
+#savebtn:hover{
+    background-color:  #475d4b;
+    color: white;
+}
+
+#edit select{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#update{
+    width: 35%;
+    height: 400px;
+    margin: auto;
+    border: 4px solid blue;
+    text-align: center;
+    margin-top: 70px;
+}
+#update p{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    /* margin-left: 0px; */
+}
+
+#update h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: black;
+    font-weight: 500;
+}
+#update input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#update button{
+    /* text-align: left; */
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#update button{
+    width: 100px;
+    height: 45px;
+    background-color:rgb(95, 78, 78);
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
     color: white;
     border: none;
-    margin-left: 0px;
-    display: inline-block;
-    
+    margin-left: 0px; 
+    display: inline-block;   
 }
-#login select{
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    margin-top: 20px;
+#SPB:hover{
+    background-color:#475d4b;
 }
-
