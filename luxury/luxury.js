@@ -94,6 +94,7 @@ function append(data){
             li2.innerText=element.strikeprice;
 
             let bt1=document.createElement("button");
+
             bt1.innerText="add to cart";
             bt1.addEventListener("click",()=>{
                 AddtoCart(element);

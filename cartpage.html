@@ -32,9 +32,9 @@ body {
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: -7px;
+  right: 10px;
+  font-size: 50px;
 }
 .overlay-content {
     display: flex;
@@ -42,7 +42,13 @@ body {
     padding-left: 10px;
     font-weight: 500;
     /* border: 4px solid blue; */
-    margin-top: 10px;
+    position: sticky;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    background-color: white;
+    height: 40px;
+    width: 90%;
+    
 }
 #myNav{
     /* border: 10px solid red; */
@@ -112,7 +118,7 @@ body {
     display: flex;
     justify-content: center;
 }
-#box div div:nth-child(2) div button{
+#box div div:nth-child(2) div>button{
     width: 40px;
     height: 26px;
     font-size: 20px;
@@ -159,7 +165,6 @@ body {
 </style>
 </head>
 <body>
-
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -194,7 +199,7 @@ body {
        </div>
        <div id="second">
         <div>Savings</div>
-        <div>₹ 0</div>
+        <div id="save">₹ 0</div>
        </div>
        <div id="fourth">
         <div ><h3>Total</h3></div>
@@ -203,11 +208,11 @@ body {
        <button>CHECKOUT</button>
 </div>
 </div> 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">Click Here </span>
 
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "35%";
+  document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
@@ -222,12 +227,14 @@ function closeNav() {
     var x=Cardata;
     var totalprice=0;
     var productTotal=0;
+    var Totalsavings=0;
     var savings=0;
      console.log(Cardata);
      function displaydata(data)
      {
         totalprice=0;
         savings=0;
+        Totalsavings=0;
         document.querySelector("#Totalpriceof").innerHTML="₹ "+"";
         document.querySelector("#box").innerHTML="";
         data.forEach((elem,index) => {
@@ -260,16 +267,26 @@ function closeNav() {
             decreament.addEventListener("click",function(){
                 countvalueminus(elem,index,h2)
             });
+            var button=document.createElement("div");
+            button.innerText="Remove";
+            button.style.cursor="pointer";
+            button.style.marginTop="-28px";
+            button.style.marginLeft="200px";
+            button.style.paddingTop="4px";
+            button.addEventListener("click",()=>{
+                Remove(elem.id);
+            })
             div1.append(img);
             div4.append(increament,h2,decreament);
-            div2.append(name,Price,SPrice,div4)
+            div2.append(name,Price,SPrice,div4,button)
             div3.append(div1,div2)
             document.querySelector("#box").append(div3);
             totalprice=totalprice+Number(elem.ProductPrice);
-            savings=savings+(Number(elem.price)-Number(elem.strikeprice));
-            console.log(totalprice,savings);
+            Totalsavings=Totalsavings+Number(elem.TotalSavings);
+            console.log(totalprice,savings,Totalsavings);
         });
         document.querySelector("#Totalpriceof").innerText="₹ "+totalprice;
+        document.querySelector("#save").innerText="₹ "+Totalsavings;
      }
 
     function countvalueplus(elem,index,h2)
@@ -277,6 +294,7 @@ function closeNav() {
         console.log(x[index].quantity);
         x[index].quantity++;
         x[index].ProductPrice=Number(elem.price)*Number(x[index].quantity);
+        x[index].TotalSavings=Number(elem.savings)*Number(x[index].quantity);
         localStorage.setItem("CartProducts",JSON.stringify(x));
         displaydata(x);
         console.log("inside ");
@@ -288,10 +306,20 @@ function closeNav() {
         if(x[index].quantity==1) return;
         x[index].quantity--;
         x[index].ProductPrice=Number(elem.price)*Number(x[index].quantity);
+        x[index].TotalSavings=Number(elem.savings)*Number(x[index].quantity);
         localStorage.setItem("CartProducts",JSON.stringify(x));
         displaydata(x);
         console.log("inside ");
         console.log(x[index].quantity);
     }  
+    function Remove(id)
+    {
+        let y=x.filter((elem)=>{
+            return elem.id!==id;
+        });
+        x=y;
+        displaydata(x);
+        localStorage.setItem("CartProducts",JSON.stringify(x));
+    }
     displaydata(Cardata);
 </script>
