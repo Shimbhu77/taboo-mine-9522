@@ -8,34 +8,44 @@
   <title>Skin Care</title>
 
   <link rel="stylesheet" href="./Skin Care.css" />
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="../styles/footer.css">
 
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <!-- page header -->
+  <div id="navbar2"></div>
+
+  <div id="navbar1"></div>
+
   <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/1200x235_1900x.jpg?v=1655708130" alt=""
     style="width:100%">
   <h5 style="font-family:sans-serif; font-weight: 200; font-size: 20px;">Home > Collection > # Skin Care</h5>
 
 
 
-  <div id="display_sv">
-    <div id="dummy_sv">
 
-    </div>
-    <div id="details_sv">
-      <p>Skin Care</p>
-      <div id="filter">
-        <div id="filter1">
-          <h4>Filter BY:</h4>
-          <form>
-            <select id="type_sv" onChange="handleType()">
+    <div id="display_sv">
+        <div id="dummy_sv">
+
+        </div>
+        <div id="details_sv">
+            <p>Skin Care</p>
+            <div id="filter">
+                <div id="filter1">
+                    <h4>Filter BY:</h4>
+                    <form>
+                        <select id="type_sv" onChange="handleType()">
               <option value="">Skin Care</option>
               <option value="By Product Type">By Product Type</option>
               <option value="By concern">By concern</option>
               <option value="By Skin Type">By Skin Type</option>
             </select>
-            <select id="subtype_sv" onChange="handleSubtype()">
+                        <select id="subtype_sv" onChange="handleSubtype()">
               <option value="">Face cream</option>
               <option value="Face cream">Face cream</option>
               <option value="Face Moisturisers">Face Moisturisers</option>
@@ -45,26 +55,28 @@
               <option value="Combo">Combo</option>
               <option value="Combo"></option>
             </select>
-          </form>
-        </div>
-        <div id="filter2">
-          <form>
-            <select id="price_sv" onChange="handlePrice()">
+                    </form>
+                </div>
+                <div id="filter2">
+                    <form>
+                        <select id="price_sv" onChange="handlePrice()">
               <option value="">Sort By Price</option>
               <option value="LTH">Low to High</option>
               <option value="HTL">High to Low</option>
             </select>
-          </form>
+                    </form>
+                </div>
+            </div>
+            <img src="https://github.com/humamul/Cool-Coders/blob/main/images/text.gif?raw=true" alt="" />
+            <div id="product_sv">
+                <div id="container_sv"></div>
+            </div>
         </div>
-      </div>
-      <img src="https://github.com/humamul/Cool-Coders/blob/main/images/text.gif?raw=true" alt="" />
-      <div id="product_sv">
-        <div id="container_sv"></div>
-      </div>
     </div>
-  </div>
 
-  <div id="footer_h"></div>
+  <div id="footer_div">
+
+  </div>
 </body>
 
 </html>
@@ -76,4 +88,19 @@
   let z = document.querySelector("#dummy_sv")
   z.innerHTML = sidebar();
 
+  import navbar from "../components/navbar.js";
+  import navbar2 from "../components/navbar2.js"
+  import footer from "../components/footer.js"
+
+  document.querySelector("#navbar2").innerHTML = navbar2();
+  document.querySelector("#navbar1").innerHTML = navbar();
+  document.querySelector("#footer_div").innerHTML = footer();
+
 </script>
+
+<script src="https://kit.fontawesome.com/f592b44598.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+  integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+

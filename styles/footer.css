@@ -68,12 +68,23 @@
     background-color: #475d4b;
     display: flex;
     justify-content: space-around;
+    font-size: 13px;
 }
 
 #span>div:nth-child(2) {
     display: flex;
     gap: 20px;
     margin: auto;
+}
+
+#span>div:nth-child(3) {
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+#span>div:nth-child(1) {
+    padding-top: 15px;
+    padding-left: 10px;
 }
 
 #Subscribe {

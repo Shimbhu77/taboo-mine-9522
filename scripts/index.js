@@ -128,3 +128,13 @@ function appendBest(data) {
 
     });
 }
+
+window.addEventListener('scroll', function() {
+    let nav = document.getElementById("navbar1");
+    if (window.pageYoffset >= 100) {
+        nav.classList.add("sticky");
+
+    } else {
+        nav.classList.remove("sticky")
+    }
+})
