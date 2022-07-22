@@ -16,13 +16,13 @@ function handlePrice() {
     if (select == "") {
         appendData(dataArray)
     } else if (select == 'HTL') {
-        dataArray.sort(function(a, b) {
+        dataArray.sort(function (a, b) {
             return b.realPrice - a.realPrice
 
         })
         appendData(dataArray)
     } else if (select == 'LTH') {
-        dataArray.sort(function(a, b) {
+        dataArray.sort(function (a, b) {
             return a.realPrice - b.realPrice
 
         })
@@ -59,7 +59,7 @@ function appendData(data) {
     let display = document.getElementById('container_sv')
     display.innerHTML = null;
     // console.log(data)
-    data.forEach(function(el) {
+    data.forEach(function (el) {
         // console.log(el)
         let div = document.createElement('div')
         div.setAttribute('class', 'box_sv')
@@ -72,10 +72,10 @@ function appendData(data) {
         })
         let ndiv = document.createElement('div')
         ndiv.setAttribute('class', 'namediv_sv')
-        let name = document.createElement('a')
-        name.setAttribute('class', 'name_sv')
-        name.innerText = el.name
-        ndiv.append(name)
+        let title = document.createElement('a')
+        title.setAttribute('class', 'name_sv')
+        title.innerText = el.title
+        ndiv.append(title)
 
         let subtype = document.createElement('p')
         subtype.setAttribute('class', 'name2_sv')
@@ -90,23 +90,34 @@ function appendData(data) {
         button.innerText = 'Add To Cart'
         button.style.cursor = 'pointer'
         button.addEventListener('click', () => {
-            addToCart(el)
+            AddtoCart(el)
         })
         div.append(image, ndiv, subtype, price, button)
         display.append(div)
     });
 }
-let CartArray = JSON.parse(localStorage.getItem('cart')) || []
+let AddCart = JSON.parse(localStorage.getItem("CartProducts")) || [];
 
-function addToCart(data) {
-    CartArray.push(data)
-    console.log(CartArray)
-    localStorage.setItem('cart', JSON.stringify(CartArray))
-
+function AddtoCart(elem) {
+    if (verifyProduct(elem) == true) {
+        elem.quantity = 1;
+        elem.ProductPrice = elem.price;
+        elem.savings = Number(elem.strikeprice) - Number(elem.price);
+        elem.TotalSavings = elem.savings;
+        AddCart.push(elem);
+        localStorage.setItem("CartProducts", JSON.stringify(AddCart));
+        console.log(elem, AddCart);
+        alert("Product Added to Cart Successfully");
+    }
+    else {
+        alert("Product Already exists in Cart ");
+    }
 }
-
-function Chacha(data) {
-    localStorage.setItem('Products', JSON.stringify(data))
-    window.location.href = '../product detail/product_detail.html'
+function verifyProduct(elem) {
+    for (var i = 0; i < AddCart.length; i++) {
+        if (elem.id == AddCart[i].id) {
+            return false;
+        }
+    }
+    return true;
 }
-appendData(data)
