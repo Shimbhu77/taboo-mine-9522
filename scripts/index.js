@@ -164,7 +164,7 @@ function func() {
 
 
 
-let AddCart = [];
+let AddCart = JSON.parse(localStorage.getItem("CartProducts")) || [];
 
 function AddtoCart(elem) {
     if (verifyProduct(elem) == true) {
