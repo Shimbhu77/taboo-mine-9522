@@ -6,36 +6,47 @@
 }
 
 
-/* navbar1 */
+/* navbar0 */
 
 #navbar1 {
-    /* text-align: center; */
-    background: white;
-    height: 50px;
-    width: 90%;
-    display: flex;
-    /* justify-content: space-around; */
-    /* border-bottom: 1px solid red; */
-    /* margin-bottom: 20px; */
-    padding-bottom: 20px;
-    /* align-items: center; */
-    /* margin-left: 20px; */
-    margin: auto auto auto 190px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 }
 
-#navbar1>div {
+#navbar0 {
+    /* text-align: center; */
+    /* background: white; */
+    height: 50px;
+    width: 72%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    /* margin-bottom: 20px; */
+    /* padding-bottom: 20px; */
+    /* align-items: center; */
+    /* margin-left: 20px; */
+    margin: auto;
+    margin-top: -32px;
+}
+
+#navbar0>div {
+    display: flex;
+    /* border: 1px solid red; */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     /* border-right: 1px solid rgb(156, 154, 154); */
 }
 
-#navbar1>div>a {
+#navbar0>div>a {
     padding-right: 10px;
     padding-left: 10px;
     border-right: 1px solid rgb(156, 154, 154);
 }
 
-#navbar1>a {
+#navbar0>a {
     height: 8px;
     padding-right: 10px;
     padding-left: 10px;
@@ -46,18 +57,18 @@
     height: 30px;
 }
 
-#navbar1 a {
+#navbar0 a {
     text-decoration: none;
     color: black;
     font-size: 15px;
     font-weight: 300;
 }
 
-#navbar1 i {
+#navbar0 i {
     color: black;
 }
 
-#navbar1>div {
+#navbar0>div {
     height: 50px;
     display: flex;
     align-items: center;
@@ -66,7 +77,7 @@
     cursor: pointer;
 }
 
-#navbar1>div>i {
+#navbar0>div>i {
     margin-left: 10px;
 }
 
@@ -90,14 +101,14 @@
     border-left: 1px solid transparent;
 }
 
-#navbar1>div>a:hover {
+#navbar0>div>a:hover {
     background-color: #e5f0da;
     border-bottom: 1px solid rgb(150, 146, 146);
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
 }
 
-#navbar1>div:hover {
+#navbar0>div:hover {
     background-color: #e5f0da;
     /* border-bottom: 1px solid rgb(150, 146, 146); */
     border-right: 1px solid transparent;
@@ -105,7 +116,7 @@
 }
 
 
-/* #navbar1>div>a:hover {
+/* #navbar0>div>a:hover {
     background-color: #e5f0da;
 } */
 
@@ -457,6 +468,7 @@ li {
 #count2 {
     position: absolute;
     width: 18px;
+    height: 17px;
     color: black;
     background-color: white;
     border-radius: 50%;
@@ -464,21 +476,22 @@ li {
     text-align: center;
     font-size: 10px;
     top: 118px;
-    right: 81px;
+    right: 84px;
     border: 1px solid black;
 }
 
 #count1 {
     position: absolute;
     width: 18px;
+    height: 17px;
     color: black;
     background-color: white;
     border-radius: 50%;
     padding: 1px;
     text-align: center;
     font-size: 10px;
-    top: 116px;
-    right: 122px;
+    top: 115px;
+    right: 123px;
     border: 1px solid black;
 }
 
