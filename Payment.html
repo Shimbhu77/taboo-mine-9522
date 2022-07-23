@@ -284,19 +284,23 @@ function OnLocation(lat, lon) {
       .then(function (res) {
         console.log(res);
         address=res.name;
-        diplaydata(address);
+        diplaydata2(address);
         console.log(address);
       })
       .catch(function (err) {
         console.log(err);
       });
     }
+    diplaydata1();
    console.log(address);   
-   function diplaydata(add)
+   function diplaydata1()
    {
     let div1=document.querySelector("#CE");
-    let div2=document.querySelector("#ST");
     div1.innerHTML="Contact  "+Userinfo[0].email+" Change";
+   }
+   function diplaydata2(add)
+   {
+    let div2=document.querySelector("#ST");
     div2.innerHTML="Ship-to  "+add+"     Change";
    }
    displayProducts(UserCart);
