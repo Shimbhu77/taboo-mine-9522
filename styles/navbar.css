@@ -454,5 +454,41 @@ li {
     width: 100%;
 }
 
+#count2 {
+    position: absolute;
+    width: 18px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
+    text-align: center;
+    font-size: 10px;
+    top: 118px;
+    right: 81px;
+    border: 1px solid black;
+}
+
+.fa-bag-shopping {
+    position: relative;
+    color: #000;
+    font-size: 30px;
+}
+
+.fa-heart {
+    font-size: 30px;
+}
+
+.changeOfNavi {
+    font-size: 25px;
+    /* border: 1px solid black; */
+}
+
+#navbar2>div:nth-child(2)>div:nth-child(1)>i {
+    font-size: 40px;
+}
+
+
+/* #navbar2>div:nth-child(2)>div:nth-child(1)>i */
+
 
 /* lets color the scroll bar */
