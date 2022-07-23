@@ -109,6 +109,7 @@ function AddtoCart(elem) {
         AddCart.push(elem);
         localStorage.setItem("CartProducts", JSON.stringify(AddCart));
         console.log(elem, AddCart);
+        document.getElementById("count2").innerText = AddCart.length
         alert("Product Added to Cart Successfully");
     }
     else {
@@ -123,3 +124,4 @@ function verifyProduct(elem) {
     }
     return true;
 }
+document.getElementById("count2").innerText = AddCart.length
