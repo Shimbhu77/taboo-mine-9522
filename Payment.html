@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            color: gray;
+            font-size: 20px
+        }
+        #navpay{
+            background-color: #e4f0da;
+            height: 200px;
+            width: 100%;
+            border: 4px solid red;
+        }
+        #infopay{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 600px;
+        }
+        #infopay>div:nth-child(1)
+        {
+          /* border: 4px solid blue; */
+        }
+        #infopay>div:nth-child(2)
+        {
+          /* border: 4px solid brown; */
+        }
+        #infopay>div:nth-child(1) div
+        {
+            width: 80%;
+            height: 100%;
+            /* border: 4px solid green; */
+            margin: auto;
+        }
+        #infopay>div:nth-child(1) >div p{
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        #infopay>div:nth-child(1) >div div
+        {
+          border: 1px solid gray;
+          height: 50px;
+          width: 100%;
+        }
+        #infopay>div:nth-child(1) >div h2+div+div{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            border: none;
+        }
+        #infopay>div:nth-child(1) >div button{
+            width: 350px;
+            height: 60px;
+            font-size: 20px;
+            background-color: #475d4b;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        #infopay>div:nth-child(1) >div h2+div+div >p{
+            margin-top: -10px;
+            text-decoration: none;
+        }
+        #infopay>div:nth-child(1) >div h2+div{
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        #infopay>div:nth-child(1) >div p+div
+        {
+            word-spacing: 60px;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        #infopay>div:nth-child(1) >div p+div+div
+        {
+            word-spacing: 60px;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        #infopay>div:nth-child(2) >div 
+        {
+          width: 90%;
+          height: 600px;
+          margin-left:0px;
+          /* border: 4px solid blue; */
+          padding-top: 50px;
+        }
+        #infopay>div:nth-child(2) >div >div{
+            /* border: 4px solid red; */
+            height: 60px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(2) 
+        {
+           display: flex;
+           justify-content: space-between;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(2) input{
+            width: 77%;
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding-left: 10px;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(2) button{
+            width: 20%;
+            background-color:gray;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(3) 
+        {
+           display: flex;
+           justify-content: space-between;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(3) input{
+            width: 77%;
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding-left: 10px;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(3) button{
+            width: 20%;
+            cursor: pointer;
+            background-color: #475d4b;
+            color: white;
+            border-radius: 5px;
+            border: none;
+
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(4)>div
+        {
+           width: 100%;
+           height: 28px;
+           /* border: 4px solid red; */
+           display: flex;
+           justify-content: space-between;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(5)>div
+        {
+           width: 100%;
+           /* border: 4px solid green; */
+           display: flex;
+           justify-content: space-between;
+           margin-top: 10px;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(5)>div h2{
+            font-size: 23px;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(5)>div h1{
+            font-size: 28px;
+        }
+        #infopay>div:nth-child(2) >div >div:nth-child(1)
+        {
+            height: auto;
+        }
+        #box{
+            width: 100%;
+        }
+        #box>div{
+            height: 100px;
+            display: grid;
+            grid-template-columns: 20% 65% 15%;
+            grid-template-rows: 90px;
+            justify-content: space-evenly;
+            gap: 5px;
+        }
+        #box>div>div:nth-child(1)
+        {
+          /* border: 2px solid yellow; */
+        }
+        #box>div>div:nth-child(1) img
+        {
+            width: 100%;
+            height: 100%;
+            border: 1px solid gray;
+        }
+        #box>div>div:nth-child(2)
+        {
+          /* border: 2px solid red; */
+          padding-top: 20px;
+        }
+        #box>div>div:nth-child(3)
+        {
+          /* border: 2px solid green; */
+          padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="navpay">
+
+    </div> -->
+    <div id="infopay">
+        <div>
+            <div>
+                <p style="margin-top:50px; margin-bottom:20px">Shipping Cart > Information > Shipping > Payment</p>
+                <div id="CE"></div>
+                <div id="ST"></div>
+                <h2 style="margin-top:30px; margin-bottom:20px ;color:black ;font-size: 30px;">Shipping method</h2>
+                <div id="ST" style="font-size:17px;">Free Shipping (PayTM, Card, Netbanking, UPI, Wallets, Pay Later & PayPal) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free</div>
+                <div id="PCP">
+                    <p> <a href="cartpage.html">> Return to Cart</a></p>
+                    <button id="Continue">Continue to Payment & Coupons</button>
+                </div>
+                    
+            </div>
+        </div>
+        <div>
+            <div>
+                <div id="box"></div>
+                <div>
+                    <input type="text" placeholder="Gift Card or Discount Code">
+                    <button>Apply</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Select option to store before cashback">
+                    <button>Apply</button>
+                </div>
+                <div>
+                    <div>
+                        <h3 style="color:black;">Subtotal</h3>
+                        <h3 id="subtotal">₹ 0</h3>
+                    </div>
+                    <div>
+                        <h3 style="color:rgb(87, 79, 79);">Shipping</h3>
+                        <h4 style="color:#475d4b;">Free</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 style="color:black;">Total</h2>
+                        <h1 id="total">₹ 0</h1>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <p style="padding-left:80px;"> Refund policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shipping policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of service</p>
+</body>
+</html>
+<script>
+let Userinfo=JSON.parse(localStorage.getItem("LoggedInUser"));
+let UserCart=JSON.parse(localStorage.getItem("CartProducts"));
+console.log(Userinfo,UserCart);
+var address;
+currentLocation();
+function currentLocation()
+{
+  navigator.geolocation.getCurrentPosition(success);
+  function success(pos) {
+  const crd = pos.coords;
+
+  console.log('Your current position is:');
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude: ${crd.longitude}`);
+  console.log(`More or less ${crd.accuracy} meters.`);
+  OnLocation(crd.latitude,crd.longitude)
+  }
+}
+function OnLocation(lat, lon) {
+    address;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=86b2cd79f612fcab4781abc9e825fe55`;
+  
+    fetch(url)
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (res) {
+        console.log(res);
+        address=res.name;
+        send(address);
+        diplaydata(address);
+        console.log(address);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+    }
+    let locate="";
+    function send(add)
+    {
+        locate=add;
+        console.log(locate);
+    }
+   console.log(address,locate);   
+   function diplaydata(add)
+   {
+    let div1=document.querySelector("#CE");
+    let div2=document.querySelector("#ST");
+    div1.innerHTML="Contact  "+Userinfo[0].email+" Change";
+    div2.innerHTML="Ship-to  "+add+"     Change";
+   }
+   displayProducts(UserCart);
+   function displayProducts(data)
+     {
+        totalprice=0;
+        document.querySelector("#subtotal").innerText="₹ ";
+        document.querySelector("#total").innerText="₹ ";
+        document.querySelector("#box").innerHTML="";
+        data.forEach((elem) => {
+            let div1=document.createElement("div");
+            let div2=document.createElement("div");
+            let div3=document.createElement("div");
+            let div4=document.createElement("div");
+            let img=document.createElement("img");
+            img.src=elem.image;
+            let name=document.createElement("h3");
+            name.innerText=elem.title;
+            name.style.color="black";
+            name.style.fontWeight="700";
+            let Price=document.createElement("h2");
+            Price.innerText="₹ "+elem.ProductPrice+" ";
+            Price.style.color="black";
+            Price.style.fontWeight="700";
+            div1.append(img);
+            div2.append(name);
+            div4.append(Price);
+            div3.append(div1,div2,div4)
+            document.querySelector("#box").append(div3);
+            totalprice=totalprice+Number(elem.ProductPrice);
+            console.log(totalprice);
+        });
+        document.querySelector("#subtotal").innerText="₹ "+totalprice;
+        document.querySelector("#subtotal").style.color="black";
+        document.querySelector("#subtotal").style.fontWeight="600"
+        document.querySelector("#total").innerText="₹ "+totalprice;
+        document.querySelector("#total").style.color="black";
+        document.querySelector("#total").style.fontWeight="800"
+     }
+    document.querySelector("#Continue").addEventListener("click",()=>{
+        setTimeout(()=>{
+            alert("Payment Successfully");
+            window.location.href="index.html";
+        },2000)
+    })
+</script>

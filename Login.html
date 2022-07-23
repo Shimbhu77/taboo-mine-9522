@@ -115,6 +115,9 @@ document.querySelector("#footer_div").innerHTML=footer();
             if(userDetails[i].email==email && userDetails[i].password==password)
             {
                 userDetails[i].loggeduser="true";
+                userDetails[i].ContactNumber="";
+                userDetails[i].Birthday="";
+                userDetails[i].Gender="";
                 console.log(userDetails);
                 LoginUser[0]=userDetails[i];
                 localStorage.setItem("LoggedInUser",JSON.stringify(LoginUser));
