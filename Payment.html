@@ -200,6 +200,7 @@
           padding-top: 30px;
         }
     </style>
+
 </head>
 <body>
     <!-- <div id="navpay">
@@ -283,7 +284,6 @@ function OnLocation(lat, lon) {
       .then(function (res) {
         console.log(res);
         address=res.name;
-        send(address);
         diplaydata(address);
         console.log(address);
       })
@@ -291,13 +291,7 @@ function OnLocation(lat, lon) {
         console.log(err);
       });
     }
-    let locate="";
-    function send(add)
-    {
-        locate=add;
-        console.log(locate);
-    }
-   console.log(address,locate);   
+   console.log(address);   
    function diplaydata(add)
    {
     let div1=document.querySelector("#CE");
