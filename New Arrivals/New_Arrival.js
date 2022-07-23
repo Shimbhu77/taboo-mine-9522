@@ -1,4 +1,14 @@
+import { sidebar } from "../scripts/sidebar.js"
+let z = document.querySelector("#dummy_sv")
+z.innerHTML = sidebar();
 
+import navbar from "../components/navbar.js";
+import navbar2 from "../components/navbar2.js"
+import footer from "../components/footer.js"
+
+document.querySelector("#navbar2").innerHTML = navbar2();
+document.querySelector("#navbar1").innerHTML = navbar();
+document.querySelector("#footer_div").innerHTML = footer();
 
 
 let data = JSON.parse(localStorage.getItem('all_data')) || []
