@@ -103,3 +103,8 @@
     text-align: center;
     padding: 20px;
 }
+
+svg {
+    width: 16px;
+    vertical-align: middle;
+}
