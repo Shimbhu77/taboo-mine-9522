@@ -212,7 +212,7 @@
             
             .seller_section>div {
                 width: 22%;
-                /* border:1px solid red; */
+                /* border: 1px solid red; */
                 position: relative;
                 padding: 10px 0px 0px 0px;
                 /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
@@ -376,9 +376,19 @@
                 z-index: 1;
             }
             
-            #whatapps>img {
+            #whatapps>a>img {
                 width: 100%;
                 /* position: fixed; */
+            }
+            
+            #whatapps>img:hover {
+                transform: scale(1.1);
+                transition: all 0.1s ease;
+            }
+            
+            #moapps>img:hover {
+                transform: scale(1.1);
+                transition: all 0.1s ease;
             }
             
             #DOWNLOAD_OUR_APP {
