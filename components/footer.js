@@ -133,15 +133,15 @@ let footer = () => {
     <div>
         <h3>CONTACT US</h3>
         <a href="https://www.facebook.com/Bella Vita Organic">
-            <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-solid fa-address-card"></i>
             <span>Office Location: Plot no. 417,<br> Udyog Vihar Phase III,<br> Gurgaon,Haryana ,India</span>
         </a>
         <a href="https://twitter.com/Bella Vita Organic">
-            <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-envelope"></i>
             <span> shop@bellavitaorganic.com</span>
         </a>
         <a href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw">
-            <i class="fa-brands fa-youtube"></i>
+        <i class="fa-solid fa-phone"></i>
             <span> +91 9311732440</span>
         </a>
         <a href="hhttps://in.pinterest.com/Bella Vita Organic/">
@@ -159,21 +159,19 @@ let footer = () => {
             <i></i>
             <span>Plus, you'll be the first to know about <br>our discounts!</span>
         </a>
-        <a href="" title="Privacy Policy">
+        <div>
             <i></i>
             <span> <form method="post" action="/contact#ContactFooter" id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
             <div class="newsletter-form__field-wrapper">
                 <div class="field">
-                    <input id="NewsletterForm--footer" type="email" name="contact[email]" class="field__input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="enter your email
+                    <input id="NewsletterForm--footer"  type="email" name="contact[email]" class="field__input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="enter your email
                             address" required="">
-                    <label class="field__label" for="NewsletterForm--footer">
-                           
-                        </label>
+                    
 
                 </div>
             </div>
             <button type="submit"id="Subscribe" >SUBMIT</button></form></span>
-        </a>
+        </div>
         <a href="" title="Terms of Use">
             <i></i>
             <span></span>
