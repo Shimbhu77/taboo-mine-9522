@@ -15,15 +15,17 @@ function handlePrice() {
     var select = document.querySelector("#price_sv").value
     if (select == "") {
         appendData(dataArray)
-    } else if (select == 'HTL') {
+    }
+    else if (select == 'HTL') {
         dataArray.sort(function (a, b) {
-            return b.realPrice - a.realPrice
+            return b.strikeprice - a.strikeprice
 
         })
         appendData(dataArray)
-    } else if (select == 'LTH') {
+    }
+    else if (select == 'LTH') {
         dataArray.sort(function (a, b) {
-            return a.realPrice - b.realPrice
+            return a.strikeprice - b.strikeprice
 
         })
         appendData(dataArray)
