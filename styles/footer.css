@@ -104,7 +104,7 @@
     padding: 20px;
 }
 
-svg {
+#svg>a>svg {
     width: 16px;
     vertical-align: middle;
 }

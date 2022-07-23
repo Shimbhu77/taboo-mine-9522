@@ -130,7 +130,7 @@ let footer = () => {
     </ul>
 </div>
     </div>
-    <div>
+    <div id="svg">
         <h3>CONTACT US</h3>
         <a href="https://www.facebook.com/Bella Vita Organic">
         
