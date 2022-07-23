@@ -166,7 +166,9 @@ function func() {
 
 let AddCart = JSON.parse(localStorage.getItem("CartProducts")) || [];
 
-function AddtoCart(elem) {
+
+function AddtoCart(elem, ) {
+    // ocument.getElementById("count2").innerText = AddCartlengt
     if (verifyProduct(elem) == true) {
         elem.quantity = 1;
         elem.ProductPrice = elem.price;
@@ -175,6 +177,9 @@ function AddtoCart(elem) {
         AddCart.push(elem);
         localStorage.setItem("CartProducts", JSON.stringify(AddCart));
         console.log(elem, AddCart);
+        document.getElementById("count2").innerText = AddCart.length
+        console.log(AddCart.length)
+
         alert("Product Added to Cart Successfully");
     } else {
         alert("Product Already exists in Cart ");

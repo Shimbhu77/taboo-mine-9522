@@ -36,8 +36,11 @@ let navbar2 = () => {
        <i class="fa-regular fa-heart"></i>
        
     <a href="/cartpage.html"><i class="fa-solid fa-bag-shopping"></i></a>
+
        </div>
-   </div> `;
+       
+   </div><div id="count1">0</div>
+   <span id="count2">0</span> `;
 }
 
 export default navbar2;
