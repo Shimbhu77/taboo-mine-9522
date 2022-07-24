@@ -130,18 +130,21 @@ let footer = () => {
     </ul>
 </div>
     </div>
-    <div>
+    <div id="svg">
         <h3>CONTACT US</h3>
         <a href="https://www.facebook.com/Bella Vita Organic">
-            <i class="fa-brands fa-facebook-f"></i>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-home" fill="none" viewBox="0 0 576 512">
+  <path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z" fill="currentColor"></path>
+</svg>
             <span>Office Location: Plot no. 417,<br> Udyog Vihar Phase III,<br> Gurgaon,Haryana ,India</span>
         </a>
         <a href="https://twitter.com/Bella Vita Organic">
-            <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-envelope"></i>
             <span> shop@bellavitaorganic.com</span>
         </a>
         <a href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw">
-            <i class="fa-brands fa-youtube"></i>
+        <i class="fa-solid fa-phone"></i>
             <span> +91 9311732440</span>
         </a>
         <a href="hhttps://in.pinterest.com/Bella Vita Organic/">
@@ -159,21 +162,19 @@ let footer = () => {
             <i></i>
             <span>Plus, you'll be the first to know about <br>our discounts!</span>
         </a>
-        <a href="" title="Privacy Policy">
+        <div>
             <i></i>
             <span> <form method="post" action="/contact#ContactFooter" id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
             <div class="newsletter-form__field-wrapper">
                 <div class="field">
-                    <input id="NewsletterForm--footer" type="email" name="contact[email]" class="field__input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="enter your email
+                    <input id="NewsletterForm--footer"  type="email" name="contact[email]" class="field__input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="enter your email
                             address" required="">
-                    <label class="field__label" for="NewsletterForm--footer">
-                           
-                        </label>
+                    
 
                 </div>
             </div>
             <button type="submit"id="Subscribe" >SUBMIT</button></form></span>
-        </a>
+        </div>
         <a href="" title="Terms of Use">
             <i></i>
             <span></span>
