@@ -134,4 +134,7 @@ function verifyProduct(elem) {
     }
     return true;
 }
-document.getElementById("count2").innerText = AddCart.length
+document.getElementById("count2").innerText = AddCart.length;
+window.handlePrice=handlePrice;
+window.handleType=handleType;
+window.handleSubtype=handleSubtype;
