@@ -11,6 +11,8 @@
 ![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(358).png)
 ### Profile Page
 ![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(359).png)
+### Profile Edit Page
+![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(364).png)
 ### Cart Page
 ![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(362).png)
 ### Payment Page
