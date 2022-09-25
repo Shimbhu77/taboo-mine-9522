@@ -1,6 +1,6 @@
 # BellaViatOrganic Clone 
 ### An online eCommerce website to shop for natural and ayurvedic cosmetics and skin care products.
-### A collaborative project built by a team of 4 executed in 4 days
+### A collaborative project built by a team of 4 Member executed in 4 days
 # Tech Stack 
 ### HTML | CSS | JavaScript | NodeJs
 ### Home page
