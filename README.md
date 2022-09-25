@@ -9,7 +9,7 @@
 ![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(357).png)
 ### Login Page
 ![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(358).png)
-### Details Page
+### Profile Page
 ![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(359).png)
 ### Cart Page
 ![](https://github.com/Shimbhu77/boAt-Clone/blob/main/Images/Screenshot%20(362).png)
