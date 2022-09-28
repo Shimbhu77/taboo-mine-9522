@@ -1,6 +1,13 @@
 # BellaVitaOrganic Clone 
 ### An online eCommerce website to shop for natural and ayurvedic cosmetics and skin care products.
 ### A collaborative project built by a team of 4 Member executed in 4 days
+
+# Features
+### Sorting and Filtering function based on product type, price, categories, etc.
+### Add to cart functionality, Payment page
+### Login, Signup & Logout, and Profile Edit functionality
+### Categories for different types of products
+
 # Tech Stack 
 ### HTML | CSS | JavaScript | NodeJs
 ### Home page
