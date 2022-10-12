@@ -3,9 +3,10 @@
 ### A collaborative project built by a team of 4 Member executed in 4 days
 
 # Features
+
+### Login, Signup & Logout, and Profile Edit functionality
 ### Sorting and Filtering function based on product type, price, categories, etc.
 ### Add to cart functionality, Payment page
-### Login, Signup & Logout, and Profile Edit functionality
 ### Categories for different types of products
 
 # Tech Stack 
